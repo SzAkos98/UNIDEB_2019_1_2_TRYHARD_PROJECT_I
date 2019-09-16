@@ -4,7 +4,8 @@ Követelményspecifikáció.
 1.BEvezetés
 
 2.Jelenlegi helyzet
-
+Szoftverfejlesztési módszertanok tantárgyra kell készítenünk egy kis projektet.
+ 
 3.Vágyálom rendszer
 
 4.Jellenlegi üzleti folyamatok 
