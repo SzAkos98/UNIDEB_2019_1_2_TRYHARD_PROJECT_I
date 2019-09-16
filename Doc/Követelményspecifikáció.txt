@@ -9,5 +9,12 @@ Szoftverfejlesztési módszertanok tantárgyra kell készítenünk egy kis proje
 3.Vágyálom rendszer
 
 4.Jellenlegi üzleti folyamatok 
+-----------------------------------
+ Auto igénylés  telefonon vagy személyesen érdeklödik az ügyfél utána -> kockás papiron megnézem ,hogy 
+milyen auto van szabadon és meddig -> .....
+
 
 5.Igényelt üzleti folyamatok
+
+Új auto vásárlás:
+-----------------
