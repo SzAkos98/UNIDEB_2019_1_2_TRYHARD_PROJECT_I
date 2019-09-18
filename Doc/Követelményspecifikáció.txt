@@ -1,7 +1,13 @@
 TRYHARD
 Követelményspecifikáció.
 
-1.BEvezetés
+1.Bevezetés
+-----------
+Egy kisvárosi könyvkölcsönző viszonylag nagy forgalommal jár, a helyiek inkább kölcsönzik a könyveiket
+vásárlás helyett. A hely kifejezetten könyvtár hangulatú, a könyveket is könyvekben tartják nyilván.
+Napjainkban azonban a jól bevált módszerek új kihívásokkal és vetélytársakkal néznek szembe a
+számítógépek személyében. Éppen ezért a kölcsönző vezetése is úgy döntött, hogy alkalmazkodik
+az új követelményeknek, és egy gyors és hatékony számítógépes rendszert vezet be.
 
 2.Jelenlegi helyzet
 Szoftverfejlesztési módszertanok tantárgyra kell készítenünk egy kis projektet.
