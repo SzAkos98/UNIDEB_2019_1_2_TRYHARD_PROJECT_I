@@ -17,5 +17,5 @@ A funkcionális specifikációban igyekszünk a Követelményspecifikációban l
 
 5.Igényelt üzleti folyamatok
 ----------------------------
-
+Egy HTML UI-val rendelkező applikáció szügséges a könyvtárnak ami 
 
