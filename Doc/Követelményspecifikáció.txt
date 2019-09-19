@@ -23,10 +23,18 @@ Szeretnénk a könyveken kívül az ügyfeleinket is legalábbis beazonosíthat�
 ügyfelek kölcsönzéseit, valamint azok határidejét is. Ez segíthet abban, hogy ne kelljen percekig a sorok közt keresni
 épp nem rendelkezésre álló könyvet. A célunk, hogy a korábbi analóg módszert teljesen felválthassa a digitális.
 
-4.Jellenlegi üzleti folyamatok 
+4.Jelenlegi üzleti folyamatok 
 -----------------------------------
- Auto igénylés  telefonon vagy személyesen érdeklödik az ügyfél utána -> kockás papiron megnézem ,hogy 
-milyen auto van szabadon és meddig -> .....
+Jelenleg a könyvtár rendszere a klasszikus papír alapú nyilvántartás segítségével működik.
+Az ügyfeleink könyvtári tag kártyával tudják igénybe venni a könyvtár szolgáltatásait illetve,
+az ügyfelek több oldalas listán vannak rendszerezve. Ez az ügyfelek ilyen módon való rendszerezése
+már egy kis vagy közepes tag létszámmal rendelkező könyvtár esetében is káosz lehet. Egy könyv
+kikölcsönzése esetén az ügyfél kap egy lapot amin a visszahozás dátuma szerepel viszont ha más is
+ki akarja kölcsönözni ugyanazt a könyvet ami jelenleg kikölcsönzés alatt áll akkor a könytárosnak
+végig kell néznie a könyvtár aktuális részét ,hogy a könyv megtalálható-e. A könyvtárosnak azzal is
+nagyon nehéz dolga van ,hogy a kikölcsönzött könyvek visszahozási határidejét nyomon kövesse
+illetve ha valaki elfelejtkezik a könyv visszahozásáról azt értesítse a késedelméről és annak
+következményeiről. A jelenlegi üzleti folyamatok elavultnak bizonyulnak.
 
 
 5.Igényelt üzleti folyamatok
