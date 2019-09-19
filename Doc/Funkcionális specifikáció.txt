@@ -3,6 +3,8 @@ Funkcionális specifikáció.
 
 1.Bevezetés
 -----------
+A funkcionális specifikációban igyekszünk a Követelményspecifikációban leírtakat
+átültetni funkciókká, menükké, gombokká...stb.
 
 2.Jelenlegi helyzet
 -------------------
