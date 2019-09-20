@@ -3,8 +3,8 @@ Funkcionális specifikáció.
 
 1.Bevezetés
 -----------
-A funkcionális specifikációban igyekszünk a Követelményspecifikációban leírtakat
-átültetni funkciókká, menükké, gombokká...stb.
+A funkcionális specifikációban igyekszünk a Követelményspecifikációban 
+leírtakat átültetni funkciókká, menükké, gombokká...stb.
 
 2.Jelenlegi helyzet
 -------------------
@@ -17,9 +17,10 @@ A funkcionális specifikációban igyekszünk a Követelményspecifikációban l
 
 5.Igényelt üzleti folyamatok
 ----------------------------
-A könyvtárnak egy HTML UI-val rendelkező applikáció szügséges ami egy adatbázisban (valószínűleg h2)
-tárolja a könyvtárban rendelkezésre álló könyvekei illetve a kölcsönzésre kiadott könyveket. 
-Opcionálisan a tagok adatbázisban való tárolása is megvalósítható.
+A könyvtárnak egy HTML UI-val rendelkező applikáció szügséges ami egy 
+adatbázisban (valószínűleg h2)tárolja a könyvtárban rendelkezésre álló 
+könyvekei illetve a kölcsönzésre kiadott könyveket. Opcionálisan a tagok
+adatbázisban való tárolása is megvalósítható.
 
 
 

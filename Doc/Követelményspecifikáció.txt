@@ -3,11 +3,13 @@ Követelményspecifikáció.
 
 1.Bevezetés
 -----------
-Egy kisvárosi könyvkölcsönző viszonylag nagy forgalommal jár, a helyiek inkább kölcsönzik a könyveiket
-vásárlás helyett. A hely kifejezetten könyvtár hangulatú, a könyveket is könyvekben tartják nyilván.
-Napjainkban azonban a jól bevált módszerek új kihívásokkal és vetélytársakkal néznek szembe a
-számítógépek személyében. Éppen ezért a kölcsönző vezetése is úgy döntött, hogy alkalmazkodik
-az új követelményeknek, és egy gyors és hatékony számítógépes rendszert vezet be.
+Egy kisvárosi könyvkölcsönző viszonylag nagy forgalommal jár, a helyiek 
+inkább kölcsönzik a könyveiket vásárlás helyett. A hely kifejezetten 
+könyvtár hangulatú, a könyveket is könyvekben tartják nyilván. Napjainkban
+azonban a jól bevált módszerek új kihívásokkal és vetélytársakkal néznek 
+szembe a számítógépek személyében. Éppen ezért a kölcsönző vezetése is 
+úgy döntött, hogy alkalmazkodik az új követelményeknek, és egy gyors és 
+hatékony számítógépes rendszert vezet be.
 
 2.Jelenlegi helyzet
 Szoftverfejlesztési módszertanok tantárgyra kell készítenünk egy kis projektet.
@@ -15,26 +17,32 @@ Szoftverfejlesztési módszertanok tantárgyra kell készítenünk egy kis proje
 3.Vágyálom rendszer
 -------------------
 
-Szeretnénk a papír ceruza rendszernél hatékonyabb rendszert beüzemeltetni, ami meggyorsítja
-a folyamatainkat, és megkönnyíti munkatársaink munkáját. Az egyes munkaállomásokon
-már találhatóak számítógépek, melyek egymással is tudnak kommunikálni, illetve interneteléréssel is rendelkeznek.
-Ezen gépekre szeretnénk egy szoftvert, amiben nyilvántarthatnánk a könyveinket, illetve az ahhoz kapcsolódó folyamatokat.
-Szeretnénk a könyveken kívül az ügyfeleinket is legalábbis beazonosítható szinten nyilvántartani, illetve az egyes
-ügyfelek kölcsönzéseit, valamint azok határidejét is. Ez segíthet abban, hogy ne kelljen percekig a sorok közt keresni
-épp nem rendelkezésre álló könyvet. A célunk, hogy a korábbi analóg módszert teljesen felválthassa a digitális.
+Szeretnénk a papír ceruza rendszernél hatékonyabb rendszert beüzemeltetni,
+ami meggyorsítja a folyamatainkat, és megkönnyíti munkatársaink munkáját. 
+Az egyes munkaállomásokon már találhatóak számítógépek, melyek egymással is
+tudnak kommunikálni, illetve interneteléréssel is rendelkeznek. Ezen gépekre
+szeretnénk egy szoftvert, amiben nyilvántarthatnánk a könyveinket, illetve 
+az ahhoz kapcsolódó folyamatokat. Szeretnénk a könyveken kívül az ügyfeleinket
+is legalábbis beazonosítható szinten nyilvántartani, illetve az egyes ügyfelek
+kölcsönzéseit, valamint azok határidejét is. Ez segíthet abban, hogy ne kelljen
+percekig a sorok közt keresni épp nem rendelkezésre álló könyvet. A célunk, hogy
+a korábbi analóg módszert teljesen felválthassa a digitális.
 
 4.Jelenlegi üzleti folyamatok 
 -----------------------------------
-Jelenleg a könyvtár rendszere a klasszikus papír alapú nyilvántartás segítségével működik.
-Az ügyfeleink könyvtári tag kártyával tudják igénybe venni a könyvtár szolgáltatásait illetve,
-az ügyfelek több oldalas listán vannak rendszerezve. Ez az ügyfelek ilyen módon való rendszerezése
-már egy kis vagy közepes tag létszámmal rendelkező könyvtár esetében is káosz lehet. Egy könyv
-kikölcsönzése esetén az ügyfél kap egy lapot amin a visszahozás dátuma szerepel viszont ha más is
-ki akarja kölcsönözni ugyanazt a könyvet ami jelenleg kikölcsönzés alatt áll akkor a könytárosnak
-végig kell néznie a könyvtár aktuális részét ,hogy a könyv megtalálható-e. A könyvtárosnak azzal is
-nagyon nehéz dolga van ,hogy a kikölcsönzött könyvek visszahozási határidejét nyomon kövesse
-illetve ha valaki elfelejtkezik a könyv visszahozásáról azt értesítse a késedelméről és annak
-következményeiről. A jelenlegi üzleti folyamatok elavultnak bizonyulnak.
+Jelenleg a könyvtár rendszere a klasszikus papír alapú nyilvántartás
+segítségével működik. Az ügyfeleink könyvtári tag kártyával tudják igénybe
+venni a könyvtár szolgáltatásait illetve, az ügyfelek több oldalas listán
+vannak rendszerezve. Ez az ügyfelek ilyen módon való rendszerezése már egy
+kis vagy közepes tag létszámmal rendelkező könyvtár esetében is káosz lehet.
+Egy könyv kikölcsönzése esetén az ügyfél kap egy lapot amin a visszahozás
+dátuma szerepel viszont ha más is ki akarja kölcsönözni ugyanazt a könyvet
+ami jelenleg kikölcsönzés alatt áll akkor a könytárosnak végig kell néznie
+a könyvtár aktuális részét ,hogy a könyv megtalálható-e. A könyvtárosnak azzal 
+is nagyon nehéz dolga van ,hogy a kikölcsönzött könyvek visszahozási határidejét
+nyomon kövesse illetve ha valaki elfelejtkezik a könyv visszahozásáról azt
+értesítse a késedelméről és annak következményeiről. A jelenlegi üzleti folyamatok
+elavultnak bizonyulnak.
 
 
 5.Igényelt üzleti folyamatok
