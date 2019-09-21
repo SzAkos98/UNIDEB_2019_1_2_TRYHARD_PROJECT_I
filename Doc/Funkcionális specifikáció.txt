@@ -43,9 +43,19 @@ d) A program segítséget nyújt ,hogy a felhasználó különböző szempontok 
    akár a könyvtári tag vagy a könyvtárban dolgozó ,hogy adott szerzőhöz milyen
    művek kapcsolódnak és éppen kint vannak egy másik tagnál vagy kivehetők-e.
 
-e)
+e) A programban kiemelt szerepet jelent ,hogy az alap felhasználó is a maga
+   jogosultságával is képes lehessen egyszerűbb lekérdezések és ez által kere
+   séseket végre hajtani az adatbázison. Ez által az ö hierarchikus rendszerben
+   betöltőt szerepe által képes lesz bizonyos adatokhoz hozzá férni és látni
+   azokat mindezek általl.
 
-f)
+
+f) Szoftverben az egyik legfontosabb „funkció” az nem más mint ,hogy egyszerű 
+   könnyen kezelhetőés átlátható legyen mint  a könyvtárós ,raktáros és vezető 
+   felhasználóknak. Illetve könyvtári programot használó tagoknak is. Mert mind az
+   aktív tagóknak és a szoftvert kezelő alkalmazottaknaknagyon fontos ,hogy gyorsan
+   és hatékonyan képesek lehessenek használni a programot.
+
 
 A rendszernek NEM célja
 -----------------------
