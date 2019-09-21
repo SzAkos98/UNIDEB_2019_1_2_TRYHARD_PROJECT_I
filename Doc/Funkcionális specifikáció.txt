@@ -1,26 +1,32 @@
 TRYHARD
 Funkcionális specifikáció.
 
-1.Bevezetés
------------
-A funkcionális specifikációban igyekszünk a Követelményspecifikációban 
-leírtakat átültetni funkciókká, menükké, gombokká...stb.
 
-2.Jelenlegi helyzet
--------------------
+A korábbiakban elkészített Követelmény specifikációban leírtak alapján
+a Funkcionális specifikáció alább található meg a dokumentumban.
 
-3.Vágyálom rendszer
--------------------
+1. Használati esetek
+--------------------
 
-4.Jelenlegi üzleti folyamatok 
------------------------------
-
-5.Igényelt üzleti folyamatok
-----------------------------
-A könyvtárnak egy HTML UI-val rendelkező applikáció szügséges ami egy 
-adatbázisban (valószínűleg h2)tárolja a könyvtárban rendelkezésre álló 
-könyvekei illetve a kölcsönzésre kiadott könyveket. Opcionálisan a tagok
-adatbázisban való tárolása is megvalósítható.
+A Követelmény specifikáció 'Követelménylista' című bekezdése alapján az
+egyes pontok kifejtésére kerül sor ebben a fejezetben.
 
 
 
+a) A programmal lehetőséget szeretnénk nyújtani a felhasználój számára
+   saját kölcsönzéseik nílvántartását. Továbbá a kölcsönzőben dolgozó
+   személyzet számára szeretnénk átláthatóbbá tenni az adminisztrációt.
+
+b) Az egyes tételekről (melyek a mi esetünkben a kölcsönözhető könyvek)
+   szeretnénk a lehető legtöbb információt eltárolni. A könyvek címét,
+   szerzőjet, megjelenésének dátumát, kölcsönzési státuszát (ki van-e
+   kölcsönözve vagy sem), a kivétel időpontját és a kölcsön lejáratának
+   dátumát.
+
+c)
+
+d)
+
+e)
+
+f)

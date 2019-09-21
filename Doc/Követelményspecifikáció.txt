@@ -11,9 +11,6 @@ szembe a számítógépek személyében. Éppen ezért a kölcsönző vezetése 
 úgy döntött, hogy alkalmazkodik az új követelményeknek, és egy gyors és 
 hatékony számítógépes rendszert vezet be.
 
-2.Jelenlegi helyzet
-Szoftverfejlesztési módszertanok tantárgyra kell készítenünk egy kis projektet.
- 
 3.Vágyálom rendszer
 -------------------
 
@@ -28,8 +25,9 @@ kölcsönzéseit, valamint azok határidejét is. Ez segíthet abban, hogy ne ke
 percekig a sorok közt keresni épp nem rendelkezésre álló könyvet. A célunk, hogy
 a korábbi analóg módszert teljesen felválthassa a digitális.
 
-4.Jelenlegi üzleti folyamatok 
------------------------------------
+4.Jelenlegi üzleti folyamatok
+-----------------------------
+
 Jelenleg a könyvtár rendszere a klasszikus papír alapú nyilvántartás
 segítségével működik. Az ügyfeleink könyvtári tag kártyával tudják igénybe
 venni a könyvtár szolgáltatásait illetve, az ügyfelek több oldalas listán
@@ -45,7 +43,15 @@ nyomon kövesse illetve ha valaki elfelejtkezik a könyv visszahozásáról azt
 elavultnak bizonyulnak.
 
 
-5.Igényelt üzleti folyamatok
+5.Követelménylista
+------------------
 
-Új auto vásárlás:
------------------
+a) Egy rendszer mely nyílvántartja a forgalomban lévő könyveket.
+b) A rendszer képes legyen egy adott elemről több adatot is tárolni.
+c) A nyilvántartásba lehtővé kell tenni a meglévő elemek módosítását, törlését
+   és új elem létrehozását.
+d) A rendszer képes legyen kiválogatni a tételeket különböző szempontok alapján.
+e) Legyen lehetősége az alap felhasználónak is legérdezést végrehajtani.
+f) A program egyszerűen kezelhető és letisztult képi világgal rendelkezzen.
+
+
