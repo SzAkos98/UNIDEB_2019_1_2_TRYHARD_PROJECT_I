@@ -7,8 +7,24 @@ alapján az alábbiakban a szoftver Rnedszertervét ismertetjük.
 
 
 1. A projetk tervezete
+----------------------
 
+A szoftver egy kisvárosi könyvkölcsönző működését hivatott elősegíteni.
+Célja az analóg rendszer digitálisra cserélése. Adminisztratív és egyébb
+feladatok ellátása számítógépes környezetben. A cél platformunk a kölcsönző
+tulajdonában lévő számítógép mely Linux alapú operációs rendszer futtat,
+név szerint az Ubuntut. A gép hardverje 8 GB DDR4 -es RAMból, egy Intel
+Core i7-8750H 2.20GHz típusú porcesszorból és egy NVIDIA GeForce GTX 1060
+típusú videókártyából áll. A gép számára biztosítvav van a stabil 10Mb/s
+sávszélességű internet elérés. Az ott dolgozók és a betérő vendégek számára
+biztosítva van a hozzáférés a számítógéphez.
+
+
+
+
+/*
 A könyvtárnak egy HTML UI-val rendelkező applikáció szügséges ami egy 
 adatbázisban (valószínűleg h2)tárolja a könyvtárban rendelkezésre álló 
 könyvekei illetve a kölcsönzésre kiadott könyveket. Opcionálisan a tagok
 adatbázisban való tárolása is megvalósítható.
+*/
