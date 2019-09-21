@@ -51,7 +51,7 @@ b) A rendszer képes legyen egy adott elemről több adatot is tárolni.
 c) A nyilvántartásba lehtővé kell tenni a meglévő elemek módosítását, törlését
    és új elem létrehozását.
 d) A rendszer képes legyen kiválogatni a tételeket különböző szempontok alapján.
-e) Legyen lehetősége az alap felhasználónak is legérdezést végrehajtani.
+e) Legyen lehetősége az alap felhasználónak is lekérdezést végrehajtani.
 f) A program egyszerűen kezelhető és letisztult képi világgal rendelkezzen.
 
 

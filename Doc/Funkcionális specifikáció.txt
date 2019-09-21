@@ -13,8 +13,8 @@ egyes pontok kifejtésére kerül sor ebben a fejezetben.
 
 
 
-a) A programmal lehetőséget szeretnénk nyújtani a felhasználój számára
-   saját kölcsönzéseik nílvántartását. Továbbá a kölcsönzőben dolgozó
+a) A programmal lehetőséget szeretnénk nyújtani a felhasználók számára
+   saját kölcsönzéseik nílvántartására. Továbbá a kölcsönzőben dolgozó
    személyzet számára szeretnénk átláthatóbbá tenni az adminisztrációt.
 
 b) Az egyes tételekről (melyek a mi esetünkben a kölcsönözhető könyvek)
