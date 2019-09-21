@@ -63,25 +63,28 @@ határidővel, visszahozási dátummal. A könyvek táblában eltároljuk a pél
 azonosítóját, könyvtári azonosítóját (ami nem unique), címét, szerzőjét,
 kiadóját, kiadás évét, illetve hogy épp elérhető-e. Az tag táblában az
 adott személy kereszt és vezetéknevét, születési dátumát, lakcímét,
-illetve az egyedi azonosítóját tároljuk.
+illetve az egyedi azonosítóját tároljuk. A törlés a foreign keyek miatt
+az adott rekord azonosítóján kívüli értékeinek NULL-ra állításával történik,
+mivel nem szeretnénk, hogy egy esetleges tag vagy könyv törlése után az ID-jük
+felszabaduljon, mert így valótlan kölcsönzési adatok is keletkezhetnének.
 
 Könyv
 +------------------------------------------+
 |	ID Primary key, unique INTEGER         |
-|	LibID VARCHAR						   |
+|	LibID VARCHAR                          |
 |	Szerzo VARCHAR                         |
 |	Cim  VARCHAR                           |
-|	Kiado VARCHAR						   |
+|	Kiado VARCHAR                          |
 |	KiadasEve DATE                         |
-|	Elerheto BOOLEAN					   |
+|	Elerheto BOOLEAN                       |
 +------------------------------------------+
 Tag
 +------------------------------------------+
 |	ID Primary key, unique INTEGER         |
 |	Vezeteknev VARCHAR                     |
-|	Keresztnev VARCHAR					   |
+|	Keresztnev VARCHAR                     |
 |	Születési datum  DATE                  |
-|	Lakcim VARCHAR 						   |
+|	Lakcim VARCHAR                         |
 +------------------------------------------+
 Kölcsönzés
 +------------------------------------------+
@@ -89,8 +92,8 @@ Kölcsönzés
 |	KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |
 |	TagID FOREIGN KEY(TAG.ID) INTEGER      |
 |	KolcsonzesDatum  DATE                  |
-|	Hatarido DATE						   |
-|	VisszahozasDatum DATE				   |
+|	Hatarido DATE                          |
+|	VisszahozasDatum DATE                  |
 +------------------------------------------+
 
 
