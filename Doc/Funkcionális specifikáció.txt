@@ -56,6 +56,17 @@ f) Szoftverben az egyik legfontosabb „funkció” az nem más mint ,hogy egysz
    aktív tagóknak és a szoftvert kezelő alkalmazottaknaknagyon fontos ,hogy gyorsan
    és hatékonyan képesek lehessenek használni a programot.
 
+Jelenlegi helyzet
+------------------
+A mostani analóg vagyis papir és ceruzán alapúló könyvtár megérett arra a szintre
+,hogy modernizálja magát és belépjen a húszadik századba és ez által meggyorsitja
+a mostani rendszert. Ez által képes lehet tartani a versenyt és kiszolgálni igy a 
+könyvtárba járó közönséget. Mert igy képesek lesznek a könyvtárban dolgozok vilám
+gyorsan lekérdezni az adatbáziból ,hogy az adot köny réssze-e a könyvtárnak bent 
+van-e illetve ha kint van egy másik tagnál akkor az ilelttönek mikor esedékes a 
+visszahozatala.Ezek eddig hosszú perceket vettek el mind a könyvtárós és mind a tagtól.
+Ami a mostani világban már tarthatalan és igy kényszerböl is muszáj megváltozni a 
+könyvtárnak mind az ott dolgozok és tagok  és ön maga érdekében.
 
 A rendszernek NEM célja
 -----------------------
