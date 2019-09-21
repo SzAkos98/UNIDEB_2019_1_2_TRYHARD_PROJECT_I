@@ -13,8 +13,8 @@ egyes pontok kifejtésére kerül sor ebben a fejezetben.
 
 
 
-a) A programmal lehetőséget szeretnénk nyújtani a felhasználók számára
-   saját kölcsönzéseik nílvántartására. Továbbá a kölcsönzőben dolgozó
+a) A programmal lehetőséget szeretnénk nyújtani a felhasználók
+   kölcsönzéseinek nyilvántartására. Továbbá a kölcsönzőben dolgozó
    személyzet számára szeretnénk átláthatóbbá tenni az adminisztrációt.
 
 b) Az egyes tételekről (melyek a mi esetünkben a kölcsönözhető könyvek)
@@ -38,11 +38,50 @@ c) A dinamikusan változó nyilvántartás lehetőséget kínál ,hogy ez által
 
 d) A program segítséget nyújt ,hogy a felhasználó különböző szempontok alapján
    mint pl: kölcsönzés dátuma szerint tudja csökkenő vagy növekvő sorendbe ki 
-   listázni a kivet könyveket igy könnyedén láthatja ,hogy ki az akinek esedékes
-   a könyv visszahozása a könyvtárba. De ide tartozik ,hogy le ellenőrizhesse 
+   listázni a kivett könyveket igy könnyedén láthatja ,hogy ki az akinek esedékes
+   a könyv visszahozása a könyvtárba. De ide tartozik ,hogy leellenőrizhesse
    akár a könyvtári tag vagy a könyvtárban dolgozó ,hogy adott szerzőhöz milyen
    művek kapcsolódnak és éppen kint vannak egy másik tagnál vagy kivehetők-e.
 
 e)
 
 f)
+
+A rendszernek NEM célja
+-----------------------
+
+a) A tagok számára felületet biztosítani a kölcsönzéseik listázására, vagy
+   bármilyen kölcsönzőbeli adatuk elérésére.
+
+b) Webes környezetben való alkalmazása, internetek keresztüli elérés, mivel
+   a jelenleg nincs felkészítve az esetleges interneten felmerülő veszélyekre,
+   mint a jelszavak védelme, az esetleges tranzakciók indítása session rablással,
+   vagy szerkesztett URL-ekkel. Épp ezért javasolt, hogy a szerver gép privát
+   hálózaton üzemeljen és inkább csak a munkaállomások számára engedélyezzen
+   kapcsolatot.
+
+Jelenlegi üzleti folyamatok modellje
+------------------------------------
+
+A tagok és a könyvek listáját egy relációs adatbázis váltja ki, amelyben ezek az
+adatok tökéletesen tárolhatóak, és különböző szűrökkel gyorsan lekérdezhetőek.
+ A menüből választhatóak ki az alapvető tevékenységek minden felhasználónak.
+ A felhasználól 3 csoportra sorolhatóak:
+   Könyvtáros
+   Raktáros
+   Vezető
+
+ A Könyvtáros felhasználó menüje:
+    Kölcsönzés
+    Visszahozás
+    Tagok
+    Könyvek
+
+ A kölcsönzési folyamat megkezdésekor a Kölcsönzés menüponot választa a könyvtáros megadja
+a kölcsönző nevét és a könyv azonosítóját, ezzel a rendszer meg eltárolja a kölcsönzést,
+majd és megjeleníti a határidőt, amit a könyvtáros így megadhat a tagnak.
+ A könyv visszahozásakor a könyvtáros a Visszahozás menüpontot választja, ahol szűrőkkel elő tudja
+keresni az adott kölcsönzést, és Visszahozva állapotba állíthatja (ekkor menti az adott időpontot).
+ A Tagok menüpontban a könyvtáros szűrni tud új tagokra, illetve lehetősége van új tag hozzáadására,
+a kijelölt tag törlésére, vagy a kijelölt tag adatainak módosítására.
+ A Könyvek menüpontban szűrni tud a könyvtáros könyvekre. Ez read-only.
