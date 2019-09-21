@@ -1,4 +1,4 @@
-TRYHARD
+﻿TRYHARD
 Funkcionális specifikáció.
 
 
@@ -23,9 +23,25 @@ b) Az egyes tételekről (melyek a mi esetünkben a kölcsönözhető könyvek)
    kölcsönözve vagy sem), a kivétel időpontját és a kölcsön lejáratának
    dátumát.
 
-c)
+c) A dinamikusan változó nyilvántartás lehetőséget kínál ,hogy ez által új 
+   tagokat vehessen fel könyvtár vagy az esetlegesen megszűnő tagságokat könnyen
+   és egyszerűen képes legyen kitörölni vagy ha egy felhasználónak megváltoztak
+   az adatai akkor azt a lehető legegyszerűbben képes legyen a dolgozó módosítani.
+   Ez módszer ugyan úgy használható   mint dolgozok szintjén  és  természetesen 
+   könyvekre is értendő. Mert ez által a könyvek listáját is könnyedséggel lehet 
+   változtatni ,hogy éppen bent van-e a könyvtárba vagy nem illetve ,hogy melyik 
+   tagnál helyezkedik el. Illetve , hogy az új könyvek felvételét is lelehet 
+   bonyolítani vagy a megrongált sérült könyveket könnyedén ki lehet vonni az 
+   adatbázisból.
 
-d)
+
+
+d) A program segítséget nyújt ,hogy a felhasználó különböző szempontok alapján
+   mint pl: kölcsönzés dátuma szerint tudja csökkenő vagy növekvő sorendbe ki 
+   listázni a kivet könyveket igy könnyedén láthatja ,hogy ki az akinek esedékes
+   a könyv visszahozása a könyvtárba. De ide tartozik ,hogy le ellenőrizhesse 
+   akár a könyvtári tag vagy a könyvtárban dolgozó ,hogy adott szerzőhöz milyen
+   művek kapcsolódnak és éppen kint vannak egy másik tagnál vagy kivehetők-e.
 
 e)
 
