@@ -45,15 +45,15 @@ elavultnak bizonyulnak.
 5.Igényelt üzleti folyamatok modellje.
 --------------------------------------
 Könyvtár szeretné kiküszöbölni a jelenlegi analóg rendszer általi nehézségeket
-igy mint minden kisebb nagyobb cég ők is követik digitalizálást.Igényeik szerint
+így mint minden kisebb nagyobb cég ők is követik digitalizálást.Igényeik szerint
 több felhasználós platform lenne mert bontásban tudnának dolgozni a könyvtári 
-munkavállalók mert igy valaki új tagot tud felveni ,mig a másik dolgozó kölcsönzés
+munkavállalók mert így valaki új tagot tud felvenni ,amig a másik dolgozó kölcsönzés
 folyamatát bonyolítaná le illetve tételeket tudna törölni vagy meghosszabbítani.
-Ezért szükség van aki kölcsönzés táblát modositaná mert a könyveket adna ki addig a 
-másik felhasználónkönyveket veszi be és veszi ki és illetve felhasználástól függően
+Ezért szükség van aki kölcsönzés táblát módosítaná mert a könyveket adna ki addig a 
+másik felhasználón könyveket veszi be és veszi ki és illetve felhasználástól függően
 olyan aki mindent folyamatot lát és esetlegesen képes lenne bele is nyúlni a rendszerbe.
 Ez által a rendszer képes lenne egy adott könyvről több adatot is tárolni ,hogy éppen 
-kinélvan ,meddig van nála és ,hogy mikor esedékes a könyvtárba való visszahozatala.
+kinél van ,meddig van nála és ,hogy mikor esedékes a könyvtárba való vissza hozatala.
 Emellett igen fontos lenne a könnyű kezelhetőség és egyben átláthatóság a felhasználók számára.
 
 
