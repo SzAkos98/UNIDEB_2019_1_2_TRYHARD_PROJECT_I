@@ -1,4 +1,4 @@
-TRYHARD
+﻿TRYHARD
 Rendszerterv
 
 
@@ -96,7 +96,40 @@ Kölcsönzés
 |	VisszahozasDatum DATE                  |
 +------------------------------------------+
 
+A HTML használata a felhasználói felület elrendezéséhez
+--------------------------------------------------------
+A HTML UI használatával A HTML UI használatával lehetővé teszi a bonyolult 
+felhasználói felületek elhelyezését minimális zavarral; nagyszerű feladat az UI 
+felépítésének és elrendezésének elválasztása az üzleti logikától; könnyű írni; 
+és könnyen karbantartható illetve sok alkalmazás képes kiaknázni a HTML adta
+táblázatós és egyszerűbb lehetőségeit.Az UI modell mellett az  űrlapmezőket 
+a végfelhasználóhoz is elrendezzük. Ez által könnyedén képesek leszünk  az 
+adatbázisban H2 konzolos alkalmazás segítségével könyvtárban kölcsönzésre  
+használható könyveket illetve az opcionális erre a célra felvet tagokat 
+adatbázisát is. Amikor az UI Model varázsló segítségével modellt generálunk 
+egy specifikációból, akkor  egy HTML 'snippet' fájlt is kapunk, amelyet 
+felhasználhatunk az űrlapmezők elrendezésére. A <táblák> , <tr> (sor) és 
+<td> (cellák) címkéket használjuk a specifikáción belüli mezők elrendezésének
+megszervezésére.  A <label> címkék barátságos nevet / feliratot adnak a vezérléshez.
+Az <input> címkék felhasználói felület elemekhez használhatók,
+például a jelölőnégyzetekhez és a legördülő listákhoz.  Az <textarea> címkék nagy 
+szövegterületekhez használhatók.  A <div class = "bbui-formák-mezőkészlet-oszlop"> 
+címkék az űrlapmezők több oszlopba rendezésére szolgálnak, míg a 
+<div class = "bbui-formák-tabs-main"> címkék az űrlapmezők tabulátorokba rendezésére szolgálnak .
+Használhatunk egy # MAP # elnevezési konvenciót az adat-specifikus metaadat-értékek 
+leképezéséhez a HTML alapú felhasználói felületen. Az alábbiakban a <label> címkét 
+és annak id = "# MAP # NAME_caption" attribútumát használjuk a NAME űrlapa feliratának
+ megjelenítéséhez egy címkén
 
+        <Td>
+          <label id = "# MAP # NAME_caption" = "# MAP # NAME_value"> </label>
+        </ Td>
+A <input> címkével a megfelelő szövegmező megjelenítéséhez az id = "# MAP # NAME_value" 
+attribútumot használhatjuk a NAME űrlap mező értékének a vezérlésbe való hozzárendelésére.
+
+        <Td>
+          <input id = "# MAP # NAME_value" type = "text" />
+        </ Td>
 
 
 /*Draft
