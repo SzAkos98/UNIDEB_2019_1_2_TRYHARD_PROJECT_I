@@ -67,6 +67,30 @@ illetve az egyedi azonosítóját tároljuk. A törlés a foreign keyek miatt
 az adott rekord azonosítóján kívüli értékeinek NULL-ra állításával történik,
 mivel nem szeretnénk, hogy egy esetleges tag vagy könyv törlése után az ID-jük
 felszabaduljon, mert így valótlan kölcsönzési adatok is keletkezhetnének.
+ A html-ben megvalósított UI-ban ha megadjuk egy könyvnek az azonosításához
+szügséges információkat akkor a program visszaadja ,hogy a könyv megtalálható-e
+a könyvtár könyveit tároló adatbázisában, illetve jelenleg ki van-e kölcsönözve
+vagy kikölcsönözhető. Ha egy könyvet egy tag kikölcsönöz akkor lehetőség nyílik,
+a könyv elérhetőségének értékét megváltoztatni.
+A program tartalmazni fog egy olyan mezőt is ahol ha megadjuk egy tag azonosí-
+tásához szügséges információkat akkor az applikáció meg tudja mondani azt, hogy
+az illető tagja-e a könyvtárnak, továbbá meg lesz a lehetőség arra is ,hogy
+hozzáadjunk a könyvtári tagok listájához olyan embert is aki még nem tag.
+További funkció lesz például ,hogy a könyvtárosnak lehetősége nyílik a program
+segítségével ellenőrízni ,hogy a könyvet mikor kölcsönözték ki illetve
+a könyvtári tagnak meddig lesz esedékes visszahozni, illetve megtekinthető
+lesz az is ,hogy ki által lett kikölcsönözve a könyv.   
+ A program megírásához css-t is fogunk alkalmazni mint wiew-ért felelős
+technológiát. Itt a program megírása során egy egyszerű, átlátható és
+szép desing létrehozását tűztük ki célul.
+A program controller részének a megvalósításához Java Servlet technológiát
+fogunk használni. A servlethez alapvetően szügséges könyvtárak listája a 
+teljesség igénye nélkül:
+java.io.*;
+javax.servlet.*;
+javax.servlet.http.*;
+A servlet class-nak mindenképp ki kell majd terjesztenie a HttpServlet osztályt.
+
 
 Könyv
 +------------------------------------------+
