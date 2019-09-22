@@ -90,7 +90,8 @@ java.io.*;
 javax.servlet.*;
 javax.servlet.http.*;
 A servlet class-nak mindenképp ki kell majd terjesztenie a HttpServlet osztályt.
-A maven-be is szügséges felvenni dependency-ként a servletet:
+A maven-be is szügséges felvenni dependency-ként a servletet illetve a H2 adatbázist:
+-------------
 <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
 <dependency>
     <groupId>javax.servlet</groupId>
@@ -98,6 +99,15 @@ A maven-be is szügséges felvenni dependency-ként a servletet:
     <version>2.5</version>
     <scope>provided</scope>
 </dependency>
+-------------
+<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <version>1.4.197</version>
+    <scope>test</scope>
+</dependency>
+-------------
 Illetve a tomcatet is fel kell venni plugin-ként:
 <plugin>
   <groupId>org.apache.tomcat.maven</groupId>
