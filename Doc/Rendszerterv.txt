@@ -90,6 +90,21 @@ java.io.*;
 javax.servlet.*;
 javax.servlet.http.*;
 A servlet class-nak mindenképp ki kell majd terjesztenie a HttpServlet osztályt.
+A maven-be is szügséges felvenni dependency-ként a servletet:
+<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.5</version>
+    <scope>provided</scope>
+</dependency>
+Illetve a tomcatet is fel kell venni plugin-ként:
+<plugin>
+  <groupId>org.apache.tomcat.maven</groupId>
+  <artifactId>tomcat7-maven-plugin</artifactId>
+  <version>2.2</version>
+</plugin>
+
 
 
 Könyv
@@ -157,10 +172,6 @@ attribútumot használhatjuk a NAME űrlap mező értékének a vezérlésbe val
 
 
 /*Draft
-A könyvtárnak egy HTML UI-val rendelkező applikáció szügséges ami egy 
-adatbázisban (valószínűleg h2)tárolja a könyvtárban rendelkezésre álló 
-könyvekei illetve a kölcsönzésre kiadott könyveket. Opcionálisan a tagok
-adatbázisban való tárolása is megvalósítható.
 Adhatunk hozzá egy 3. táblát is mint settings itt név érték párokat tárolhatnánk
 pl hogy mennyi egy kölcsönzési határidő vagy ami még eszünkbe jut,
 mert akkor ezek sem hardcoded propertyk lennének, ami jól mutatna ebben a
