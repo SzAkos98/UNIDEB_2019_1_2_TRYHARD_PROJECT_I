@@ -82,3 +82,24 @@ e) Legyen lehetősége az alap felhasználónak is lekérdezést végrehajtani.
 f) A program egyszerűen kezelhető és letisztult képi világgal rendelkezzen.
 
 
+Képernyőtervek
+--------------
+
+A program alapvetően egy főmenűből, és a menüből nyitható funkció képernyőkből
+áll. A főmenüből elérhető az összes funkció, valamint a kilépési lehetőség.
+A program célja, hogy gyakorlatilag egy adatbázis előnyeit SQL utasítások
+használata nélkül élvezhessük. Így a fontosabb funkciók számára kell lehetőséget
+biztosítanunk a userek számára.
+Ezek alapján kell
+    - lekérdezés
+    - létrehozás
+    - módosítás
+    - törlés.
+
+A képernyőknek vannak közös elemei, ezek a navigációs gombok, melyek aktiválják
+az adott funkciót, illetve visszalépnek a menübe.
+
+A jelen esetben a kölcsönzőben szükség van:
+    - könyvek és tagok lekérezésére
+        + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
+        valamint a lekérdező szűrők szövegmezői, végül az navigációs gombok.
