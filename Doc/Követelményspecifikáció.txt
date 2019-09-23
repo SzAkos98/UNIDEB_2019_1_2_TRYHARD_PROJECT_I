@@ -11,6 +11,18 @@ szembe a számítógépek személyében. Éppen ezért a kölcsönző vezetése 
 úgy döntött, hogy alkalmazkodik az új követelményeknek, és egy gyors és 
 hatékony számítógépes rendszert vezet be.
 
+2. Jelenlegi helyzet
+---------------------
+
+A könyvtár többszáz taggal rendelkezik, és büszkén mondhatjuk el magunkról,
+hogy a könyvbázisunk is gyorsan növekszik. Ez a méretű növekedés negatív oldala
+viszont, hogy az adminisztráció mértéke is jelentősen megugrik, mivel a könyveinket
+is nyilván kell tartanunk nagy méretű indexekben, valamint a tagjainkat is, hogy a
+kölcsönzéseik esetén fellépő esetleges problémák esetén értesíteni tudjuk őket
+(például lejárt határidő, megrongálódott könyv). A rengeteg papírmunkán egyszerűsíthetne
+egy közös informatikai rendszer, amelyet minden dolgozónk elérhet,
+és megfelelően módosíthat
+
 3.Vágyálom rendszer
 -------------------
 
