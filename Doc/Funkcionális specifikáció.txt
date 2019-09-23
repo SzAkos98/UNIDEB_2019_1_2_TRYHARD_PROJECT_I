@@ -116,8 +116,8 @@ keresni az adott kölcsönzést, és Visszahozva állapotba állíthatja (ekkor 
 a kijelölt tag törlésére, vagy a kijelölt tag adatainak módosítására.
  A Könyvek menüpontban szűrni tud a könyvtáros könyvekre. Ez read-only.
 
-Képernyőtervek
---------------
+Igényelt üzleti folyamatok
+--------------------------
 
 A program alapvetően egy főmenűből, és a menüből nyitható funkció képernyőkből
 áll. A főmenüből elérhető az összes funkció, valamint a kilépési lehetőség.
@@ -129,6 +129,23 @@ Ezek alapján kell
     - létrehozás
     - módosítás
     - törlés.
+
+Ezen funkciókat kivezetjük grafikus felhasználói interfacere, így
+egyszerűen a használat a felhasználók számára.
+ Mivel az adott folyamat megszabja melyik táblának az elemeit használjuk,
+így csak a szűréssel kell törődnünk.
+A lekérdezés esetén gyakorlatilag egy read only folyamatról beszélünk,
+ekkor csak meg kell jeleníteni a kívánt rekordokat.
+A létrehozás az új könyv/új tag regisztrálásának felel meg, ekkor a megfelelő
+táblába illesztünk be új rekordokat, tehát a mezők kitöltésére biztosítunk lehetőséget.
+A módosítás papíron sokkal körülményesebb, de a rendszerben csak ki kell választani a
+módosítandó rekordot, és átírni a hibás értéket.
+A törlés nagyon hasonló folyamat a módosításhoz, viszont itt a kijelölt rekord minden
+értékét nullra állítjuk, az azonosítóján kívül.
+
+
+Képernyőtervek
+--------------
 
 A képernyőknek vannak közös elemei, ezek a navigációs gombok, melyek aktiválják
 az adott funkciót, illetve visszalépnek a menübe.
