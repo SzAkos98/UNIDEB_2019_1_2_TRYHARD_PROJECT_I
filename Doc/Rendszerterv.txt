@@ -179,15 +179,3 @@ attribútumot használhatjuk a NAME űrlap mező értékének a vezérlésbe val
         <Td>
           <input id = "# MAP # NAME_value" type = "text" />
         </ Td>
-
-
-/*Draft
-Adhatunk hozzá egy 3. táblát is mint settings itt név érték párokat tárolhatnánk
-pl hogy mennyi egy kölcsönzési határidő vagy ami még eszünkbe jut,
-mert akkor ezek sem hardcoded propertyk lennének, ami jól mutatna ebben a
-doksiban mint feature, illetve a többuseres dolgot kellene még kifejteni
-a spéci jogokkal, meg a szükséges dependencyket, illetve lehetne egy ilyen
-mvc package felosztást is csinálni a backend a dbvel mint modell, az ide tartozó
-java classok pl util/modell packageben mint dbutil meg ami még közben jöhet, a
-html css mint view, és a servlet mint controller, csak ihletnek.
-*/
