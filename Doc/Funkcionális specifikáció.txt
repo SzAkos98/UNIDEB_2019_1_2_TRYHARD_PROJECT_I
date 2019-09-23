@@ -2,17 +2,8 @@
 Funkcionális specifikáció.
 
 
-1.Bevezetés
------------
-Egy kisvárosi könyvkölcsönző viszonylag nagy forgalommal jár, a helyiek
-inkább kölcsönzik a könyveiket vásárlás helyett. A hely kifejezetten
-könyvtár hangulatú, a könyveket is könyvekben tartják nyilván. Napjainkban
-azonban a jól bevált módszerek új kihívásokkal és vetélytársakkal néznek
-szembe a számítógépek személyében. Éppen ezért a kölcsönző vezetése is
-úgy döntött, hogy alkalmazkodik az új követelményeknek, és egy gyors és
-hatékony számítógépes rendszert vezet be. Erre az igényre alapozva
-terveztük meg a programot, hogy a felvetett problémákra gyors és praktikus
-megoldást nyújthasson, és hasznos eszköz legyen a kölcsönző mindennapjaiban.
+A korábbiakban elkészített Követelmény specifikációban leírtak alapján
+a Funkcionális specifikáció alább található meg a dokumentumban.
 
 1. Használati esetek
 --------------------
