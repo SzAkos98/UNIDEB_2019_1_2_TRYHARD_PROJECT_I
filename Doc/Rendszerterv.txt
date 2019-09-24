@@ -179,3 +179,96 @@ attribútumot használhatjuk a NAME űrlap mező értékének a vezérlésbe val
         <Td>
           <input id = "# MAP # NAME_value" type = "text" />
         </ Td>
+
+/*
+ÚJRATERVEZETT RENDSZERTERV
+
+Bevezetés
+---------
+
+A rendszer célja
+----------------
+
+Projekt terv
+------------
+o Projektszerepkörök, felelősségek
+
+o Projektmunkások és felelősségeik
+
+o Ütemterv
+
+o Mérföldkövek
+
+Üzleti folyamatok modellje
+--------------------------
+o Üzleti szereplők
+
+o Üzleti folyamatok
+
+o Üzleti entitások
+
+Követelmények
+-------------
+o Funkcionális követelmények
+
+o Nemfunkcionális követelmények
+
+o Törvényi előírások, szabványok
+
+Funkcionális terv
+-----------------
+o Rendszerszereplők
+
+o Rendszerhasználati esetek és lefutásaik
+
+o Határosztályok
+
+o Menü-hierarchiák
+
+o Képernyőtervek
+
+Fizikai környezet
+-----------------
+o Vásárolt softwarekomponensek és külső rendszerek
+
+o Hardver és hálózati topológia
+
+o Fizikai alrendszerek
+
+o Fejlesztő eszközök
+
+o Keretrendszer (pl. Spring)
+
+Absztrakt domain modell
+-----------------------
+o Domain specifikáció, fogalmak
+
+o Absztrakt komponensek, ezek kapcsolatai
+
+Architekturális terv
+--------------------
+o Egy architekturális tervezési minta (pl. MVC, 3-rétegű alkalmazás, …)
+
+o Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
+
+o Változások kezelése
+
+o Rendszer bővíthetősége
+
+o Biztonsági funkciók
+
+Adatbázis terv
+--------------
+o Logikai adatmodell
+
+
+Implementációs terv
+-------------------
+o Perzisztencia-osztályok
+
+o Üzleti logika osztályai
+
+o Kliensoldal osztályai
+
+Tesztterv
+---------
