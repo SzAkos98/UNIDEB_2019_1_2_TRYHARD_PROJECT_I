@@ -189,11 +189,13 @@ A rendszerterv elkészítésének célja az ,hogy a program fejlesztőinek ponto
 részletes és szaknyelvet tartalmazó leírás legyen a kezében ami kitér a
 rendszerrel kapcsolatos összes fontos szakmai kérdésre.
  
+
 A rendszer célja
 ----------------
 A rendszer célja a könyvtár adminisztrációs munkájának megkönnyítése amit
 a programunk egy JavaFX felhasználói felülettel és SQL adatbázis rendszerrel
 szeretne elérni.
+
 
 Projekt terv
 ------------
@@ -247,8 +249,14 @@ könyv megtalálható-e a könyvtárban                            a könyv áll
 A könyvtári alkalmazott tájékoztatja a tagot 
 ,hogy a könyv jelenleg nem áll rendelkezésre
 
+
 o Üzleti entitások
 ------------------
+Az üzletben résztvevő entitások:
+-A programot használó könyvtári alkalmazott
+-A könyvtárban regisztrált tagok
+-A könyvtárban még nem regisztrált, de majd regisztráló tagok
+
 
 Követelmények
 -------------
@@ -257,6 +265,7 @@ o Funkcionális követelmények
 
 o Nemfunkcionális követelmények
 -------------------------------
+
 
 Funkcionális terv
 -----------------
@@ -275,10 +284,14 @@ o Menü-hierarchiák
 o Képernyőtervek
 ----------------
 
+
 Fizikai környezet
 -----------------
 o Vásárolt softwarekomponensek és külső rendszerek
 --------------------------------------------------
+A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel
+Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060
+típusú videókártyából állnak.
 
 o Hardver és hálózati topológia
 -------------------------------
@@ -288,9 +301,14 @@ o Fizikai alrendszerek
 
 o Fejlesztő eszközök
 --------------------
-
+A projekt során használt fejlszetői eszközök:
+-Java
+-Tomcat
+-Maven
+-SQL
 o Keretrendszer
 ---------------
+-Java FX
 
 Absztrakt domain modell
 -----------------------
@@ -302,14 +320,12 @@ o Absztrakt komponensek, ezek kapcsolatai
 
 Architekturális terv
 --------------------
-o Egy architekturális tervezési minta (pl. MVC, 3-rétegű alkalmazás, …)
------------------------------------------------------------------------
+o Egy architekturális tervezési minta
+-------------------------------------
+A projekt során a az MVC(model-view-controller) modellt fogjuk alkalmazni.
 
 o Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
 ---------------------------------------------------------
-
-o Változások kezelése
----------------------
 
 o Rendszer bővíthetősége
 ------------------------
@@ -317,10 +333,12 @@ o Rendszer bővíthetősége
 o Biztonsági funkciók
 ---------------------
 
+
 Adatbázis terv
 --------------
 o Logikai adatmodell
 --------------------
+
 
 Implementációs terv
 -------------------
@@ -332,6 +350,7 @@ o Üzleti logika osztályai
 
 o Kliensoldal osztályai
 -----------------------
+
 
 Tesztterv
 ---------
