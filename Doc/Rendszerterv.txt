@@ -338,7 +338,33 @@ Adatbázis terv
 --------------
 o Logikai adatmodell
 --------------------
-
+Könyv
++------------------------------------------+
+|	ID Primary key, unique INTEGER         |
+|	LibID VARCHAR                          |
+|	Szerzo VARCHAR                         |
+|	Cim  VARCHAR                           |
+|	Kiado VARCHAR                          |
+|	KiadasEve DATE                         |
+|	Elerheto BOOLEAN                       |
++------------------------------------------+
+Tag
++------------------------------------------+
+|	ID Primary key, unique INTEGER         |
+|	Vezeteknev VARCHAR                     |
+|	Keresztnev VARCHAR                     |
+|	Születési datum  DATE                  |
+|	Lakcim VARCHAR                         |
++------------------------------------------+
+Kölcsönzés
++------------------------------------------+
+|	KolcsonzesID PRIMARY KEY, UNIQUE       |
+|	KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |
+|	TagID FOREIGN KEY(TAG.ID) INTEGER      |
+|	KolcsonzesDatum  DATE                  |
+|	Hatarido DATE                          |
+|	VisszahozasDatum DATE                  |
++------------------------------------------+
 
 Implementációs terv
 -------------------
@@ -354,3 +380,11 @@ o Kliensoldal osztályai
 
 Tesztterv
 ---------
+T01: A program elindítása
+T02: Az adatbázisból egy létező könyvre való rákeresés
+T03: Az adatbázisból egy nem létező könyvre való rákeresés
+T04: Egy könyv hozzáadása az adatbázishoz
+T05: Egy könyv állapotának kikölcsönzöttről való átállítása elérhetőre
+T06: Egy könyv állapotának elérhetőről való átállítása kikölcsönzöttre
+T07: Egy tag felvétele a tagok adatbázisába
+T08: Egy tag eltávolítása a tagok adatbázisából
