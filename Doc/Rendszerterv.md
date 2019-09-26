@@ -154,31 +154,30 @@ leképezéséhez a HTML alapú felhasználói felületen. Az alábbiakban a cím
   
 ### Bevezetés  
 
-A rendszerterv elkészítésének célja az ,hogy a program fejlesztőinek pontos,  
-részletes és szaknyelvet tartalmazó leírás legyen a kezében ami kitér a  
-rendszerrel kapcsolatos összes fontos szakmai kérdésre.
+A rendszerterv elkészítésének célja az ,hogy a program fejlesztőinek pontos, részletes 
+és szaknyelvet tartalmazó leírás legyen a kezében ami kitér a  rendszerrel kapcsolatos összes fontos szakmai kérdésre.
 A szoftver egy kisvárosi könyvkölcsönző működését hivatott elősegíteni.
 Célja az analóg rendszer digitálisra cserélése ennek következtében a könyvtár
- fenetarthatóságát képes növelni és a dolgozok munkáját meggyorsítani . 
- Adminisztratív és  könyv kölcsönzés és egyéb feladatok ellátása számítógépes 
- környezetben. A cél platformunk a kölcsönző tulajdonában lévő számítógépek mely 
- Linux alapú operációs rendszer futtatnak, név szerint az Ubuntut. A megvalósítás 
- miatt a program alkalmas lehet más operációs rendszer alatti futtatásra is, de 
- ez nem elsődleges célja afejlesztésnek. A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel
+fenetarthatóságát képes növelni és a dolgozok munkáját meggyorsítani . 
+Adminisztratív és  könyv kölcsönzés és egyéb feladatok ellátása számítógépes 
+környezetben. A cél platformunk a kölcsönző tulajdonában lévő számítógépek mely 
+Linux alapú operációs rendszer futtatnak, név szerint az Ubuntut. A megvalósítás 
+miatt a program alkalmas lehet más operációs rendszer alatti futtatásra is, de 
+ez nem elsődleges célja afejlesztésnek. A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel
 Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060
 típusú videokártyából állnak. A gépek számára biztosítva van a stabil 10Mb/s
 sávszélességű internet elérés. Ez által a megfelelő infrastruktúra kiégetésével 
- megvan teremtve a megfelelő hátér ,hogy a dolgozok lehető legjobb hatásfokkal 
- képesek legyenek használni a szoftvert.  A rendszer felé pitése egy szerver-kliens 
- alapokra épülő modell,egy közös H2 adatbázis motorral rendelkező adatbázison, 
- amelytárolja az elérhető könyveket, illetve az ügyfelek alapvetően szükséges 
- adatait amely az "egyszerű és  egyben nagyszerű " elv alapján lesz elkészítve 
- ,hogy a könyvtárban dolgozók rövid tanulmányozás után képesek legyek átlátni a 
- szoftver és kényelmesen tudják használni azt.Ezért a tervezet szerint olyan 
- programozási nyelvet használunk ami megkönnyítői ennek a szoftvernek a leghatékonyabb
- le kódolását. Erről bővében a Fejlesztő eszközök menüpontban térünk ki. 
- A digitalizálás hatására sokall átláthatóbb kezelhetőbb és biztonságosabb lesz 
- az új rendszer a régihez képest.
+megvan teremtve a megfelelő hátér ,hogy a dolgozok lehető legjobb hatásfokkal 
+képesek legyenek használni a szoftvert.  A rendszer felé pitése egy szerver-kliens 
+alapokra épülő modell,egy közös H2 adatbázis motorral rendelkező adatbázison, 
+amelytárolja az elérhető könyveket, illetve az ügyfelek alapvetően szükséges 
+adatait amely az "egyszerű és  egyben nagyszerű " elv alapján lesz elkészítve 
+,hogy a könyvtárban dolgozók rövid tanulmányozás után képesek legyek átlátni a 
+szoftver és kényelmesen tudják használni azt.Ezért a tervezet szerint olyan 
+programozási nyelvet használunk ami megkönnyítői ennek a szoftvernek a leghatékonyabb
+le kódolását. Erről bővében a Fejlesztő eszközök menüpontban térünk ki. 
+A digitalizálás hatására sokall átláthatóbb kezelhetőbb és biztonságosabb lesz 
+az új rendszer a régihez képest.
    
   
 ### A rendszer célja  
