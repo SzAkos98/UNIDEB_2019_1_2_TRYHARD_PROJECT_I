@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="body" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.MainMenuController">
+    <center>
+        <VBox id="vbox" alignment="CENTER">
+
+            <Label id="message" text="SO IT BEGINS" />
+
+        </VBox>
+    </center>
+
+</BorderPane>

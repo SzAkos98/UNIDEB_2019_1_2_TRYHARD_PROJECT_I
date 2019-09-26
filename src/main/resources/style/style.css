@@ -1,0 +1,11 @@
+#body {
+    -fx-background-image: url("/style/background.gif");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-opacity: 0.9;
+}
+
+#message {
+    -fx-font-size: 6em;
+    -fx-text-fill: black;
+}
