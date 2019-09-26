@@ -90,6 +90,9 @@ b) Webes környezetben való alkalmazása, internetek keresztüli elérés, mive
    hálózaton üzemeljen és inkább csak a munkaállomások számára engedélyezzen
    kapcsolatot.
 
+c) Figyelmeztetést küldeni annak a tagnak akinek lejárt a kölcsönzési ideje vagy
+   közelít a határidő végéhez
+
 Jelenlegi üzleti folyamatok modellje
 ------------------------------------
 

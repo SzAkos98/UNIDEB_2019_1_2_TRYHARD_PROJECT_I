@@ -179,3 +179,212 @@ attribútumot használhatjuk a NAME űrlap mező értékének a vezérlésbe val
         <Td>
           <input id = "# MAP # NAME_value" type = "text" />
         </ Td>
+
+/*
+ÚJRATERVEZETT RENDSZERTERV
+
+Bevezetés
+---------
+A rendszerterv elkészítésének célja az ,hogy a program fejlesztőinek pontos,
+részletes és szaknyelvet tartalmazó leírás legyen a kezében ami kitér a
+rendszerrel kapcsolatos összes fontos szakmai kérdésre.
+ 
+
+A rendszer célja
+----------------
+A rendszer célja a könyvtár adminisztrációs munkájának megkönnyítése amit
+a programunk egy JavaFX felhasználói felülettel és SQL adatbázis rendszerrel
+szeretne elérni.
+
+
+Projekt terv
+------------
+o Projektszerepkörök, felelősségek
+----------------------------------
+
+o Projektmunkások és felelősségeik
+----------------------------------
+
+o Ütemterv
+----------
+A követelmény specifikációnak, funkcionális specifikációnak és a rendszertervnek
+legkésőbb 2019.09.26-ra kész kell lennie. Ezt követi majd a programsorok 
+megírása amelynek a program átadására, vagyis 2019.09.30 a határideje.
+
+o Mérföldkövek
+--------------
+A program elkészítésének fő mérföldkövei:
+-A Trelloban való regisztráció illetve a használatának elkezdése
+-A git repository elkészítése
+-A tagok git-re való regisztrációja illetve a projekthez felvétele
+-A követelményspecifikáció elkészítése
+-A funckionális specifikáció elkészítése
+-A rendszerterv elkészítése
+-A program JavaFX UI-jának elkészítése
+-A program adatbázisának elkészítése
+-A program controllerének elkészítése
+-A program tesztelése
+-A program bemutatása a megrendelőnek
+
+o Üzleti szereplők
+------------------
+A programot az éppen munkaidőben jelenlévő könyvtáros fogja használni.
+A könyvtár összes alkalmazottjának, akik ebben a munkakörben dolgoznak
+megvan a végzettsége és a tudása ahoz ,hogy TRYHARD csapat által készített
+programot magabiztosan képes legyen használni.
+
+o Üzleti folyamatok
+-------------------
+Egy könyvtári tag bemegy a könyvtárba      A könyvtári tag felkeresi az éppen ott  
+azzal a céllal,hogy könyvet szeretne   --> tartózkodó könyvári dolgozót aki képes az -->
+kikölcsönözni 				   általunk készített programot használni
+
+A könyvtári alkalmazott megnézi a program    Ha megtalálható  A tagok tájékoztatják a visszahozás dátumáról  
+segítségével, hogy a kikölcsönözni kívánt    ---------------> majd távozhat a könyvel, továbbá a könyvtári alkalmazott
+könyv megtalálható-e a könyvtárban                            a könyv állapotát a programban átállítja nem 
+	|						      kikölcsönzöttről kikölcsönzöttre
+	| Ha nem található meg a könyvtárban
+	|
+	ˇ
+A könyvtári alkalmazott tájékoztatja a tagot 
+,hogy a könyv jelenleg nem áll rendelkezésre
+
+
+o Üzleti entitások
+------------------
+Az üzletben résztvevő entitások:
+-A programot használó könyvtári alkalmazott
+-A könyvtárban regisztrált tagok
+-A könyvtárban még nem regisztrált, de majd regisztráló tagok
+
+
+Követelmények
+-------------
+o Funkcionális követelmények
+----------------------------
+
+o Nemfunkcionális követelmények
+-------------------------------
+
+
+Funkcionális terv
+-----------------
+o Rendszerszereplők
+-------------------
+
+o Rendszerhasználati esetek és lefutásaik
+-----------------------------------------
+
+o Határosztályok
+----------------
+
+o Menü-hierarchiák
+------------------
+
+o Képernyőtervek
+----------------
+
+
+Fizikai környezet
+-----------------
+o Vásárolt softwarekomponensek és külső rendszerek
+--------------------------------------------------
+A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel
+Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060
+típusú videókártyából állnak.
+
+o Hardver és hálózati topológia
+-------------------------------
+
+o Fizikai alrendszerek
+----------------------
+
+o Fejlesztő eszközök
+--------------------
+A projekt során használt fejlszetői eszközök:
+-Java
+-Tomcat
+-Maven
+-SQL
+o Keretrendszer
+---------------
+-Java FX
+
+Absztrakt domain modell
+-----------------------
+o Domain specifikáció, fogalmak
+-------------------------------
+
+o Absztrakt komponensek, ezek kapcsolatai
+-----------------------------------------
+
+Architekturális terv
+--------------------
+o Egy architekturális tervezési minta
+-------------------------------------
+A projekt során a az MVC(model-view-controller) modellt fogjuk alkalmazni.
+
+o Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
+---------------------------------------------------------
+
+o Rendszer bővíthetősége
+------------------------
+
+o Biztonsági funkciók
+---------------------
+
+
+Adatbázis terv
+--------------
+o Logikai adatmodell
+--------------------
+Könyv
++------------------------------------------+
+|	ID Primary key, unique INTEGER         |
+|	LibID VARCHAR                          |
+|	Szerzo VARCHAR                         |
+|	Cim  VARCHAR                           |
+|	Kiado VARCHAR                          |
+|	KiadasEve DATE                         |
+|	Elerheto BOOLEAN                       |
++------------------------------------------+
+Tag
++------------------------------------------+
+|	ID Primary key, unique INTEGER         |
+|	Vezeteknev VARCHAR                     |
+|	Keresztnev VARCHAR                     |
+|	Születési datum  DATE                  |
+|	Lakcim VARCHAR                         |
++------------------------------------------+
+Kölcsönzés
++------------------------------------------+
+|	KolcsonzesID PRIMARY KEY, UNIQUE       |
+|	KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |
+|	TagID FOREIGN KEY(TAG.ID) INTEGER      |
+|	KolcsonzesDatum  DATE                  |
+|	Hatarido DATE                          |
+|	VisszahozasDatum DATE                  |
++------------------------------------------+
+
+Implementációs terv
+-------------------
+o Perzisztencia-osztályok
+-------------------------
+
+o Üzleti logika osztályai
+-------------------------
+
+o Kliensoldal osztályai
+-----------------------
+
+
+Tesztterv
+---------
+T01: A program elindítása
+T02: Az adatbázisból egy létező könyvre való rákeresés
+T03: Az adatbázisból egy nem létező könyvre való rákeresés
+T04: Egy könyv hozzáadása az adatbázishoz
+T05: Egy könyv állapotának kikölcsönzöttről való átállítása elérhetőre
+T06: Egy könyv állapotának elérhetőről való átállítása kikölcsönzöttre
+T07: Egy tag felvétele a tagok adatbázisába
+T08: Egy tag eltávolítása a tagok adatbázisából
