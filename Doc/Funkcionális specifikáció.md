@@ -1,9 +1,9 @@
-﻿TRYHARD
-Funkcionális specifikáció.
+﻿# TRYHARD
+# Funkcionális specifikáció
 
 
-1.Bevezetés
------------
+## Bevezetés
+
 Egy kisvárosi könyvkölcsönző viszonylag nagy forgalommal jár, a helyiek
 inkább kölcsönzik a könyveiket vásárlás helyett. A hely kifejezetten
 könyvtár hangulatú, a könyveket is könyvekben tartják nyilván. Napjainkban
@@ -14,25 +14,25 @@ hatékony számítógépes rendszert vezet be. Erre az igényre alapozva
 terveztük meg a programot, hogy a felvetett problémákra gyors és praktikus
 megoldást nyújthasson, és hasznos eszköz legyen a kölcsönző mindennapjaiban.
 
-1. Használati esetek
---------------------
+## Használati esetek
+
 
 A Követelmény specifikáció 'Követelménylista' című bekezdése alapján az
 egyes pontok kifejtésére kerül sor ebben a fejezetben.
 
 
 
-a) A programmal lehetőséget szeretnénk nyújtani a felhasználók
+* A programmal lehetőséget szeretnénk nyújtani a felhasználók
    kölcsönzéseinek nyilvántartására. Továbbá a kölcsönzőben dolgozó
    személyzet számára szeretnénk átláthatóbbá tenni az adminisztrációt.
 
-b) Az egyes tételekről (melyek a mi esetünkben a kölcsönözhető könyvek)
+* Az egyes tételekről (melyek a mi esetünkben a kölcsönözhető könyvek)
    szeretnénk a lehető legtöbb információt eltárolni. A könyvek címét,
    szerzőjet, megjelenésének dátumát, kölcsönzési státuszát (ki van-e
    kölcsönözve vagy sem), a kivétel időpontját és a kölcsön lejáratának
    dátumát.
 
-c) A dinamikusan változó nyilvántartás lehetőséget kínál ,hogy ez által új 
+* A dinamikusan változó nyilvántartás lehetőséget kínál ,hogy ez által új 
    tagokat vehessen fel könyvtár vagy az esetlegesen megszűnő tagságokat könnyen
    és egyszerűen képes legyen kitörölni vagy ha egy felhasználónak megváltoztak
    az adatai akkor azt a lehető legegyszerűbben képes legyen a dolgozó módosítani.
@@ -45,28 +45,28 @@ c) A dinamikusan változó nyilvántartás lehetőséget kínál ,hogy ez által
 
 
 
-d) A program segítséget nyújt ,hogy a felhasználó különböző szempontok alapján
+* A program segítséget nyújt ,hogy a felhasználó különböző szempontok alapján
    mint pl: kölcsönzés dátuma szerint tudja csökkenő vagy növekvő sorendbe ki 
    listázni a kivett könyveket igy könnyedén láthatja ,hogy ki az akinek esedékes
    a könyv visszahozása a könyvtárba. De ide tartozik ,hogy leellenőrizhesse
    akár a könyvtári tag vagy a könyvtárban dolgozó ,hogy adott szerzőhöz milyen
    művek kapcsolódnak és éppen kint vannak egy másik tagnál vagy kivehetők-e.
 
-e) A programban kiemelt szerepet jelent ,hogy az alap felhasználó is a maga
+* A programban kiemelt szerepet jelent ,hogy az alap felhasználó is a maga
    jogosultságával is képes lehessen egyszerűbb lekérdezések és ez által kere
    séseket végre hajtani az adatbázison. Ez által az ö hierarchikus rendszerben
    betöltőt szerepe által képes lesz bizonyos adatokhoz hozzá férni és látni
    azokat mindezek általl.
 
 
-f) Szoftverben az egyik legfontosabb „funkció” az nem más mint ,hogy egyszerű 
+* Szoftverben az egyik legfontosabb „funkció” az nem más mint ,hogy egyszerű 
    könnyen kezelhetőés átlátható legyen mint  a könyvtárós ,raktáros és vezető 
    felhasználóknak. Illetve könyvtári programot használó tagoknak is. Mert mind az
    aktív tagóknak és a szoftvert kezelő alkalmazottaknaknagyon fontos ,hogy gyorsan
    és hatékonyan képesek lehessenek használni a programot.
 
-Jelenlegi helyzet
-------------------
+## Jelenlegi helyzet
+
 A mostani analóg vagyis papír és ceruzán alapuló könyvtár megérett arra a szintre
 ,hogy modernizálja magát és belépjen a huszadik századba és ez által meggyorsítja
 a mostani rendszert. Ez által képes lehet tartani a versenyt és kiszolgálni igy a 
@@ -77,38 +77,38 @@ vissza hozatala. Ezek eddig hosszú perceket vettek el mind a könyvtáros és m
 Ami a mostani világban már tarthatatlan és így kényszerböl is muszáj megváltozni a 
 könyvtárnak mind az ott dolgozok és tagok  és ön maga érdekében.
 
-A rendszernek NEM célja
------------------------
+## A rendszernek NEM célja
 
-a) A tagok számára felületet biztosítani a kölcsönzéseik listázására, vagy
+
+* A tagok számára felületet biztosítani a kölcsönzéseik listázására, vagy
    bármilyen kölcsönzőbeli adatuk elérésére.
 
-b) Webes környezetben való alkalmazása, internetek keresztüli elérés, mivel
+* Webes környezetben való alkalmazása, internetek keresztüli elérés, mivel
    a jelenleg nincs felkészítve az esetleges interneten felmerülő veszélyekre,
    mint a jelszavak védelme, az esetleges tranzakciók indítása session rablással,
    vagy szerkesztett URL-ekkel. Épp ezért javasolt, hogy a szerver gép privát
    hálózaton üzemeljen és inkább csak a munkaállomások számára engedélyezzen
    kapcsolatot.
 
-c) Figyelmeztetést küldeni annak a tagnak akinek lejárt a kölcsönzési ideje vagy
+* Figyelmeztetést küldeni annak a tagnak akinek lejárt a kölcsönzési ideje vagy
    közelít a határidő végéhez
 
-Jelenlegi üzleti folyamatok modellje
-------------------------------------
+## Jelenlegi üzleti folyamatok modellje
+
 
 A tagok és a könyvek listáját egy relációs adatbázis váltja ki, amelyben ezek az
 adatok tökéletesen tárolhatóak, és különböző szűrökkel gyorsan lekérdezhetőek.
  A menüből választhatóak ki az alapvető tevékenységek minden felhasználónak.
  A felhasználól 3 csoportra sorolhatóak:
-   Könyvtáros
-   Raktáros
-   Vezető
+   * Könyvtáros
+   * Raktáros
+   * Vezető
 
- A Könyvtáros felhasználó menüje:
-    Kölcsönzés
-    Visszahozás
-    Tagok
-    Könyvek
+ - A Könyvtáros felhasználó menüje:
+    * Kölcsönzés
+    * Visszahozás
+    * Tagok
+    * Könyvek
 
  A kölcsönzési folyamat megkezdésekor a Kölcsönzés menüponot választa a könyvtáros megadja
 a kölcsönző nevét és a könyv azonosítóját, ezzel a rendszer meg eltárolja a kölcsönzést,
@@ -119,19 +119,19 @@ keresni az adott kölcsönzést, és Visszahozva állapotba állíthatja (ekkor 
 a kijelölt tag törlésére, vagy a kijelölt tag adatainak módosítására.
  A Könyvek menüpontban szűrni tud a könyvtáros könyvekre. Ez read-only.
 
-Igényelt üzleti folyamatok
---------------------------
+## Igényelt üzleti folyamatok
+
 
 A program alapvetően egy főmenűből, és a menüből nyitható funkció képernyőkből
 áll. A főmenüből elérhető az összes funkció, valamint a kilépési lehetőség.
 A program célja, hogy gyakorlatilag egy adatbázis előnyeit SQL utasítások
 használata nélkül élvezhessük. Így a fontosabb funkciók számára kell lehetőséget
 biztosítanunk a userek számára.
-Ezek alapján kell
-    - lekérdezés
-    - létrehozás
-    - módosítás
-    - törlés.
+Ezek alapján kell:
+   - lekérdezés
+   - létrehozás
+   - módosítás
+   - törlés
 
 Ezen funkciókat kivezetjük grafikus felhasználói interfacere, így
 egyszerűen a használat a felhasználók számára.
@@ -147,15 +147,14 @@ A törlés nagyon hasonló folyamat a módosításhoz, viszont itt a kijelölt r
 értékét nullra állítjuk, az azonosítóján kívül.
 
 
-Képernyőtervek
---------------
+## Képernyőtervek
 
 A képernyőknek vannak közös elemei, ezek a navigációs gombok, melyek aktiválják
 az adott funkciót, illetve visszalépnek a menübe.
 
 A jelen esetben a kölcsönzőben szükség van:
 
-    - Kölcsönzési folyamat indítása
+   - Kölcsönzési folyamat indítása
       Szükség van az adott könyv/ek és a kölcsönző tag rekordjaira is, ezért
       mindkettőre külön külön szűrni tudni kell.
       + A tag adataira szűrő mezők
@@ -164,17 +163,17 @@ A jelen esetben a kölcsönzőben szükség van:
       + A könyvek közti találatok a szűrések alapján
       + Az épp hozzáadandó könyvek listája
 
-    - Könyvek és tagok lekérezésére
+   - Könyvek és tagok lekérezésére
         + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
         + a lekérdező szűrők szövegmezői
         + navigációs gombok.
 
-    - Új könyv/tag felvétele, meglévő módosítása
+   - Új könyv/tag felvétele, meglévő módosítása
         + A rekordok táblázatos formában
         + A rekord attribútumainak megfelelő számú szöveges mező,
         + navigációs gombok.
 
-    - Meglévő rekord törlése
+   - Meglévő rekord törlése
         Külön képernyőn a véletlen törlések elkerülésére. A törléshez rá
         kell szűrni a rekordra vagy kiválasztani a táblázatból.
         + A képernyő egy táblázatos reprezentációából áll a rekordoknak,

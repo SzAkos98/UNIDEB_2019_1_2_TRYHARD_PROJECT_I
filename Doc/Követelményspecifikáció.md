@@ -1,8 +1,8 @@
-﻿TRYHARD
-Követelményspecifikáció.
+﻿# TRYHARD
+# Követelményspecifikáció
 
-1.Bevezetés
------------
+## Bevezetés
+
 Egy kisvárosi könyvkölcsönző viszonylag nagy forgalommal jár, a helyiek 
 inkább kölcsönzik a könyveiket vásárlás helyett. A hely kifejezetten 
 könyvtár hangulatú, a könyveket is könyvekben tartják nyilván. Napjainkban
@@ -11,8 +11,7 @@ szembe a számítógépek személyében. Éppen ezért a kölcsönző vezetése 
 úgy döntött, hogy alkalmazkodik az új követelményeknek, és egy gyors és 
 hatékony számítógépes rendszert vezet be.
 
-2. Jelenlegi helyzet
----------------------
+## Jelenlegi helyzet
 
 A könyvtár többszáz taggal rendelkezik, és büszkén mondhatjuk el magunkról,
 hogy a könyvbázisunk is gyorsan növekszik. Ez a méretű növekedés negatív oldala
@@ -23,8 +22,8 @@ kölcsönzéseik esetén fellépő esetleges problémák esetén értesíteni tu
 egy közös informatikai rendszer, amelyet minden dolgozónk elérhet,
 és megfelelően módosíthat
 
-3.Vágyálom rendszer
--------------------
+## Vágyálom rendszer
+
 
 Szeretnénk a papír ceruza rendszernél hatékonyabb rendszert beüzemeltetni,
 ami meggyorsítja a folyamatainkat, és megkönnyíti munkatársaink munkáját. 
@@ -37,8 +36,7 @@ kölcsönzéseit, valamint azok határidejét is. Ez segíthet abban, hogy ne ke
 percekig a sorok közt keresni épp nem rendelkezésre álló könyvet. A célunk, hogy
 a korábbi analóg módszert teljesen felválthassa a digitális.
 
-4.Jelenlegi üzleti folyamatok
------------------------------
+## Jelenlegi üzleti folyamatok
 
 Jelenleg a könyvtár rendszere a klasszikus papír alapú nyilvántartás
 segítségével működik. Az ügyfeleink könyvtári tag kártyával tudják igénybe
@@ -54,8 +52,8 @@ nyomon kövesse illetve ha valaki elfelejtkezik a könyv visszahozásáról azt
 értesítse a késedelméről és annak következményeiről. A jelenlegi üzleti folyamatok
 elavultnak bizonyulnak.
 
-5.Igényelt üzleti folyamatok modellje.
---------------------------------------
+## Igényelt üzleti folyamatok modellje
+
 Könyvtár szeretné kiküszöbölni a jelenlegi analóg rendszer általi nehézségeket
 így mint minden kisebb nagyobb cég ők is követik digitalizálást.Igényeik szerint
 több felhasználós platform lenne mert bontásban tudnának dolgozni a könyvtári 
@@ -70,15 +68,14 @@ Emellett igen fontos lenne a könnyű kezelhetőség és egyben átláthatóság
 
 
 
-6.Követelménylista
-------------------
+## Követelménylista
 
-a) Egy rendszer mely nyílvántartja a forgalomban lévő könyveket.
-b) A rendszer képes legyen egy adott elemről több adatot is tárolni.
-c) A nyilvántartásba lehtővé kell tenni a meglévő elemek módosítását, törlését
+* Egy rendszer mely nyílvántartja a forgalomban lévő könyveket.
+* A rendszer képes legyen egy adott elemről több adatot is tárolni.
+* A nyilvántartásba lehtővé kell tenni a meglévő elemek módosítását, törlését
    és új elem létrehozását.
-d) A rendszer képes legyen kiválogatni a tételeket különböző szempontok alapján.
-e) Legyen lehetősége az alap felhasználónak is lekérdezést végrehajtani.
-f) A program egyszerűen kezelhető és letisztult képi világgal rendelkezzen.
+* A rendszer képes legyen kiválogatni a tételeket különböző szempontok alapján.
+* Legyen lehetősége az alap felhasználónak is lekérdezést végrehajtani.
+* A program egyszerűen kezelhető és letisztult képi világgal rendelkezzen.
 
 
