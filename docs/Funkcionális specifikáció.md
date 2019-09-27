@@ -83,18 +83,22 @@ adatok tökéletesen tárolhatóak, és különböző szűrőkkel gyorsan lekér
 
  - A Könyvtáros felhasználó menüje:
     * Kölcsönzés
-    * Visszahozás
-    * Tagok
-    * Könyvek
-
+    * Új tag
+    * Új könyv
+    * Tag adatainak szerkesztése
+    * Könyv adatainak szerkesztése
+    * Tag törlése
+    * Könyv törlése
+    * Kilépés
+    
  A kölcsönzési folyamat megkezdésekor a 'Kölcsönzés' menüponot választva a könyvtáros megadja
 a kölcsönző nevét és a könyv azonosítóját, ezt a rendszer eltárolja, majd megjeleníti a
- kölcsönzési határidőt, amit a könyvtáros így megadhat a tagnak.
- A könyv visszahozásakor a könyvtáros a 'Visszahozás' menüpontot választja ki, ahol szűrőkkel elő
-  tudja keresni az adott kölcsönzést. Ez után 'Visszahozva' állapotba állíthatja a könyv stáuszát
-   (ekkor menti az adott időpontot). A 'Tagok' menüpontban a könyvtáros szűrni tud tagokra,
-   illetve lehetősége van új tag hozzáadására, a kijelölt tag törlésére vagy a kijelölt tag
-   adatainak módosítására. A 'Könyvek' menüpontban szűrni tud a könyvtáros könyvekre.
+ kölcsönzési határidőt, amit a könyvtáros így megadhat a tagnak. Ugyan ez a menüpont 
+ használható a vissza hozott könyvek adminisztrálására is. Az 'Új tag' és az 'Új könyv' menüpontokon
+ keresztül tud a felhasználó új "elemeket" felvenni az adatbázisba. A 'Tag adatainak szerkesztése'
+ és a 'Könyv adatainak szerkesztése' menüpontok használhatóak az "elemek" adatinak módosítására az
+ adatbázisban. A 'Tag törlése' és a 'Könyv törlése' menüpontok használhatók tételek törlésére az
+ adatbázisból. A 'Kilépés' menüponttal zárható be a program.
 
 ## Igényelt üzleti folyamatok
 
