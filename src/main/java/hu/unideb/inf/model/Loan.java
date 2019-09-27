@@ -4,7 +4,8 @@ package hu.unideb.inf.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.Date;
+import java.sql.Date;
+
 
 @Entity
 public class Loan {
