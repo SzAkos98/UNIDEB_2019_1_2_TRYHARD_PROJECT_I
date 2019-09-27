@@ -14,35 +14,35 @@ public class MainMenuController {
 
 
     public void handleLoan(ActionEvent actionEvent) throws IOException {
-        configScene(loadFxml("/fxml/DeletePerson.fxml"));
+        configScene(loadFxml("/fxml/Loan.fxml"));
 
     }
 
     public void handleNewPerson(ActionEvent actionEvent) throws IOException {
-        configScene(loadFxml("/fxml/DeletePerson.fxml"));
+        configScene(loadFxml("/fxml/NewPerson.fxml"));
 
     }
 
     public void handleNewBook(ActionEvent actionEvent) throws IOException {
-        configScene(loadFxml("/fxml/DeletePerson.fxml"));
+        configScene(loadFxml("/fxml/NewBook.fxml"));
 
 
     }
 
     public void handleModBook(ActionEvent actionEvent) throws IOException {
-        configScene(loadFxml("/fxml/DeletePerson.fxml"));
+        configScene(loadFxml("/fxml/UpdateBook.fxml"));
 
 
     }
 
     public void handleDeleteBook(ActionEvent actionEvent) throws IOException {
-        configScene(loadFxml("/fxml/DeletePerson.fxml"));
+        configScene(loadFxml("/fxml/DeleteBook.fxml"));
 
 
     }
 
     public void handleModPerson(ActionEvent actionEvent) throws IOException {
-        configScene(loadFxml("/fxml/DeletePerson.fxml"));
+        configScene(loadFxml("/fxml/UpdatePerson.fxml"));
 
 
     }

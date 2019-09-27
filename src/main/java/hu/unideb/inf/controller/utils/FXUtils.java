@@ -1,5 +1,6 @@
 package hu.unideb.inf.controller.utils;
 
+import hu.unideb.inf.main.Main;
 import hu.unideb.inf.main.MainApp;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
@@ -44,7 +45,7 @@ public class FXUtils {
         Scene scene = new Scene(root);
 
         scene.getStylesheets().add("style/style.css");
-
+        MainApp.primaryStage.setMaximized(true);
         MainApp.primaryStage.setScene(scene);
         MainApp.primaryStage.show();
     }
