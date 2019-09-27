@@ -14,4 +14,12 @@ Egy adatbázison alapuló JavaFX alkalmazás könyvek és tagok nyilvántartás�
 @megvagyhadnagy01 | Varga Mátyás
 @notusedusername|Tóth Norbert
 
+ ### Dokumentáció
+ 
+ [Követelményspecifikáció](/docs/Követelményspecifikáció.md)
+ 
+ [Funcitonális Specifikáció](/docs/Funkcionális%20specifikáció.md)
+ 
+ [Rendszerterv](/docs/Rendszerterv.md)
+ 
  
