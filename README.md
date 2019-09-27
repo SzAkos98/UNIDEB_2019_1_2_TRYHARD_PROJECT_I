@@ -5,6 +5,8 @@
 Egy adatbázison alapuló JavaFX alkalmazás könyvek és tagok nyilvántartására,
 és kölcsönzések kezelésére.
 
+----
+
 ### A csapat
 
  GitHub|Név 
@@ -14,7 +16,9 @@ Egy adatbázison alapuló JavaFX alkalmazás könyvek és tagok nyilvántartás�
 @megvagyhadnagy01 | Varga Mátyás
 @notusedusername|Tóth Norbert
 
- ### Dokumentáció
+-----
+
+### Dokumentáció
  
  [Követelményspecifikáció](/docs/Követelményspecifikáció.md)
  
