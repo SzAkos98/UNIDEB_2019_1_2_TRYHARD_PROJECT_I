@@ -14,13 +14,13 @@ hatékony számítógépes rendszert vezet be.
 ## Jelenlegi helyzet
 
 A könyvtár többszáz taggal rendelkezik, és büszkén mondhatjuk el magunkról,
-hogy a könyvbázisunk is gyorsan növekszik. Ez a méretű növekedés negatív oldala
-viszont, hogy az adminisztráció mértéke is jelentősen megugrik, mivel a könyveinket
+hogy a könyvbázisunk is gyorsan növekszik. Ennek a gyors méretű növekedésnek a negatív oldala
+viszont az, hogy az adminisztráció mértéke is jelentősen megugrik, mivel a könyveinket
 is nyilván kell tartanunk nagy méretű indexekben, valamint a tagjainkat is, hogy a
 kölcsönzéseik esetén fellépő esetleges problémák esetén értesíteni tudjuk őket
 (például lejárt határidő, megrongálódott könyv). A rengeteg papírmunkán egyszerűsíthetne
 egy közös informatikai rendszer, amelyet minden dolgozónk elérhet,
-és megfelelően módosíthat
+és megfelelően módosíthat.
 
 ## Vágyálom rendszer
 
@@ -44,7 +44,7 @@ vannak rendszerezve. Ez az ügyfelek ilyen módon való rendszerezése már egy
 kis vagy közepes tag létszámmal rendelkező könyvtár esetében is káosz lehet.
 Egy könyv kikölcsönzése esetén az ügyfél kap egy lapot amin a visszahozás
 dátuma szerepel viszont ha más is ki akarja kölcsönözni ugyanazt a könyvet
-ami jelenleg kikölcsönzés alatt áll akkor a könytárosnak végig kell néznie
+ami jelenleg kikölcsönzés alatt áll akkor a könyvtárosnak végig kell néznie
 a könyvtár aktuális részét ,hogy a könyv megtalálható-e. A könyvtárosnak azzal 
 is nagyon nehéz dolga van ,hogy a kikölcsönzött könyvek visszahozási határidejét
 nyomon kövesse illetve ha valaki elfelejtkezik a könyv visszahozásáról azt
@@ -54,17 +54,14 @@ elavultnak bizonyulnak.
 ## Igényelt üzleti folyamatok modellje
 
 Könyvtár szeretné kiküszöbölni a jelenlegi analóg rendszer általi nehézségeket
-így mint minden kisebb nagyobb cég ők is követik digitalizálást.Igényeik szerint
-több felhasználós platform lenne mert bontásban tudnának dolgozni a könyvtári 
-munkavállalók mert így valaki új tagot tud felvenni ,amig a másik dolgozó kölcsönzés
-folyamatát bonyolítaná le illetve tételeket tudna törölni vagy meghosszabbítani.
-Ezért szükség van valakire aki kölcsönzés táblát módosítaná. Könyveket adna ki addig a 
-másik felhasználón könyveket venne be és venne ki, illetve felhasználástól függően
-olyanra is szükség lehet aki minden folyamatot lát és esetlegesen képes lenne bele is 
-nyúlni a rendszerbe.Ez által a rendszer képes lenne egy adott könyvről több adatot is 
-tárolni ,hogy éppen kinél van ,meddig van nála és ,hogy mikor esedékes a könyvtárba 
-való vissza hozatala. Emellett igen fontos lenne a könnyű kezelhetőség és egyben 
-átláthatóság a felhasználók számára.
+így, mint minden kisebb-nagyobb cég ők is követik digitalizációt.Igényeik szerint
+több funkciós platform lenne, mely teljes mértékben felváltaná a mostani rendszert.
+A program funkciói között szerepel a legtöbb jelenlegi folyamat digitális változata.
+Nem ragaszkodnak az online adatbázishoz továbbá a lokális hálózaton való adat eléréshez.
+Megelégednek egy önálló gépen működő programmal. A rendszer képes kell, hogy legyen 
+egy adott könyvről több adat tárolására is, hogy éppen kinél van, meddig van nála és, 
+hogy mikor esedékes a könyvtárba való vissza hozatala. Emellett igen fontos lenne a 
+könnyű kezelhetőség és egyben átláthatóság a felhasználók számára.
 
 
 
