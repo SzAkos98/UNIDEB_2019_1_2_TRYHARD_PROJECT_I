@@ -5,7 +5,7 @@
   
   
 A korábbiakban elkészült Követelmény specifkácó és Funkcionális specifikáció  
-alapján az alábbiakban a szoftver Rnedszertervét ismertetjük.  
+alapján az alábbiakban a szoftver Rendszertervét ismertetjük.  
   
   
 ### 1. A projekt tervezete  
@@ -14,28 +14,25 @@ alapján az alábbiakban a szoftver Rnedszertervét ismertetjük.
 A szoftver egy kisvárosi könyvkölcsönző működését hivatott elősegíteni.  
 Célja az analóg rendszer digitálisra cserélése. Adminisztratív és egyébb  
 feladatok ellátása számítógépes környezetben. A cél platformunk a kölcsönző  
-tulajdonában lévő számítógépek mely Linux alapú operációs rendszer futtatnak,  
-név szerint az Ubuntut. A megvalósítás miatt a program alkalmas lehet más  
+tulajdonában lévő számítógép melyen Linux alapú operációs rendszer fut,  
+név szerint az Ubuntu. A megvalósítás miatt a program alkalmas lehet más  
 operációs rendszer alatti futtatásra is, de ez nem elsődleges célja a  
-fejlesztésnek. A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel  
+fejlesztésnek. A gép hardverje 8 GB DDR4 -es RAMból, egy Intel  
 Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060  
-típusú videókártyából állnak. A gépek számára biztosítvav van a stabil 10Mb/s  
-sávszélességű internet elérés. A gépeket a kölcsönző dolgozói használhatják.  
-Szándékunkban áll többféle jogosultságokkal rendelkező felhasználókat  
-implementálni, és az adatbázist több munkaállomásról is eléhetővé tenni  
-a helyi hálózaton. A rendszer felépítése egy szerver-kliens alapokra épülő  
-modell, egy közös H2 adatbázis motorral rendelkező adatbázison, amely  
+típusú videókártyából áll. A gép számára biztosítva van egy stabil 10Mb/s  
+sávszélességű internet elérés. A gépet a kölcsönző dolgozói használhatják. 
+A rendszer felépítése egy adatbázis-kliens alapokra épülő  
+modell. Ez egy H2 adatbázis motorral rendelkező adatbázis, amely  
 tárolja az elérhető könyveket, illetve az ügyfelek alapvetően szükséges  
 adatait. Mivel a rendszerünket az első fázisban nem készítjük fel a külső  
 támadások kivédésére, csak belső, tűzfallal elzárt privát hálózaton javasoljuk  
 a használatát. Ezzel megelőzhetjük a személyes adatok kiszivárgását.  
 Emiatt a felhasználási mód miatt jelenleg az ügyfelek számára csak közvetett  
-regisztráció elérhető, így a GDPR tájékoztatót javasolt papir alapon 1  
-példányban hitelesítve tárolnim illetve egyet az ügyfélnek adni, így  
+regisztráció elérhető, így a GDPR tájékoztatót javasolt papir alapon egy  
+példányban hitelesítve tárolni illetve egyet az ügyfélnek adni. Így  
 megfelelő bizonyító erővel bír problémák felmerülésekor. A rendszer ezen  
 megvalósításában alkalmas az megfelelő rekordok lekérdezésére, módosítására,  
-törlésére. Ezen funkciók elosztására a különböző jogosultságú felhasználók  
-közt később térünk ki.  
+törlésére.
   
 ### 2. A rendszer felépítése  
   
