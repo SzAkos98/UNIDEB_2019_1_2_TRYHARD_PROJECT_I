@@ -37,18 +37,16 @@ egyes pontok kifejtésére kerül sor ebben a fejezetben.
    tagokat vehessen fel a könyvtár vagy az esetlegesen megszűnő tagságokat könnyen
    és egyszerűen képes legyen kitörölni, vagy ha egy felhasználónak megváltoznak
    az adatai akkor azt a lehető legegyszerűbben képes legyen a dolgozó módosítani.
-   Ez a módszer ugyan úgy használható a dolgozók szintjén  és  természetesen 
-   könyvekre is értendő. Mert ez által a könyvek listáját is könnyedséggel lehet 
-   változtatni, hogy éppen bent van-e a könyvtárban a könyv vagy nem. Illetve ,hogy melyik 
-   tagnál helyezkedik el. Az új könyvek felvételét is lelehet 
-   bonyolítani vagy a megrongált sérült könyveket is könnyedén ki lehet vonni az 
-   adatbázisból.
+   A könyvek listáját is könnyedséggel lehet változtatni, hogy éppen bent van-e a
+   könyvtárban a könyv vagy sem. Illetve ,hogy melyik tagnál helyezkedik el. Az új
+   könyvek felvételét is lelehet bonyolítani vagy a megrongált sérült könyveket
+   is könnyedén ki lehet vonni az adatbázisból.
 
 * A program segítséget nyújt ,hogy a felhasználó különböző szempontok alapján
    mint pl: kölcsönzés dátuma szerint tudja csökkenő vagy növekvő sorendbe 
-   listázni a kivett könyveket. Így könnyedén láthatja ,hogy ki az akinek esedékes
+   listázni a kivett könyveket. Így könnyedén látható ,hogy ki az akinek esedékes
    a könyv visszahozása a könyvtárba. De ide tartozik ,hogy leellenőrizhesse
-   akár a könyvtárban dolgozó ,hogy adott szerzőhöz milyen művek kapcsolódnak
+   akár a könyvtárban dolgozó, hogy adott szerzőhöz milyen művek kapcsolódnak
    és éppen kint vannak egy tagnál vagy kivehetők-e.
 
 * A szoftverben az egyik legfontosabb „funkció” az nem más mint ,hogy egyszerű 
