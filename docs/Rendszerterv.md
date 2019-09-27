@@ -36,29 +36,17 @@ törlésére.
   
 ### 2. A rendszer felépítése  
   
-  
-A kiszolgáló egy Tomcat szerver lesz, amely eléri a szervergépen lévő  
-adatbázist, feldolgozza a kéréseket, majd végrehajtja a megfelelő módosításokat  
-az adatokon. Mivel a rendszer belső privát hálózaton működik, a jelen  
-iterációban jelszó hashelést nem tervezünk implementálni a felhasználói  
-loginoknál, ezért későbbi webes felhasználás esetén ez rendkívüli fontosságú  
-feladat. Mivel a rendszer a szerveren fut, a programból gyakorlatilag egy  
-példány szükséges a szerveren, a többi gép a böngészőből éri el a felületet.  
 Az adatbázis kapcsolathoz szükséges egy adatbázis connection osztály,  
 amely létrehozza, fenntartja, és zárja az adatbáziskapcsolatot.  
  A funkciókhoz szükség van servlet osztályokra, amelyek felelnek a megfelelő  
-kérések felépítéséért. A felhasználóval való kommunikációt html-ben íródott  
+kérések felépítéséért. A felhasználóval való kommunikációt javafx-ben íródott  
 interface valósítja meg, ezek praktikusan külső fájlokból, és forrásból  
-módosított részekből állnak. Ennek a megoldásnak köszönhetően a felhasználók  
-használhatnak saját megjelenési stílusokat is, a böngészőn keresztül. Az  
-adatbázis miatt a rendszer egy esetleges szerver leállás után is perzisztens  
-marad, és a szolgáltatás is visszaáll újraindítást követően, így az esetleges  
-folyamatban lévő tranzakciókat leszámítva az adatok nem vesznek el.  
+módosított részekből állnak.  
  Az adatbázisnak két lényegi táblája a könyveket, és az ügyfeleket tartalmazza.  
 A kölcsönzés megvalósításához szükség van egy kapcsolótáblára is, amelynek  
-rekordjai egy egy kölcsönzési folyamatot ábrázolnak, a kölcsönző azonosítójával,  
+rekordjai egy-egy kölcsönzési folyamatot ábrázolnak, a kölcsönző azonosítójával,  
 a kölcsönzött könyv azonosítójával,valamint a kölcsönzési dátummal, és a  
-határidővel, visszahozási dátummal. A könyvek táblában eltároljuk a példány  
+határidővel (visszahozási dátummal). A könyvek táblában eltároljuk a példány  
 azonosítóját, könyvtári azonosítóját (ami nem unique), címét, szerzőjét,  
 kiadóját, kiadás évét, illetve hogy épp elérhető-e. Az tag táblában az  
 adott személy kereszt és vezetéknevét, születési dátumát, lakcímét,  
@@ -66,7 +54,7 @@ illetve az egyedi azonosítóját tároljuk. A törlés a foreign keyek miatt
 az adott rekord azonosítóján kívüli értékeinek NULL-ra állításával történik,  
 mivel nem szeretnénk, hogy egy esetleges tag vagy könyv törlése után az ID-jük  
 felszabaduljon, mert így valótlan kölcsönzési adatok is keletkezhetnének.  
- A html-ben megvalósított UI-ban ha megadjuk egy könyvnek az azonosításához  
+ A javafx-ben megvalósított UI-ban ha megadjuk egy könyvnek az azonosításához  
 szügséges információkat akkor a program visszaadja ,hogy a könyv megtalálható-e  
 a könyvtár könyveit tároló adatbázisában, illetve jelenleg ki van-e kölcsönözve  
 vagy kikölcsönözhető. Ha egy könyvet egy tag kikölcsönöz akkor lehetőség nyílik,  
@@ -77,38 +65,12 @@ az illető tagja-e a könyvtárnak, továbbá meg lesz a lehetőség arra is ,ho
 hozzáadjunk a könyvtári tagok listájához olyan embert is aki még nem tag.  
 További funkció lesz például ,hogy a könyvtárosnak lehetősége nyílik a program  
 segítségével ellenőrízni ,hogy a könyvet mikor kölcsönözték ki illetve  
-a könyvtári tagnak meddig lesz esedékes visszahozni, illetve megtekinthető  
-lesz az is ,hogy ki által lett kikölcsönözve a könyv.     
- A program megírásához css-t is fogunk alkalmazni mint wiew-ért felelős  
-technológiát. Itt a program megírása során egy egyszerű, átlátható és  
-szép desing létrehozását tűztük ki célul.  
-A program controller részének a megvalósításához Java Servlet technológiát  
-fogunk használni. A servlethez alapvetően szügséges könyvtárak listája a   
-teljesség igénye nélkül:  
-java.io.*;  
-javax.servlet.*;  
-javax.servlet.http.*;  
-A servlet class-nak mindenképp ki kell majd terjesztenie a HttpServlet osztályt.  
-A maven-be is szügséges felvenni dependency-ként a servletet illetve a H2 adatbázist:  
+a könyvtári tagnak meddig lesz esedékes visszahozni. Illetve megtekinthető  
+lesz az is ,hogy ki által lett kikölcsönözve a könyv.
 
- 
-```xml  
-<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->  
-<dependency>  
- <groupId>javax.servlet</groupId> <artifactId>servlet-api</artifactId> <version>2.5</version> <scope>provided</scope></dependency>  
--------------  
-<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->  
-<dependency>  
- <groupId>com.h2database</groupId> <artifactId>h2</artifactId> <version>1.4.197</version> <scope>test</scope></dependency>  
-  
-```
--------------  
-```xml  
-Illetve a tomcatet is fel kell venni plugin-ként:  
-<plugin>  
- <groupId>org.apache.tomcat.maven</groupId> <artifactId>tomcat7-maven-plugin</artifactId> <version>2.2</version></plugin>  
-  
-```  
+
+A program controller részének megvalósítását Java programozási nyelven terveztük el.
+A projekthez továbbá felhasználtuk a Maven nevű projekt menedzsment eszköztárat is.
   
 Könyv        | Kölcsönzés   |Tag  
 ------------| --------------|---------  
