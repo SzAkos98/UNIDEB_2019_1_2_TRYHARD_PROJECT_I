@@ -14,7 +14,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 
-<BorderPane onKeyPressed="#handleKeyBoard"
+<BorderPane
             styleClass="borderpane"
             xmlns="http://javafx.com/javafx/8"
             xmlns:fx="http://javafx.com/fxml/1"
@@ -45,7 +45,7 @@
                 </GridPane>
                 <HBox spacing="10.0">
                     <children>
-                        <TableView fx:id="table" onKeyPressed="#handleSelectionKey" onMouseClicked="#handleSelection" HBox.hgrow="ALWAYS" />
+                        <TableView fx:id="table" onMouseClicked="#handleSelection" HBox.hgrow="ALWAYS" />
                         <TableView fx:id="cart" onMouseClicked="#handleCartSelection" HBox.hgrow="ALWAYS" />
                     </children>
                 </HBox>

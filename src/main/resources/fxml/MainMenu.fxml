@@ -7,9 +7,10 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane styleClass="borderpane" id="Mainroot"
+<BorderPane fx:id="borderPane"
+            styleClass="borderpane" id="Mainroot"
             xmlns="http://javafx.com/javafx/8.0.172-ea"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.DeleteBookController">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.MainMenuController">
     <top>
         <HBox alignment="CENTER">
             <Label text="FŐMENÜ" styleClass="title"/>
@@ -20,9 +21,9 @@
             <Button fx:id="loan" onAction="#handleLoan" prefWidth="500" text="Kölcsönzés"/>
             <Button fx:id="newPerson" onAction="#handleNewPerson" prefWidth="500" text="Tag felvétele"/>
             <Button fx:id="newBook" onAction="#handleNewBook" prefWidth="500" text="Könyv felvétele"/>
-            <Button fx:id="modPerson" onAction="#handleModBook" prefWidth="500" text="Tag módosítása"/>
+            <Button fx:id="modPerson" onAction="#handleModPerson" prefWidth="500" text="Tag módosítása"/>
             <Button fx:id="modBook" onAction="#handleModBook" prefWidth="500" text="Könyv módosítása"/>
-            <Button fx:id="deletePerson" onAction="#handleDeleteBook" prefWidth="500" text="Tag törlése"/>
+            <Button fx:id="deletePerson" onAction="#handleDeletePerson" prefWidth="500" text="Tag törlése"/>
             <Button fx:id="deleteBook" onAction="#handleDeleteBook" prefWidth="500" text="Könyv törlése"/>
             <Button fx:id="exit" onAction="#handleExit" prefWidth="500" text="Kilépés"/>
             <opaqueInsets>

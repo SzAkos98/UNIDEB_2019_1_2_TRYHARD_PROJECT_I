@@ -1,4 +1,4 @@
-#body {
+.borderpane {
     -fx-background-image: url("/style/background.gif");
     -fx-background-repeat: stretch;
     -fx-background-position: center center;

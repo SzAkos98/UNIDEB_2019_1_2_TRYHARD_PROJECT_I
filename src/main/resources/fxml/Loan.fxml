@@ -14,7 +14,7 @@
         <Label styleClass="title" text="Válaszd ki a tagot aki könyvet szeretne kikölcsönözni!" />
     </top>
     <center>
-        <TableView fx:id="table" onKeyPressed="#handleSelectionKey" onMouseClicked="#handleSelection" />
+        <TableView fx:id="table" onMouseClicked="#handleSelection" />
     </center>
     <bottom>
         <VBox spacing="10.0">
