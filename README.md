@@ -18,7 +18,7 @@ Egy adatbázison alapuló JavaFX alkalmazás könyvek és tagok nyilvántartás�
  
  [Követelményspecifikáció](/docs/Követelményspecifikáció.md)
  
- [Funcitonális Specifikáció](/docs/Funkcionális%20specifikáció.md)
+ [Funkcionális Specifikáció](/docs/Funkcionális specifikáció.md)
  
  [Rendszerterv](/docs/Rendszerterv.md)
  
