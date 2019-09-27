@@ -6,6 +6,7 @@ Egy adatbázison alapuló JavaFX alkalmazás könyvek és tagok nyilvántartás�
 és kölcsönzések kezelésére.
 
 ### A csapat
+
  GitHub|Név 
 ------|-----
 @SzAkos98 | Szabó Ákos
