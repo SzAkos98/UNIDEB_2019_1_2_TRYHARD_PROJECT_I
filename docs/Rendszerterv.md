@@ -130,9 +130,10 @@ Varga Mátyás    | szoftverfejlesztő
 
   
 ### Ütemterv  
+
 A követelmény specifikációnak, funkcionális specifikációnak és a rendszertervnek  
 legkésőbb 2019.09.26-ra kész kell lennie. Ezt követi majd a programsorok   
-megírása amelynek a program átadására, vagyis 2019.09.30 a határideje.  
+megírása, amelynek a program átadására, vagyis 2019.09.30 a határideje.  
   
 ### Mérföldkövek  
   
@@ -182,13 +183,24 @@ Az üzletben résztvevő entitások:
   
   
 ### Követelmények  
+
+A program célja a jelenlegi könyvtári adminisztráció felváltása.
+A jelenlegi folyamat analóg papír-ceruza segítségével vezetett adminisztrálás
+digitalizálása. Mindezt a könnyebb és gyorsabb kezelhetőség érdekében, hogy
+a könyvtár dolgozói hamarabb kiszolgálhassák a könyvtár tagjait. Könnyen nyílván
+tudják tartani a könyvek státuszát és fizikai állapotát, a tagok esetleges késedelmeit.
   
 ### Funkcionális követelmények  
   
+- Könnyen és egyszerűen kezelhető rendszer.
+- Jól átlátható adatbázis kezelés.
+- Egyszerű adatbázis lekérdezések lebonyolítása.
+- Könnyed adatfelvétel és módosítás.
   
-###  Nemfunkcionális követelmények  
+###  Nem funkcionális követelmények  
   
-  
+- Esztétikus felhasználói felület.
+- Látás károsultak számára is megfelelő színvilág és betűméretek használata.
   
 ### Funkcionális terv  
   
