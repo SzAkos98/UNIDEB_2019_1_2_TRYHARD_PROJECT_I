@@ -27,14 +27,13 @@ egy közös informatikai rendszer, amelyet minden dolgozónk elérhet,
 
 Szeretnénk a papír ceruza rendszernél hatékonyabb rendszert beüzemeltetni,
 ami meggyorsítja a folyamatainkat, és megkönnyíti munkatársaink munkáját. 
-Az egyes munkaállomásokon már találhatóak számítógépek, melyek egymással is
-tudnak kommunikálni, illetve interneteléréssel is rendelkeznek. Ezen gépekre
-szeretnénk egy szoftvert, amiben nyilvántarthatnánk a könyveinket, illetve 
-az ahhoz kapcsolódó folyamatokat. Szeretnénk a könyveken kívül az ügyfeleinket
-is legalábbis beazonosítható szinten nyilvántartani, illetve az egyes ügyfelek
-kölcsönzéseit, valamint azok határidejét is. Ez segíthet abban, hogy ne kelljen
-percekig a sorok közt keresni épp nem rendelkezésre álló könyvet. A célunk, hogy
-a korábbi analóg módszert teljesen felválthassa a digitális.
+A munkaállomáson már található számítógé,mely szükség esetén interneteléréssel
+ is rendelkezik. Ezen gépre szeretnénk egy szoftvert, amiben nyilvántarthatnánk
+ a könyveinket, illetve az ahhoz kapcsolódó folyamatokat. Szeretnénk a könyveken 
+ kívül az ügyfeleinket is legalábbis beazonosítható szinten nyilvántartani. Továbbá
+ az egyes ügyfelek kölcsönzéseit, valamint azok határidejét is. Ez segíthet abban,
+ hogy ne kelljen percekig a sorok közt keresni az épp nem rendelkezésre álló könyvet.
+ A célunk, hogy a korábbi analóg módszert teljesen felválthassa a digitális.
 
 ## Jelenlegi üzleti folyamatok
 

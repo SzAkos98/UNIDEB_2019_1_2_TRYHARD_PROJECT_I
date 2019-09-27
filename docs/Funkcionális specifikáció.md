@@ -9,10 +9,11 @@ inkább kölcsönzik a könyveiket vásárlás helyett. A hely kifejezetten
 könyvtár hangulatú, a könyveket is könyvekben tartják nyilván. Napjainkban
 azonban a jól bevált módszerek új kihívásokkal és vetélytársakkal néznek
 szembe a számítógépek személyében. Éppen ezért a kölcsönző vezetése is
-úgy döntött, hogy alkalmazkodik az új követelményeknek, és egy gyors és
+úgy döntött, hogy alkalmazkodik az új követelményekhez, és egy gyors és
 hatékony számítógépes rendszert vezet be. Erre az igényre alapozva
 terveztük meg a programot, hogy a felvetett problémákra gyors és praktikus
 megoldást nyújthasson, és hasznos eszköz legyen a kölcsönző mindennapjaiban.
+
 
 ## Használati esetek
 
@@ -33,76 +34,54 @@ egyes pontok kifejtésére kerül sor ebben a fejezetben.
    dátumát.
 
 * A dinamikusan változó nyilvántartás lehetőséget kínál ,hogy ez által új 
-   tagokat vehessen fel könyvtár vagy az esetlegesen megszűnő tagságokat könnyen
-   és egyszerűen képes legyen kitörölni vagy ha egy felhasználónak megváltoztak
+   tagokat vehessen fel a könyvtár vagy az esetlegesen megszűnő tagságokat könnyen
+   és egyszerűen képes legyen kitörölni, vagy ha egy felhasználónak megváltoznak
    az adatai akkor azt a lehető legegyszerűbben képes legyen a dolgozó módosítani.
-   Ez módszer ugyan úgy használható   mint dolgozok szintjén  és  természetesen 
+   Ez a módszer ugyan úgy használható a dolgozók szintjén  és  természetesen 
    könyvekre is értendő. Mert ez által a könyvek listáját is könnyedséggel lehet 
-   változtatni ,hogy éppen bent van-e a könyvtárba vagy nem illetve ,hogy melyik 
-   tagnál helyezkedik el. Illetve , hogy az új könyvek felvételét is lelehet 
-   bonyolítani vagy a megrongált sérült könyveket könnyedén ki lehet vonni az 
+   változtatni, hogy éppen bent van-e a könyvtárban a könyv vagy nem. Illetve ,hogy melyik 
+   tagnál helyezkedik el. Az új könyvek felvételét is lelehet 
+   bonyolítani vagy a megrongált sérült könyveket is könnyedén ki lehet vonni az 
    adatbázisból.
 
-
-
 * A program segítséget nyújt ,hogy a felhasználó különböző szempontok alapján
-   mint pl: kölcsönzés dátuma szerint tudja csökkenő vagy növekvő sorendbe ki 
-   listázni a kivett könyveket igy könnyedén láthatja ,hogy ki az akinek esedékes
+   mint pl: kölcsönzés dátuma szerint tudja csökkenő vagy növekvő sorendbe 
+   listázni a kivett könyveket. Így könnyedén láthatja ,hogy ki az akinek esedékes
    a könyv visszahozása a könyvtárba. De ide tartozik ,hogy leellenőrizhesse
-   akár a könyvtári tag vagy a könyvtárban dolgozó ,hogy adott szerzőhöz milyen
-   művek kapcsolódnak és éppen kint vannak egy másik tagnál vagy kivehetők-e.
+   akár a könyvtárban dolgozó ,hogy adott szerzőhöz milyen művek kapcsolódnak
+   és éppen kint vannak egy tagnál vagy kivehetők-e.
 
-* A programban kiemelt szerepet jelent ,hogy az alap felhasználó is a maga
-   jogosultságával is képes lehessen egyszerűbb lekérdezések és ez által kere
-   séseket végre hajtani az adatbázison. Ez által az ö hierarchikus rendszerben
-   betöltőt szerepe által képes lesz bizonyos adatokhoz hozzá férni és látni
-   azokat mindezek általl.
-
-
-* Szoftverben az egyik legfontosabb „funkció” az nem más mint ,hogy egyszerű 
-   könnyen kezelhetőés átlátható legyen mint  a könyvtárós ,raktáros és vezető 
-   felhasználóknak. Illetve könyvtári programot használó tagoknak is. Mert mind az
-   aktív tagóknak és a szoftvert kezelő alkalmazottaknaknagyon fontos ,hogy gyorsan
-   és hatékonyan képesek lehessenek használni a programot.
+* A szoftverben az egyik legfontosabb „funkció” az nem más mint ,hogy egyszerű 
+   könnyen kezelhető és átlátható legyen a felhasználók számára.
 
 ## Jelenlegi helyzet
 
-A mostani analóg vagyis papír és ceruzán alapuló könyvtár megérett arra a szintre
-,hogy modernizálja magát és belépjen a huszadik századba és ez által meggyorsítja
-a mostani rendszert. Ez által képes lehet tartani a versenyt és kiszolgálni igy a 
-könyvtárba járó közönséget. Mert így képesek lesznek a könyvtárban dolgozok villám
-gyorsan lekérdezni az adatbázisból ,hogy az adott könny része-e a könyvtárnak bent 
-van-e illetve ha kint van egy másik tagnál akkor az illetőnek mikor esedékes a 
-vissza hozatala. Ezek eddig hosszú perceket vettek el mind a könyvtáros és mind a tagtól.
-Ami a mostani világban már tarthatatlan és így kényszerböl is muszáj megváltozni a 
-könyvtárnak mind az ott dolgozok és tagok  és ön maga érdekében.
+A mostani analóg, vagyis papír és ceruzán alapuló könyvtár megérett arra a szintre,
+hogy modernizálja magát és belépjen a huszadik századba. Ez által meggyorsítva
+a mostani rendszert. Így a későbbiekben képes lehet tartani a versenyt és kiszolgálni a 
+könyvtárba járó közönséget. Mert így képesek lesznek a könyvtárban dolgozók villám
+gyorsan lekérdezni az adatbázisból, hogy az adott könny része-e a könyvtárnak. Bent 
+van-e a könyv, illetve ha kint van egy tagnál akkor az illetőnek mikor esedékes a könyv 
+vissza hozatala. Ezek a folyamatok eddig hosszú perceket vettek el mind a könyvtáros
+és mind a tag idejéből. Ami a mostani világban már tarthatatlan. Így kényszerből is
+muszáj megváltozni a könyvtárnak a jelenlegi rendszert.
 
 ## A rendszernek NEM célja
-
 
 * A tagok számára felületet biztosítani a kölcsönzéseik listázására, vagy
    bármilyen kölcsönzőbeli adatuk elérésére.
 
-* Webes környezetben való alkalmazása, internetek keresztüli elérés, mivel
-   a jelenleg nincs felkészítve az esetleges interneten felmerülő veszélyekre,
-   mint a jelszavak védelme, az esetleges tranzakciók indítása session rablással,
-   vagy szerkesztett URL-ekkel. Épp ezért javasolt, hogy a szerver gép privát
-   hálózaton üzemeljen és inkább csak a munkaállomások számára engedélyezzen
-   kapcsolatot.
-
+* Webes környezetben való alkalmazásra, interneten keresztüli elérésre, mivel
+   a könyvtár jelenleg nincs felkészítve az esetleges interneten felmerülő veszélyekre.
+   
 * Figyelmeztetést küldeni annak a tagnak akinek lejárt a kölcsönzési ideje vagy
    közelít a határidő végéhez
 
 ## Jelenlegi üzleti folyamatok modellje
 
-
 A tagok és a könyvek listáját egy relációs adatbázis váltja ki, amelyben ezek az
-adatok tökéletesen tárolhatóak, és különböző szűrökkel gyorsan lekérdezhetőek.
- A menüből választhatóak ki az alapvető tevékenységek minden felhasználónak.
- A felhasználól 3 csoportra sorolhatóak:
-   * Könyvtáros
-   * Raktáros
-   * Vezető
+adatok tökéletesen tárolhatóak, és különböző szűrőkkel gyorsan lekérdezhetőek.
+ A menüből választhatóak ki az alapvető tevékenységek.
 
  - A Könyvtáros felhasználó menüje:
     * Kölcsönzés
@@ -110,14 +89,14 @@ adatok tökéletesen tárolhatóak, és különböző szűrökkel gyorsan lekér
     * Tagok
     * Könyvek
 
- A kölcsönzési folyamat megkezdésekor a Kölcsönzés menüponot választa a könyvtáros megadja
-a kölcsönző nevét és a könyv azonosítóját, ezzel a rendszer meg eltárolja a kölcsönzést,
-majd és megjeleníti a határidőt, amit a könyvtáros így megadhat a tagnak.
- A könyv visszahozásakor a könyvtáros a Visszahozás menüpontot választja, ahol szűrőkkel elő tudja
-keresni az adott kölcsönzést, és Visszahozva állapotba állíthatja (ekkor menti az adott időpontot).
- A Tagok menüpontban a könyvtáros szűrni tud új tagokra, illetve lehetősége van új tag hozzáadására,
-a kijelölt tag törlésére, vagy a kijelölt tag adatainak módosítására.
- A Könyvek menüpontban szűrni tud a könyvtáros könyvekre. Ez read-only.
+ A kölcsönzési folyamat megkezdésekor a 'Kölcsönzés' menüponot választva a könyvtáros megadja
+a kölcsönző nevét és a könyv azonosítóját, ezt a rendszer eltárolja, majd megjeleníti a
+ kölcsönzési határidőt, amit a könyvtáros így megadhat a tagnak.
+ A könyv visszahozásakor a könyvtáros a 'Visszahozás' menüpontot választja ki, ahol szűrőkkel elő
+  tudja keresni az adott kölcsönzést. Ez után 'Visszahozva' állapotba állíthatja a könyv stáuszát
+   (ekkor menti az adott időpontot). A 'Tagok' menüpontban a könyvtáros szűrni tud tagokra,
+   illetve lehetősége van új tag hozzáadására, a kijelölt tag törlésére vagy a kijelölt tag
+   adatainak módosítására. A 'Könyvek' menüpontban szűrni tud a könyvtáros könyvekre.
 
 ## Igényelt üzleti folyamatok
 
