@@ -59,12 +59,13 @@ Könyvtár szeretné kiküszöbölni a jelenlegi analóg rendszer általi nehéz
 több felhasználós platform lenne mert bontásban tudnának dolgozni a könyvtári 
 munkavállalók mert így valaki új tagot tud felvenni ,amig a másik dolgozó kölcsönzés
 folyamatát bonyolítaná le illetve tételeket tudna törölni vagy meghosszabbítani.
-Ezért szükség van aki kölcsönzés táblát módosítaná mert a könyveket adna ki addig a 
-másik felhasználón könyveket veszi be és veszi ki és illetve felhasználástól függően
-olyan aki mindent folyamatot lát és esetlegesen képes lenne bele is nyúlni a rendszerbe.
-Ez által a rendszer képes lenne egy adott könyvről több adatot is tárolni ,hogy éppen 
-kinél van ,meddig van nála és ,hogy mikor esedékes a könyvtárba való vissza hozatala.
-Emellett igen fontos lenne a könnyű kezelhetőség és egyben átláthatóság a felhasználók számára.
+Ezért szükség van valakire aki kölcsönzés táblát módosítaná. Könyveket adna ki addig a 
+másik felhasználón könyveket venne be és venne ki, illetve felhasználástól függően
+olyanra is szükség lehet aki minden folyamatot lát és esetlegesen képes lenne bele is 
+nyúlni a rendszerbe.Ez által a rendszer képes lenne egy adott könyvről több adatot is 
+tárolni ,hogy éppen kinél van ,meddig van nála és ,hogy mikor esedékes a könyvtárba 
+való vissza hozatala. Emellett igen fontos lenne a könnyű kezelhetőség és egyben 
+átláthatóság a felhasználók számára.
 
 
 
