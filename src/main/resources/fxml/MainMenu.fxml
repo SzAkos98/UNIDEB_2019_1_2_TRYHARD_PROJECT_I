@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane id="body" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.MainMenuController">
+<BorderPane styleClass="borderpane" id="Mainroot"
+            xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="shopthing.controller.MainMenuController">
+    <top>
+        <HBox alignment="CENTER">
+            <Label text="FŐMENÜ" styleClass="title"/>
+        </HBox>
+    </top>
     <center>
-        <VBox id="vbox" alignment="CENTER">
-
-            <Label id="message" text="SO IT BEGINS" />
-
+        <VBox spacing="10.0" alignment="CENTER" prefHeight="721.0" prefWidth="854.0">
+            <Button fx:id="loan" onAction="#handleLoan" prefWidth="500" text="Kölcsönzés"/>
+            <Button fx:id="newPerson" onAction="#handleNewPerson" prefWidth="500" text="Tag felvétele"/>
+            <Button fx:id="newBook" onAction="#handleNewBook" prefWidth="500" text="Könyv felvétele"/>
+            <Button fx:id="modPerson" onAction="#handleModBook" prefWidth="500" text="Tag módosítása"/>
+            <Button fx:id="modBook" onAction="#handleModBook" prefWidth="500" text="Könyv módosítása"/>
+            <Button fx:id="deletePerson" onAction="#handleDeleteBook" prefWidth="500" text="Tag törlése"/>
+            <Button fx:id="deleteBook" onAction="#handleDeleteBook" prefWidth="500" text="Könyv törlése"/>
+            <Button fx:id="exit" onAction="#handleExit" prefWidth="500" text="Kilépés"/>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
         </VBox>
     </center>
-
+    <opaqueInsets>
+        <Insets topRightBottomLeft="50.0"/>
+    </opaqueInsets>
+    <padding>
+        <Insets topRightBottomLeft="50.0"/>
+    </padding>
 </BorderPane>
