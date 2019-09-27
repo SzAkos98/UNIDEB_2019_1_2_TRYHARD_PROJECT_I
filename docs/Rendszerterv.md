@@ -1,15 +1,47 @@
-﻿
-
-# TRYHARD  
+﻿# TRYHARD  
 ## Rendszerterv  
   
   
 A korábbiakban elkészült Követelmény specifkácó és Funkcionális specifikáció  
 alapján az alábbiakban a szoftver Rendszertervét ismertetjük.  
+
+
+### Bevezetés  
+
+A rendszerterv elkészítésének célja az ,hogy a program fejlesztőinek pontos, részletes 
+és szaknyelvet tartalmazó leírás legyen a kezében ami kitér a  rendszerrel kapcsolatos összes fontos szakmai kérdésre.
+A szoftver egy kisvárosi könyvkölcsönző működését hivatott elősegíteni.
+Célja az analóg rendszer digitálisra cserélése ennek következtében a könyvtár
+fenetarthatóságát képes növelni és a dolgozok munkáját meggyorsítani . 
+Adminisztratív és  könyv kölcsönzés és egyéb feladatok ellátása számítógépes 
+környezetben. A cél platformunk a kölcsönző tulajdonában lévő számítógépek mely 
+Linux alapú operációs rendszer futtatnak, név szerint az Ubuntut. A megvalósítás 
+miatt a program alkalmas lehet más operációs rendszer alatti futtatásra is, de 
+ez nem elsődleges célja afejlesztésnek. A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel
+Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060
+típusú videokártyából állnak. A gépek számára biztosítva van a stabil 10Mb/s
+sávszélességű internet elérés. Ez által a megfelelő infrastruktúra kiégetésével 
+megvan teremtve a megfelelő hátér ,hogy a dolgozok lehető legjobb hatásfokkal 
+képesek legyenek használni a szoftvert.  A rendszer felé pitése egy szerver-kliens 
+alapokra épülő modell,egy közös H2 adatbázis motorral rendelkező adatbázison, 
+amelytárolja az elérhető könyveket, illetve az ügyfelek alapvetően szükséges 
+adatait amely az "egyszerű és  egyben nagyszerű " elv alapján lesz elkészítve 
+,hogy a könyvtárban dolgozók rövid tanulmányozás után képesek legyek átlátni a 
+szoftver és kényelmesen tudják használni azt.Ezért a tervezet szerint olyan 
+programozási nyelvet használunk ami megkönnyítői ennek a szoftvernek a leghatékonyabb
+le kódolását. Erről bővében a Fejlesztő eszközök menüpontban térünk ki. 
+A digitalizálás hatására sokall átláthatóbb kezelhetőbb és biztonságosabb lesz 
+az új rendszer a régihez képest.
+   
   
-  
-### 1. A projekt tervezete  
-  
+### A rendszer célja  
+
+A rendszer célja a könyvtár adminisztrációs munkájának megkönnyítése amit  
+a programunk egy JavaFX felhasználói felülettel és SQL adatbázis rendszerrel  
+szeretne elérni.  
+    
+### A projekt tervezete  
+
   
 A szoftver egy kisvárosi könyvkölcsönző működését hivatott elősegíteni.  
 Célja az analóg rendszer digitálisra cserélése. Adminisztratív és egyébb  
@@ -34,7 +66,7 @@ megfelelő bizonyító erővel bír problémák felmerülésekor. A rendszer eze
 megvalósításában alkalmas az megfelelő rekordok lekérdezésére, módosítására,  
 törlésére.
   
-### 2. A rendszer felépítése  
+### A rendszer felépítése  
   
 Az adatbázis kapcsolathoz szükséges egy adatbázis connection osztály,  
 amely létrehozza, fenntartja, és zárja az adatbáziskapcsolatot.  
@@ -82,82 +114,26 @@ Könyv        | Kölcsönzés   |Tag
    KiadasEve DATE |Hatarido DATE     |                     
    Elerheto BOOLEAN|VisszahozasDatum DATE        |   
   
-### A HTML használata a felhasználói felület elrendezéséhez  
-  
-A HTML UI használatával A HTML UI használatával lehetővé teszi a bonyolult   
-felhasználói felületek elhelyezését minimális zavarral; nagyszerű feladat az UI   
-felépítésének és elrendezésének elválasztása az üzleti logikától; könnyű írni;   
-és könnyen karbantartható illetve sok alkalmazás képes kiaknázni a HTML adta  
-táblázatós és egyszerűbb lehetőségeit.Az UI modell mellett az  űrlapmezőket   
-a végfelhasználóhoz is elrendezzük. Ez által könnyedén képesek leszünk  az   
-adatbázisban H2 konzolos alkalmazás segítségével könyvtárban kölcsönzésre    
-használható könyveket illetve az opcionális erre a célra felvet tagokat   
-adatbázisát is. Amikor az UI Model varázsló segítségével modellt generálunk   
-egy specifikációból, akkor  egy HTML 'snippet' fájlt is kapunk, amelyet   
-felhasználhatunk az űrlapmezők elrendezésére. A  és   
- (cellák) címkéket használjuk a specifikáción belüli mezők elrendezésének  
-megszervezésére.  A címkék barátságos nevet / feliratot adnak a vezérléshez.  
-Az címkék felhasználói felület elemekhez használhatók,  
-például a jelölőnégyzetekhez és a legördülő listákhoz.  Az címkék nagy   
-szövegterületekhez használhatók.  A <div class = "bbui-formák-mezőkészlet-oszlop">   
-címkék az űrlapmezők több oszlopba rendezésére szolgálnak, míg a   
-<div class = "bbui-formák-tabs-main"> címkék az űrlapmezők tabulátorokba rendezésére szolgálnak .  
-Használhatunk egy # MAP # elnevezési konvenciót az adat-specifikus metaadat-értékek   
-leképezéséhez a HTML alapú felhasználói felületen. Az alábbiakban a címkét   
-és annak id = "# MAP # NAME_caption" attribútumát használjuk a NAME űrlapa feliratának  
- megjelenítéséhez egy címkén  
-
- 
-/*  
-ÚJRATERVEZETT RENDSZERTERV  
-  
-### Bevezetés  
-
-A rendszerterv elkészítésének célja az ,hogy a program fejlesztőinek pontos, részletes 
-és szaknyelvet tartalmazó leírás legyen a kezében ami kitér a  rendszerrel kapcsolatos összes fontos szakmai kérdésre.
-A szoftver egy kisvárosi könyvkölcsönző működését hivatott elősegíteni.
-Célja az analóg rendszer digitálisra cserélése ennek következtében a könyvtár
-fenetarthatóságát képes növelni és a dolgozok munkáját meggyorsítani . 
-Adminisztratív és  könyv kölcsönzés és egyéb feladatok ellátása számítógépes 
-környezetben. A cél platformunk a kölcsönző tulajdonában lévő számítógépek mely 
-Linux alapú operációs rendszer futtatnak, név szerint az Ubuntut. A megvalósítás 
-miatt a program alkalmas lehet más operációs rendszer alatti futtatásra is, de 
-ez nem elsődleges célja afejlesztésnek. A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel
-Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060
-típusú videokártyából állnak. A gépek számára biztosítva van a stabil 10Mb/s
-sávszélességű internet elérés. Ez által a megfelelő infrastruktúra kiégetésével 
-megvan teremtve a megfelelő hátér ,hogy a dolgozok lehető legjobb hatásfokkal 
-képesek legyenek használni a szoftvert.  A rendszer felé pitése egy szerver-kliens 
-alapokra épülő modell,egy közös H2 adatbázis motorral rendelkező adatbázison, 
-amelytárolja az elérhető könyveket, illetve az ügyfelek alapvetően szükséges 
-adatait amely az "egyszerű és  egyben nagyszerű " elv alapján lesz elkészítve 
-,hogy a könyvtárban dolgozók rövid tanulmányozás után képesek legyek átlátni a 
-szoftver és kényelmesen tudják használni azt.Ezért a tervezet szerint olyan 
-programozási nyelvet használunk ami megkönnyítői ennek a szoftvernek a leghatékonyabb
-le kódolását. Erről bővében a Fejlesztő eszközök menüpontban térünk ki. 
-A digitalizálás hatására sokall átláthatóbb kezelhetőbb és biztonságosabb lesz 
-az új rendszer a régihez képest.
-   
-  
-### A rendszer célja  
-
-A rendszer célja a könyvtár adminisztrációs munkájának megkönnyítése amit  
-a programunk egy JavaFX felhasználói felülettel és SQL adatbázis rendszerrel  
-szeretne elérni.  
-  
-  
-### Projekt terv  
-  
-### Projektszerepkörök, felelősségek  
-  
   
 ###  Projektmunkások és felelősségeik  
   
+A projektet készítő négy személy teljesen egyenjogú szerepkörökkel rendelkezik.
+Mind négyük kiveszi a részét a munka minden egyes fázisából és részéből. Mindnyájan
+egyenrangú fejlesztői a programnak.
+
+Név |   Szerepkör
+-----------|---------
+Keserű Kristóf  | szoftverfejlesztő
+Szabó Ákos  | szoftverfejlesztő
+Tóth Norbert    | szoftverfejlesztő
+Varga Mátyás    | szoftverfejlesztő
+
   
 ### Ütemterv  
+
 A követelmény specifikációnak, funkcionális specifikációnak és a rendszertervnek  
 legkésőbb 2019.09.26-ra kész kell lennie. Ezt követi majd a programsorok   
-megírása amelynek a program átadására, vagyis 2019.09.30 a határideje.  
+megírása, amelynek a program átadására, vagyis 2019.09.30 a határideje.  
   
 ### Mérföldkövek  
   
@@ -207,13 +183,24 @@ Az üzletben résztvevő entitások:
   
   
 ### Követelmények  
+
+A program célja a jelenlegi könyvtári adminisztráció felváltása.
+A jelenlegi folyamat analóg papír-ceruza segítségével vezetett adminisztrálás
+digitalizálása. Mindezt a könnyebb és gyorsabb kezelhetőség érdekében, hogy
+a könyvtár dolgozói hamarabb kiszolgálhassák a könyvtár tagjait. Könnyen nyílván
+tudják tartani a könyvek státuszát és fizikai állapotát, a tagok esetleges késedelmeit.
   
 ### Funkcionális követelmények  
   
+- Könnyen és egyszerűen kezelhető rendszer.
+- Jól átlátható adatbázis kezelés.
+- Egyszerű adatbázis lekérdezések lebonyolítása.
+- Könnyed adatfelvétel és módosítás.
   
-###  Nemfunkcionális követelmények  
+###  Nem funkcionális követelmények  
   
-  
+- Esztétikus felhasználói felület.
+- Látás károsultak számára is megfelelő színvilág és betűméretek használata.
   
 ### Funkcionális terv  
   
@@ -233,26 +220,26 @@ Az üzletben résztvevő entitások:
   
 ### Fizikai környezet  
   
-### Vásárolt softwarekomponensek és külső rendszerek  
-  
-A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel  
+#### Hardver és hálózati topológia  
+A gép hardverje 8 GB DDR4 -es RAMból, egy Intel  
 Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060  
-típusú videókártyából állnak.  
+típusú videókártyából áll. A számítógép számára szükség esetén internet elérés biztosított.
   
-### Hardver és hálózati topológia  
   
 ### Fizikai alrendszerek  
   
+A Fizikai környezet nem rendelkezik alrendszerekkel.
   
 ### Fejlesztő eszközök  
+
 A projekt során használt fejlszetői eszközök:  
--Java  
--Tomcat  
--Maven  
--SQL  
+- Java
+- Maven  
+- SQL  
+
 ### Keretrendszer  
   
--Java FX  
+- Java FX  
   
 ### Absztrakt domain modell  
   
@@ -265,15 +252,18 @@ A projekt során használt fejlszetői eszközök:
   
 ### Egy architekturális tervezési minta  
   
-A projekt során a az MVC(model-view-controller) modellt fogjuk alkalmazni.  
+A projekt során a az MVC (model-view-controller) modellt fogjuk alkalmazni.  
   
 ### Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai  
+
+
   
 ### Rendszer bővíthetősége  
   
 ### Biztonsági funkciók  
   
-  
+A lokális adattárolásra és a számítógéphez való korlátozott hozzáférésre tekintettel
+nem láttuk szükségességét biztonsági funkciók beépítésére a rendszrbe.
   
 ### Adatbázis terv  
   
@@ -311,3 +301,35 @@ T05: |Egy könyv állapotának kikölcsönzöttről való átállítása elérhe
 T06: |Egy könyv állapotának elérhetőről való átállítása kikölcsönzöttre  
 T07: |Egy tag felvétele a tagok adatbázisába  
 T08: |Egy tag eltávolítása a tagok adatbázisából
+
+
+
+### A HTML használata a felhasználói felület elrendezéséhez  
+  
+A HTML UI használatával A HTML UI használatával lehetővé teszi a bonyolult   
+felhasználói felületek elhelyezését minimális zavarral; nagyszerű feladat az UI   
+felépítésének és elrendezésének elválasztása az üzleti logikától; könnyű írni;   
+és könnyen karbantartható illetve sok alkalmazás képes kiaknázni a HTML adta  
+táblázatós és egyszerűbb lehetőségeit.Az UI modell mellett az  űrlapmezőket   
+a végfelhasználóhoz is elrendezzük. Ez által könnyedén képesek leszünk  az   
+adatbázisban H2 konzolos alkalmazás segítségével könyvtárban kölcsönzésre    
+használható könyveket illetve az opcionális erre a célra felvet tagokat   
+adatbázisát is. Amikor az UI Model varázsló segítségével modellt generálunk   
+egy specifikációból, akkor  egy HTML 'snippet' fájlt is kapunk, amelyet   
+felhasználhatunk az űrlapmezők elrendezésére. A  és   
+ (cellák) címkéket használjuk a specifikáción belüli mezők elrendezésének  
+megszervezésére.  A címkék barátságos nevet / feliratot adnak a vezérléshez.  
+Az címkék felhasználói felület elemekhez használhatók,  
+például a jelölőnégyzetekhez és a legördülő listákhoz.  Az címkék nagy   
+szövegterületekhez használhatók.  A <div class = "bbui-formák-mezőkészlet-oszlop">   
+címkék az űrlapmezők több oszlopba rendezésére szolgálnak, míg a   
+<div class = "bbui-formák-tabs-main"> címkék az űrlapmezők tabulátorokba rendezésére szolgálnak.  
+Használhatunk egy # MAP # elnevezési konvenciót az adat-specifikus metaadat-értékek   
+leképezéséhez a HTML alapú felhasználói felületen. Az alábbiakban a címkét   
+és annak id = "# MAP # NAME_caption" attribútumát használjuk a NAME űrlapa feliratának  
+ megjelenítéséhez egy címkén  
+
+ 
+/*  
+ÚJRATERVEZETT RENDSZERTERV  
+  
