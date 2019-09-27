@@ -136,7 +136,19 @@ az adott funkciót, illetve visszalépnek a menübe.
 
 A jelen esetben a kölcsönzőben szükség van:
 
-   - Kölcsönzési folyamat indítása
+   - #### Főmenü
+        
+    Kölcsönzés
+    Új tag
+    Új könyv
+    Tag módosítás
+    Könyv módosítás
+    Tag törlés
+    Könyv törlés
+    Kilépés
+   
+   - #### Kölcsönzési folyamat indítása
+      
       Szükség van az adott könyv/ek és a kölcsönző tag rekordjaira is, ezért
       mindkettőre külön külön szűrni tudni kell.
       + A tag adataira szűrő mezők
@@ -145,17 +157,38 @@ A jelen esetben a kölcsönzőben szükség van:
       + A könyvek közti találatok a szűrések alapján
       + Az épp hozzáadandó könyvek listája
 
-   - Könyvek és tagok lekérezésére
-        + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
-        + a lekérdező szűrők szövegmezői
-        + navigációs gombok.
-
-   - Új könyv/tag felvétele, meglévő módosítása
+   - #### Új könyv felvétele
+   
         + A rekordok táblázatos formában
         + A rekord attribútumainak megfelelő számú szöveges mező,
         + navigációs gombok.
-
-   - Meglévő rekord törlése
+   
+   - #### Új tag felvétele
+   
+        + A rekordok táblázatos formában
+        + A rekord attribútumainak megfelelő számú szöveges mező,
+        + navigációs gombok.
+        
+   -  #### Meglévő könyv módosítása
+   
+         + A rekordok táblázatos formában
+         + A rekord attribútumainak megfelelő számú szöveges mező,
+         + navigációs gombok.      
+   
+   -  #### Meglévő tag módosítása
+   
+         + A rekordok táblázatos formában
+         + A rekord attribútumainak megfelelő számú szöveges mező,
+         + navigációs gombok.  
+            
+   - #### Meglévő könyv törlése
+        Külön képernyőn a véletlen törlések elkerülésére. A törléshez rá
+        kell szűrni a rekordra vagy kiválasztani a táblázatból.
+        + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
+        + a lekérdező szűrők szövegmezői
+        + navigációs gombok.
+   
+   - #### Meglévő tag törlése
         Külön képernyőn a véletlen törlések elkerülésére. A törléshez rá
         kell szűrni a rekordra vagy kiválasztani a táblázatból.
         + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
