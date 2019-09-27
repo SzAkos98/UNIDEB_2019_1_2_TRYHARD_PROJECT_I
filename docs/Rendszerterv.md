@@ -220,26 +220,26 @@ tudják tartani a könyvek státuszát és fizikai állapotát, a tagok esetlege
   
 ### Fizikai környezet  
   
-### Vásárolt softwarekomponensek és külső rendszerek  
-  
-A gépek hardverje 8 GB DDR4 -es RAMból, egy Intel  
+#### Hardver és hálózati topológia  
+A gép hardverje 8 GB DDR4 -es RAMból, egy Intel  
 Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060  
-típusú videókártyából állnak.  
+típusú videókártyából áll. A számítógép számára szükség esetén internet elérés biztosított.
   
-### Hardver és hálózati topológia  
   
 ### Fizikai alrendszerek  
   
+A Fizikai környezet nem rendelkezik alrendszerekkel.
   
 ### Fejlesztő eszközök  
+
 A projekt során használt fejlszetői eszközök:  
--Java  
--Tomcat  
--Maven  
--SQL  
+- Java
+- Maven  
+- SQL  
+
 ### Keretrendszer  
   
--Java FX  
+- Java FX  
   
 ### Absztrakt domain modell  
   
@@ -252,15 +252,18 @@ A projekt során használt fejlszetői eszközök:
   
 ### Egy architekturális tervezési minta  
   
-A projekt során a az MVC(model-view-controller) modellt fogjuk alkalmazni.  
+A projekt során a az MVC (model-view-controller) modellt fogjuk alkalmazni.  
   
 ### Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai  
+
+
   
 ### Rendszer bővíthetősége  
   
 ### Biztonsági funkciók  
   
-  
+A lokális adattárolásra és a számítógéphez való korlátozott hozzáférésre tekintettel
+nem láttuk szükségességét biztonsági funkciók beépítésére a rendszrbe.
   
 ### Adatbázis terv  
   
