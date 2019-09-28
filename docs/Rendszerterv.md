@@ -414,18 +414,18 @@ Tag:
    -Vezetéknév
    -Születési dátum
 
+   Könyv           | Kölcsönzés                            |Tag  
+   ----------------|---------------------------------------|---------  
+   ID Primary key  |KolcsonzesID PRIMARY KEY, UNIQUE       |unique INTEGER           
+   LibID VARCHAR   |KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |Vezeteknev VARCHAR                         
+   Szerzo VARCHAR  |TagID FOREIGN KEY(TAG.ID) INTEGER      |Keresztnev VARCHAR                     
+   Cim  VARCHAR    | KolcsonzesDatum  DATE                 |Születési datum  DATE                     
+   Kiado VARCHAR   |                                       |   Lakcim VARCHAR                    
+   KiadasEve DATE  |Hatarido DATE                          |                     
+   Elerheto BOOLEAN|VisszahozasDatum DATE                  |    
 
 #### Logikai adatmodell  
   
-Könyv        | Kölcsönzés   |Tag  
-------------| --------------|---------  
-   ID Primary key|KolcsonzesID PRIMARY KEY, UNIQUE |unique INTEGER           
-   LibID VARCHAR  |KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |  Vezeteknev VARCHAR                         
-   Szerzo VARCHAR |TagID FOREIGN KEY(TAG.ID) INTEGER  |   Keresztnev VARCHAR                     
-   Cim  VARCHAR   | KolcsonzesDatum  DATE  |   Születési datum  DATE                     
-   Kiado VARCHAR  |  |   Lakcim VARCHAR                    
-   KiadasEve DATE |Hatarido DATE     |                     
-   Elerheto BOOLEAN|VisszahozasDatum DATE        |   
    
 ### Implementációs terv  
   
