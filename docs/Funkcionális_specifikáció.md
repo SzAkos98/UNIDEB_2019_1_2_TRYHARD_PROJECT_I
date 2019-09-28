@@ -100,32 +100,19 @@ a kölcsönző nevét és a könyv azonosítóját, ezt a rendszer eltárolja, m
  adatbázisban. A 'Tag törlése' és a 'Könyv törlése' menüpontok használhatók tételek törlésére az
  adatbázisból. A 'Kilépés' menüponttal zárható be a program.
 
-Folyamatábra a jelenlegi üzleti folyamatok szemléltetésere:
+**Folyamatleírás a jelenlegi üzleti folyamatok szemléltetésere:**
 
-|A könyvtári tag besétál|     | Felkeresi a könyvtár egy|
-|a könyvtárba könyv     | --> | kölcsönzését felelős    | -->
-|kölcsönzési céllal     |     | alkalmazottját          | 
+A könyvtári tag besétál a könyvtárba könyv kölcsönzési céllal.
+Felkeresi a könyvtár egy kölcsönzését felelős alkalmazottját.
+A tag elmondja a könyvtárosnak, hogy milyen könyvet vagy könyveket szeretne kikölcsönözni.
 
-|A tag elmondja a könyvtárosnak, |      /--------------\  Igen  |A könyvtáros átadja a tagnak  |
-|hogy milyen könyvet vagy        | --> <Elérető a könyv?> ----> |a könyvet és felírja ,hogy    |
-|könyveket szeretne kikölcsönözni|      \--------------/        |a könyvet kiadta, illetve     |
-						|               |tájékoztatást ad a visszahozás|
-						|Nem   		|dátumáról   		       |
-						|
-						|
-						ˇ
-					----------------
-				      /A könyv elérhető a\  Igen |A könyvtáros tájékoztatást ad |
-				     <könyvtár könyveinek > ---->|arról ,hogy a könyv mikor lesz|
-				      \a listájában?     /       |ismét elérhető  		|
-					----------------
-						|					
-						|Nem
-						|
-						ˇ
-				  |A könyvtáros közli ,hogy a|
-				  |könyv sajnos nem elérhető |
-				  |ebben a könyvtárban	     |
+Elérető a könyv?
+
+Igen: A könyvtáros átadja a tagnak a könyvet és felírja ,hogy a könyvet kiadta, illetve
+tájékoztatást ad a visszahozás dátumáról
+
+Nem: A könyvtáros tájékoztatást ad arról ,hogy a könyv mikor lesz ismét elérhető.
+Ha nem érhető el a könyvtárban akkor nem juthat hozzá a tag a könyvhet a könyvtárban.
 
 ## Igényelt üzleti folyamatok
 
