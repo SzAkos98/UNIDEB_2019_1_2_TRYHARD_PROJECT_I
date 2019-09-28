@@ -215,6 +215,18 @@ Ezek a 'funkciók' nem mások, mint:
  - Amortizáció esetén könyvek kivonása a nyílvántartésból.
   
 ### Rendszerszereplők  
+
+A jelenlegi rendszerben és a későbbiakben is megkülönböztetünk 2 önálló entitás csoportot.
+A csoportok között nem kizárt az átfedés lehetősége. A csoportok különböző cselekvőképsséggel
+rendelkeznek. A két csoport név szerint az adminisztrációt végző 'Könyvtárosok csoportja' és 
+a könyveket kölcsönző felhasználók csoportja, melnyek 'Tagok csoportja' a pontos megnevezése.
+A Tagok csoportja igénybe veszi a könyvtár szolgáltatásait, míg a Könyvtárosok csoportjának
+tagjai ezt nyílvántartják és kiszolgálják a másik csoportot. Hierarchia tekintetében kimondható,
+hogy a Könyvtárosok csoportja a Tagok csoportja fölött helyezkedik el. Több 'jogosultsággla'
+rendelkeznek a személyek ebben a csoportban. Azon fölül, hogy ők az adminisztrátorok, az ő 
+feladatuk a Tagok értesítése problémák esetén. Hivatalos munkatársai a könyvtár szervezetének
+ így nekik kell lebonyolítani a kapcsolattartást is a Tagokkal. Feladatuk kiterjed a Tagok
+ értesítésére elmaradás esetén.
   
 ### Rendszerhasználati esetek és lefutásaik  
   
