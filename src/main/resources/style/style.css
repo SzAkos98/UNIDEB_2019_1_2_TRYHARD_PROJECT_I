@@ -1,8 +1,9 @@
 .borderpane {
-    -fx-background-image: url("/style/background.gif");
+/*    -fx-background-image: url("/style/background.gif");
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
-    -fx-opacity: 0.9;
+    -fx-opacity: 0.9;*/
+    -fx-background-color: rgb(177, 250, 244)
 }
 
 #message {
