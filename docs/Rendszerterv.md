@@ -213,7 +213,17 @@ tudják tartani a könyvek státuszát és fizikai állapotát, a tagok esetlege
   
   
 ### Menü-hierarchiák  
-  
+  FŐMENÜ:
+     -Kölcsönzés
+        -Tag kiválasztása
+	-Kikölcsönözni kívánt könyv vagy könyvek kiválasztása
+     -Tag felétele
+     -Könyv felvétele
+     -Tag módosítása
+     -Könyv módosítása
+     -Tag törlése
+     -Könyv törlése
+     -Kilépés
   
 ### Képernyőtervek  
   
