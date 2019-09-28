@@ -155,7 +155,24 @@ módosítandó rekordot, és átírni a módosítani kívánt értéket.
 A törlés nagyon hasonló folyamat a módosításhoz, viszont itt a kijelölt rekord minden
 értékét nullra állítjuk, az azonosítóján kívül.
 
+Folyamatábra az igényelt üzleti folyamatok szemléltetésére:
 
+|A könyvtári tag besétál|     | Felkeresi a könyvtár egy|     
+|a könyvtárba könyv     | --> | kölcsönzését felelős    | -->  
+|kölcsönzési céllal     |     | alkalmazottját          | 	
+
+|A tag elmondja a könyvtárosnak, |        /-----------------------------------\
+|hogy milyen könyvet vagy        | -->   <Elérető a könyv az adatbázis szerint?>
+|könyveket szeretne kikölcsönözni|        \-----------------------------------/
+						/                           \
+					   Igen/			     \Nem		      
+					      /				      \
+					     ˇ				       ˇ
+				|A könyvtáros átállitja a   |		|A könyvtáros közli a taggal,    |
+				|könyvet elérhetőről        |		|hogy a könyv sajnos nem elérhető|
+				|kikölcsönzöttre és közli   |		|ebben a könyvtárban		 |
+				|a taggal ,hogy mikorra kell|
+				|visszahozni  		    |
 
 ## Képernyőtervek
 
