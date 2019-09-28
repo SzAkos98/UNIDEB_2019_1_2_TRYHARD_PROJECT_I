@@ -5,6 +5,7 @@ package hu.unideb.inf.utils;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.io.File;
 
 
 public class HibernateUtils {
@@ -42,4 +43,18 @@ public class HibernateUtils {
         return factory;
     }
 
+    private static File getPropertyFile() {
+        File file = null;
+        try {
+            file = new File(System.getProperty("user.home") + "/try-hard-fx/db.properties");
+            if (file.exists()) {
+            } else {
+                file = null;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return file;
+
+    }
 }
