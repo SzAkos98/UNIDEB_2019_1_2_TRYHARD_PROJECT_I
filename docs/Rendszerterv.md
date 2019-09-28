@@ -497,3 +497,5 @@ T05: |Egy könyv állapotának kikölcsönzöttről való átállítása elérhe
 T06: |Egy könyv állapotának elérhetőről való átállítása kikölcsönzöttre  
 T07: |Egy tag felvétele a tagok adatbázisába  
 T08: |Egy tag eltávolítása a tagok adatbázisából
+T09: |Egy könyv kikölcsönzése
+T10: |Több könyv kikölcsönzése
