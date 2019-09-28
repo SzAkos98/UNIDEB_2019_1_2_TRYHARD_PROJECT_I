@@ -358,18 +358,18 @@ A projekt során használt fejlszetői eszközök:
   
 ### Architekturális terv  
 A rendszert felépítő alrendszerek
-(szoftver komponensek) lényegében a Java ,Sql,Mavan használata Java FX  kereténbelüli
+(szoftver komponensek) lényegében a Java ,Sql ,Mavan használata Java FX keretén belüli
 használata.Az alrendszerek meghatározása után a tulajdonságaikat kiaknázva vezérlési,
 valamint kommunikációs kapcsolatokat lehet létrehozni ez által. Ennek a megfelelő
-komponensek  és összekötök ismeretében magasszintü tervezetet jön létre. A rendszer
-szerepe az érdekelt szereplő kkommunikációjának lehetövé tétele ,a korai fejlesztási
-fázisok döntéseinek támogatása a követelmények tükrében és emellet igen fontos a Nagylépték" 
-újrafelhasználhatóság elösegítése. Ehez persze szükség van különféle forrásokra mint Üzleti és technológiai döntések
-eredménye ,meghatározó a környezet szerepe ,  fejlesztök céljai és stratégiája által
+komponensek és összekötök ismeretében magas szintű tervezetet jön létre. A rendszer
+szerepe az érdekelt szereplő kommunikációjának lehetővé tétele ,a korai fejlesztési
+fázisok döntéseinek támogatása a követelmények tükrében és emelet igen fontos a Nagy lépték"
+újrafelhasználhatóság elősegítése. Ehez persze szükség van különféle forrásokra mint Üzleti és technológiai döntések
+eredménye ,meghatározó a környezet szerepe , fejlesztők céljai és stratégiája által
 befolyásolt követelmények vezetnek különféle szoftver architektúrákhoz. 
-Mint minden folyamat ez is egy ciklús körül forog mint az :
-- architektúrát meghatározó fejlesztö szervezet szerkezetéböl
-- szereplök
+Mint minden folyamat ez is egy ciklus körül forog mint az :
+- architektúrát meghatározó fejlesztő szervezet szerkezetéből
+- szereplők
 - Követelmények
 - Technológiai környezet
 - A tervező tapasztalata
