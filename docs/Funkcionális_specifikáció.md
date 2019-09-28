@@ -142,24 +142,20 @@ módosítandó rekordot, és átírni a módosítani kívánt értéket.
 A törlés nagyon hasonló folyamat a módosításhoz, viszont itt a kijelölt rekord minden
 értékét nullra állítjuk, az azonosítóján kívül.
 
-Folyamatábra az igényelt üzleti folyamatok szemléltetésére:
+**Folyamatleírás az igényelt üzleti folyamatok szemléltetésére:**
 
-|A könyvtári tag besétál|     | Felkeresi a könyvtár egy|     
-|a könyvtárba könyv     | --> | kölcsönzését felelős    | -->  
-|kölcsönzési céllal     |     | alkalmazottját          | 	
+A könyvtári tag besétál a könyvtárba könyv kölcsönzési céllal.
+Majd felkeresi a könyvtár egy kölcsönzését felelős alkalmazottját.
+A tag elmondja a könyvtárosnak, hogy milyen könyvet vagy könyveket szeretne kikölcsönözni.
 
-|A tag elmondja a könyvtárosnak, |        /-----------------------------------\
-|hogy milyen könyvet vagy        | -->   <Elérető a könyv az adatbázis szerint?>
-|könyveket szeretne kikölcsönözni|        \-----------------------------------/
-						/                           \
-					   Igen/			     \Nem		      
-					      /				      \
-					     ˇ				       ˇ
-				|A könyvtáros átállitja a   |		|A könyvtáros közli a taggal,    |
-				|könyvet elérhetőről        |		|hogy a könyv sajnos nem elérhető|
-				|kikölcsönzöttre és közli   |		|ebben a könyvtárban		 |
-				|a taggal ,hogy mikorra kell|
-				|visszahozni  		    |
+_Elérhető a könyv?_
+
+Igen: A könyvtáros átállitja a könyvet elérhetőről kikölcsönzöttre és közli 
+a taggal ,hogy mikorra kell visszahozni a könyvet.
+
+Nem: A könyvtáros közli a taggal, hogy a könyv sajnos nem elérhető ebben a könyvtárban.
+
+
 
 ## Képernyőtervek
 
