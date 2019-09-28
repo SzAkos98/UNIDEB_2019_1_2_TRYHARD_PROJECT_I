@@ -21,7 +21,7 @@
             <Button fx:id="loan" onAction="#handleLoan" prefWidth="500" text="Kölcsönzés"/>
             <Button fx:id="newPerson" onAction="#handleNewPerson" prefWidth="500" text="Tag felvétele"/>
             <Button fx:id="newBook" onAction="#handleNewBook" prefWidth="500" text="Könyv felvétele"/>
-            <Button fx:id="modPerson" disable="true" onAction="#handleModPerson" prefWidth="500" text="Tag módosítása"/>
+            <Button fx:id="modPerson" onAction="#handleModPerson" prefWidth="500" text="Tag módosítása"/>
             <Button fx:id="modBook" onAction="#handleModBook" prefWidth="500" text="Könyv módosítása"/>
             <Button fx:id="deletePerson" onAction="#handleDeletePerson" prefWidth="500" text="Tag törlése"/>
             <Button fx:id="deleteBook" onAction="#handleDeleteBook" prefWidth="500" text="Könyv törlése"/>
