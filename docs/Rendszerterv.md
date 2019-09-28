@@ -70,34 +70,34 @@ törlésére.
   
 Az adatbázis kapcsolathoz szükséges egy adatbázis connection osztály,  
 amely létrehozza, fenntartja, és zárja az adatbáziskapcsolatot.  
- A funkciókhoz szükség van servlet osztályokra, amelyek felelnek a megfelelő  
+A funkciókhoz szükség van servlet osztályokra, amelyek felelnek a megfelelő  
 kérések felépítéséért. A felhasználóval való kommunikációt javafx-ben íródott  
 interface valósítja meg, ezek praktikusan külső fájlokból, és forrásból  
-módosított részekből állnak.  
- Az adatbázisnak két lényegi táblája a könyveket, és az ügyfeleket tartalmazza.  
-A kölcsönzés megvalósításához szükség van egy kapcsolótáblára is, amelynek  
-rekordjai egy-egy kölcsönzési folyamatot ábrázolnak, a kölcsönző azonosítójával,  
-a kölcsönzött könyv azonosítójával,valamint a kölcsönzési dátummal, és a  
-határidővel (visszahozási dátummal). A könyvek táblában eltároljuk a példány  
-azonosítóját, könyvtári azonosítóját (ami nem unique), címét, szerzőjét,  
-kiadóját, kiadás évét, illetve hogy épp elérhető-e. Az tag táblában az  
-adott személy kereszt és vezetéknevét, születési dátumát, lakcímét,  
-illetve az egyedi azonosítóját tároljuk. A törlés a foreign keyek miatt  
-az adott rekord azonosítóján kívüli értékeinek NULL-ra állításával történik,  
-mivel nem szeretnénk, hogy egy esetleges tag vagy könyv törlése után az ID-jük  
-felszabaduljon, mert így valótlan kölcsönzési adatok is keletkezhetnének.  
- A javafx-ben megvalósított UI-ban ha megadjuk egy könyvnek az azonosításához  
-szügséges információkat akkor a program visszaadja ,hogy a könyv megtalálható-e  
-a könyvtár könyveit tároló adatbázisában, illetve jelenleg ki van-e kölcsönözve  
-vagy kikölcsönözhető. Ha egy könyvet egy tag kikölcsönöz akkor lehetőség nyílik,  
-a könyv elérhetőségének értékét megváltoztatni.  
-A program tartalmazni fog egy olyan mezőt is ahol ha megadjuk egy tag azonosí-  
-tásához szügséges információkat akkor az applikáció meg tudja mondani azt, hogy  
-az illető tagja-e a könyvtárnak, továbbá meg lesz a lehetőség arra is ,hogy  
-hozzáadjunk a könyvtári tagok listájához olyan embert is aki még nem tag.  
-További funkció lesz például ,hogy a könyvtárosnak lehetősége nyílik a program  
-segítségével ellenőrízni ,hogy a könyvet mikor kölcsönözték ki illetve  
-a könyvtári tagnak meddig lesz esedékes visszahozni. Illetve megtekinthető  
+módosított részekből állnak.
+Az adatbázisnak két lényegi táblája a könyveket, és az ügyfeleket tartalmazza.
+A kölcsönzés megvalósításához szükség van egy kapcsolótáblára is, amelynek
+rekordjai egy-egy kölcsönzési folyamatot ábrázolnak, a kölcsönző azonosítójával, 
+a kölcsönzött könyv azonosítójával, valamint a kölcsönzési dátummal, és a 
+határidővel (visszahozási dátummal). A könyvek táblában eltároljuk a példány 
+azonosítóját, könyvtári azonosítóját (ami nem unique), címét, szerzőjét, 
+kiadóját, kiadás évét, illetve hogy épp elérhető-e. Az tag táblában az 
+adott személy kereszt és vezetéknevét, születési dátumát, lakcímét, 
+illetve az egyedi azonosítóját tároljuk. A törlés a foreign keyek miatt 
+az adott rekord azonosítóján kívüli értékeinek NULL-ra állításával történik, 
+mivel nem szeretnénk, hogy egy esetleges tag vagy könyv törlése után az ID-jük 
+felszabaduljon, mert így valótlan kölcsönzési adatok is keletkezhetnének. 
+ A javafx-ben megvalósított UI-ban ha megadjuk egy könyvnek az azonosításához 
+szügséges információkat akkor a program visszaadja ,hogy könyv megtalálható-e
+a könyvtár könyveit tároló adatbázisában, illetve jelenleg ki van-e kölcsönözve 
+vagy kikölcsönözhető. Ha egy könyvet egy tag kikölcsönöz akkor lehetőség nyílik, 
+a könyv elérhetőségének értékét megváltoztatni.
+A program tartalmazni fog egy olyan mezőt is ahol ha megadjuk egy tag azonosításához
+ szügséges információkat akkor az applikáció meg tudja mondani azt, hogy
+ az illető tagja-e a könyvtárnak, továbbá meg lesz a lehetőség arra is ,hogy 
+hozzáadjunk a könyvtári tagok listájához olyan embert is aki még nem tag. 
+További funkció lesz például ,hogy a könyvtárosnak lehetősége nyílik a program 
+segítségével ellenőrízni ,hogy a könyvet mikor kölcsönözték ki illetve 
+a könyvtári tagnak meddig lesz esedékes visszahozni. Illetve megtekinthető 
 lesz az is ,hogy ki által lett kikölcsönözve a könyv.
 
 
@@ -416,35 +416,3 @@ T05: |Egy könyv állapotának kikölcsönzöttről való átállítása elérhe
 T06: |Egy könyv állapotának elérhetőről való átállítása kikölcsönzöttre  
 T07: |Egy tag felvétele a tagok adatbázisába  
 T08: |Egy tag eltávolítása a tagok adatbázisából
-
-
-
-### A HTML használata a felhasználói felület elrendezéséhez  
-  
-A HTML UI használatával A HTML UI használatával lehetővé teszi a bonyolult   
-felhasználói felületek elhelyezését minimális zavarral; nagyszerű feladat az UI   
-felépítésének és elrendezésének elválasztása az üzleti logikától; könnyű írni;   
-és könnyen karbantartható illetve sok alkalmazás képes kiaknázni a HTML adta  
-táblázatós és egyszerűbb lehetőségeit.Az UI modell mellett az  űrlapmezőket   
-a végfelhasználóhoz is elrendezzük. Ez által könnyedén képesek leszünk  az   
-adatbázisban H2 konzolos alkalmazás segítségével könyvtárban kölcsönzésre    
-használható könyveket illetve az opcionális erre a célra felvet tagokat   
-adatbázisát is. Amikor az UI Model varázsló segítségével modellt generálunk   
-egy specifikációból, akkor  egy HTML 'snippet' fájlt is kapunk, amelyet   
-felhasználhatunk az űrlapmezők elrendezésére. A  és   
- (cellák) címkéket használjuk a specifikáción belüli mezők elrendezésének  
-megszervezésére.  A címkék barátságos nevet / feliratot adnak a vezérléshez.  
-Az címkék felhasználói felület elemekhez használhatók,  
-például a jelölőnégyzetekhez és a legördülő listákhoz.  Az címkék nagy   
-szövegterületekhez használhatók.  A <div class = "bbui-formák-mezőkészlet-oszlop">   
-címkék az űrlapmezők több oszlopba rendezésére szolgálnak, míg a   
-<div class = "bbui-formák-tabs-main"> címkék az űrlapmezők tabulátorokba rendezésére szolgálnak.  
-Használhatunk egy # MAP # elnevezési konvenciót az adat-specifikus metaadat-értékek   
-leképezéséhez a HTML alapú felhasználói felületen. Az alábbiakban a címkét   
-és annak id = "# MAP # NAME_caption" attribútumát használjuk a NAME űrlapa feliratának  
- megjelenítéséhez egy címkén  
-
- 
-/*  
-ÚJRATERVEZETT RENDSZERTERV  
-  
