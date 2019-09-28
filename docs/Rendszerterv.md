@@ -159,20 +159,31 @@ programot magabiztosan képes legyen használni.
   
 ###  Üzleti folyamatok  
   
-Egy könyvtári tag bemegy a könyvtárba      A könyvtári tag felkeresi az éppen ott    
-azzal a céllal,hogy könyvet szeretne   --> tartózkodó könyvári dolgozót aki képes az -->  
-kikölcsönözni              általunk készített programot használni  
-  
-A könyvtári alkalmazott megnézi a program    Ha megtalálható  A tagok tájékoztatják a visszahozás dátumáról    
-segítségével, hogy a kikölcsönözni kívánt    ---------------> majd távozhat a könyvel, továbbá a könyvtári alkalmazott  
-könyv megtalálható-e a könyvtárban                            a könyv állapotát a programban átállítja nem   
-   |                       kikölcsönzöttről kikölcsönzöttre  
-   | Ha nem található meg a könyvtárban  
-   |  
-   ˇ  
-A könyvtári alkalmazott tájékoztatja a tagot   
-,hogy a könyv jelenleg nem áll rendelkezésre  
-  
+Tag felvétele a rendszerbe:
+
+|Egy könyvtárban még nem    |     |Felkeresi az ügyfél a       |     
+|regisztrált ügyfél besétál | --> |könyvtári program kezelésére| --> 
+|a könyvtárba azzal a cállal|	  |felkészített alkalmazottat  |     
+|,hogy tag szeretne lenni   |         
+
+|Az alkalmazott elkéri a regisztrálni  |
+|kívánó szeménynek az adatait	       |
+|(Neve, Születési dátuma) és egy       |
+|ID segítségével felviszi a rendszerbe.|
+|(A tagfelvételre készült, 	       |
+|Tag felvétele menüpontot használja)   |
+
+-----------------------------------------------------------------------
+
+Tag törlése a rendszerből:
+
+|Egy könyvtárban regisztrált tag	|     |Felkeresi az ügyfél a       |	 
+|besétál a könyvtárba azzal a szándékkal| --> |könyvtári program kezelésére| -->
+|,hogy meg szeretné szűneteni a tagságát|     |felkészített alkalmazottat  |    
+
+|Az alkalmazott megkéri a tagot ,hogy	 |     |Itt kiválasztja a tagot a tagok		|
+|azonosítsa magát majd az alkalmazott    | --> |listájából majd a töröl gombra		|
+|belép a program Tag törlése menüpontjába|     |kattintva eltávolítja őt az adatbázisból|
   
 ###  Üzleti entitások  
   
