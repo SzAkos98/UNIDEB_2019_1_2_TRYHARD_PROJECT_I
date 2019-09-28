@@ -248,10 +248,10 @@ feladatuk a Tagok értesítése problémák esetén. Hivatalos munkatársai a k�
   
   
 ### Menü-hierarchiák  
-  FŐMENÜ:
-     -Kölcsönzés
+    FŐMENÜ:
+     - Kölcsönzés
         -Tag kiválasztása
-	-Kikölcsönözni kívánt könyv vagy könyvek kiválasztása
+	 -Kikölcsönözni kívánt könyv vagy könyvek kiválasztása
      -Tag felétele
      -Könyv felvétele
      -Tag módosítása
@@ -455,15 +455,6 @@ Tag:
 
 #### Logikai adatmodell  
 
-   |Könyv           |         |Kölcsönzés                            |        |Tag                  |
-   |----------------|         |--------------------------------------|        |---------------------|
-   |ID Primary key  |         |KolcsonzesID PRIMARY KEY, UNIQUE      |        |unique INTEGER       |    
-   |LibID VARCHAR   |         |KonyvID FOREIGN KEY(KONYV.ID) INTEGER |        |Vezeteknev VARCHAR   |                      
-   |Szerzo VARCHAR  |         |TagID FOREIGN KEY(TAG.ID) INTEGER     |        |Keresztnev VARCHAR   |                 
-   |Cim  VARCHAR    |         |KolcsonzesDatum  DATE                 |        |Születési datum  DATE|                     
-   |Kiado VARCHAR   |         |                                      |        |Lakcim VARCHAR       |             
-   |KiadasEve DATE  |         |Hatarido DATE                         |                     
-   |Elerheto BOOLEAN|         |VisszahozasDatum DATE                 |    
    
 ### Implementációs terv  
 
