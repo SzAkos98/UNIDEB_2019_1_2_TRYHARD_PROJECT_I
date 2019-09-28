@@ -313,8 +313,8 @@ A jelen esetben a kölcsönzőben szükség van:
         + a lekérdező szűrők szövegmezői
         + navigációs gombok.
   
- ### Fizikai környezet  
-
+  
+### Fizikai környezet  
   
 #### Hardver és hálózati topológia  
 A gép hardverje 8 GB DDR4 -es RAMból, egy Intel  
@@ -352,7 +352,16 @@ A projekt során a az MVC (model-view-controller) modellt fogjuk alkalmazni.
   
 ### Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai  
 
-
+A készítendő szoftver két alkalmazási rétegből áll. Ezek a Felhasználói réteg és 
+a Kontroller réteg. A Felhasználói réteg egy grafikus felhasználói felületet biztosít
+a könyvtár dolgozói számára. Főbb komponensei a 'Főmenü' és a menüben szereplő alpontok
+amelyek már elérést biztoosítanak az egyes funkciókhoz a Kontroller rétegben. Az alpontok
+mind egy-egy új ablakra vezetnek, melyeken grafikus felületen használhatóak a funkciók. 
+Az alpontok között kivételt képez a 'Kilépés' menüpont, amely bezárja az alkalmazást. A
+Kontroller réteg főbb komponensei a vezérlő utasítások, melyek az adatbázisba történő
+módosításért felelnek. A másik fő komponens az pedig maga az adatbázis. Minden egyes 
+funkcióhoz tartozik egy Felhasználói réteg és egy Kontroller réteg. Ezek a porgramkódban
+is önálló egymással közvetlen kapcsolatban álló állományok.
   
 ### Rendszer bővíthetősége  
   
