@@ -204,7 +204,7 @@ tudják tartani a könyvek státuszát és fizikai állapotát, a tagok esetlege
   
 ### Funkcionális terv  
   
- ### Rendszerszereplők  
+### Rendszerszereplők  
   
 ### Rendszerhasználati esetek és lefutásaik  
   
@@ -227,8 +227,72 @@ tudják tartani a könyvek státuszát és fizikai állapotát, a tagok esetlege
   
 ### Képernyőtervek  
   
+A képernyőknek vannak közös elemei, ezek a navigációs gombok, melyek aktiválják
+az adott funkciót, illetve visszalépnek a menübe.
+
+A jelen esetben a kölcsönzőben szükség van:
+
+   - #### Főmenü
+        
+    - Kölcsönzés
+    - Új tag
+    - Új könyv
+    - Tag módosítás
+    - Könyv módosítás
+    - Tag törlés
+    - Könyv törlés
+    - Kilépés
+   
+   - #### Kölcsönzési folyamat indítása
+      
+      Szükség van az adott könyv/ek és a kölcsönző tag rekordjaira is, ezért
+      mindkettőre külön külön szűrni tudni kell.
+      + A tag adataira szűrő mezők
+      + A taghoz tartozó szűrt választható rekordok listája
+      + A könyv szűrői
+      + A könyvek közti találatok a szűrések alapján
+      + Az épp hozzáadandó könyvek listája
+
+   - #### Új könyv felvétele
+   
+        + A rekordok táblázatos formában
+        + A rekord attribútumainak megfelelő számú szöveges mező,
+        + navigációs gombok.
+   
+   - #### Új tag felvétele
+   
+        + A rekordok táblázatos formában
+        + A rekord attribútumainak megfelelő számú szöveges mező,
+        + navigációs gombok.
+        
+   -  #### Meglévő könyv módosítása
+   
+         + A rekordok táblázatos formában
+         + A rekord attribútumainak megfelelő számú szöveges mező,
+         + navigációs gombok.      
+   
+   -  #### Meglévő tag módosítása
+   
+         + A rekordok táblázatos formában
+         + A rekord attribútumainak megfelelő számú szöveges mező,
+         + navigációs gombok.  
+            
+   - #### Meglévő könyv törlése
+        Külön képernyőn a véletlen törlések elkerülésére. A törléshez rá
+        kell szűrni a rekordra vagy kiválasztani a táblázatból.
+        + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
+        + a lekérdező szűrők szövegmezői
+        + navigációs gombok.
+   
+   - #### Meglévő tag törlése
+        Külön képernyőn a véletlen törlések elkerülésére. A törléshez rá
+        kell szűrni a rekordra vagy kiválasztani a táblázatból.
+        + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
+        + a lekérdező szűrők szövegmezői
+        + navigációs gombok.
   
-### Fizikai környezet  
+ ### Fizikai környezet  
+
   
 #### Hardver és hálózati topológia  
 A gép hardverje 8 GB DDR4 -es RAMból, egy Intel  
@@ -236,7 +300,7 @@ Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060
 típusú videókártyából áll. A számítógép számára szükség esetén internet elérés biztosított.
   
   
-### Fizikai alrendszerek  
+#### Fizikai alrendszerek  
   
 A Fizikai környezet nem rendelkezik alrendszerekkel.
   
@@ -288,6 +352,7 @@ Könyv        | Kölcsönzés   |Tag
    Kiado VARCHAR  |  |   Lakcim VARCHAR                    
    KiadasEve DATE |Hatarido DATE     |                     
    Elerheto BOOLEAN|VisszahozasDatum DATE        |   
+   
 ### Implementációs terv  
   
 ### Perzisztencia-osztályok  
