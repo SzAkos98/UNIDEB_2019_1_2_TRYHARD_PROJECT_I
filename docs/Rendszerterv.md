@@ -483,6 +483,11 @@ Perzisztencia osztályok:
    -HibernateUtils
   
 ### Üzleti logika osztályai  
+Az üzleti logika a háromrétegű adatkezelő alkalmazások középső rétege, amely meghatározza az alkalmazás működésének logikáját.
+A háromrétegű architektúra az alkalmazást három különálló rétegre osztja fel. E rétegek komponensei önállóan léteznek, és együttműködésük során egyidejűleg több különböző alkalmazásnak is a részei lehetnek.
+Az adatbázislogika az adatok nyers tárolását végzi. Semmilyen információval nem rendelkezik az adatok feldolgozásával vagy megjelenítésével kapcsolatban.
+Az ügyviteli (üzleti) logika az alkalmazás logikáját, működési szabályait határozza meg. Semmilyen információval nem rendelkezik az adatok tárolásával vagy megjelenítésével kapcsolatban.
+A felhasználói interfész feladata az ügyviteli logika által küldött adatok formázása és megjelenítése. Biztosítja a felhasználó hozzáférését az ügyviteli logika szolgáltatásaihoz. Sohasem kerül közvetlen kapcsolatba az adatbázissal, és nem végez semmilyen műveletet az adatokon.
   
   
 ### Kliensoldal osztályai  
