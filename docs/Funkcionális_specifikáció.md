@@ -100,6 +100,33 @@ a kölcsönző nevét és a könyv azonosítóját, ezt a rendszer eltárolja, m
  adatbázisban. A 'Tag törlése' és a 'Könyv törlése' menüpontok használhatók tételek törlésére az
  adatbázisból. A 'Kilépés' menüponttal zárható be a program.
 
+Folyamatábra a jelenlegi üzleti folyamatok szemléltetésere:
+
+|A könyvtári tag besétál|     | Felkeresi a könyvtár egy|
+|a könyvtárba könyv     | --> | kölcsönzését felelős    | -->
+|kölcsönzési céllal     |     | alkalmazottját          | 
+
+|A tag elmondja a könyvtárosnak, |      /--------------\  Igen  |A könyvtáros átadja a tagnak  |
+|hogy milyen könyvet vagy        | --> <Elérető a könyv?> ----> |a könyvet és felírja ,hogy    |
+|könyveket szeretne kikölcsönözni|      \--------------/        |a könyvet kiadta, illetve     |
+						|               |tájékoztatást ad a visszahozás|
+						|Nem   		|dátumáról   		       |
+						|
+						|
+						ˇ
+					----------------
+				      /A könyv elérhető a\  Igen |A könyvtáros tájékoztatást ad |
+				     <könyvtár könyveinek > ---->|arról ,hogy a könyv mikor lesz|
+				      \a listájában?     /       |ismét elérhető  		|
+					----------------
+						|					
+						|Nem
+						|
+						ˇ
+				  |A könyvtáros közli ,hogy a|
+				  |könyv sajnos nem elérhető |
+				  |ebben a könyvtárban	     |
+
 ## Igényelt üzleti folyamatok
 
 
@@ -129,32 +156,7 @@ A törlés nagyon hasonló folyamat a módosításhoz, viszont itt a kijelölt r
 értékét nullra állítjuk, az azonosítóján kívül.
 
 
-Folyamatábra a jelenlegi üzleti folyamatok szemléltetésere:
 
-|A könyvtári tag besétál|     | Felkeresi a könyvtár egy|
-|a könyvtárba könyv     | --> | kölcsönzését felelős    | -->
-|kölcsönzési céllal     |     | alkalmazottját          | 
-
-|A tag elmondja a könyvtárosnak, |      /--------------\  Igen  |A könyvtáros átadja a tagnak  |
-|hogy milyen könyvet vagy        | --> <Elérető a könyv?> ----> |a könyvet és felírja ,hogy    |
-|könyveket szeretne kikölcsönözni|      \--------------/        |a könyvet kiadta, illetve     |
-						|               |tájékoztatást ad a visszahozás|
-						|Nem   		|dátumáról   		       |
-						|
-						|
-						ˇ
-					----------------
-				      /A könyv elérhető a\  Igen |A könyvtáros tájékoztatást ad |
-				     <könyvtár könyveinek > ---->|arról ,hogy a könyv mikor lesz|
-				      \a listájában?     /       |ismét elérhető  		|
-					----------------
-						|					
-						|Nem
-						|
-						ˇ
-				  |A könyvtáros közli ,hogy a|
-				  |könyv sajnos nem elérhető |
-				  |ebben a könyvtárban	     |
 ## Képernyőtervek
 
 A képernyőknek vannak közös elemei, ezek a navigációs gombok, melyek aktiválják
