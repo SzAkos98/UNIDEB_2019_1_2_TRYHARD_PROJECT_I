@@ -158,34 +158,35 @@ megvan a végzettsége és a tudása ahoz ,hogy TRYHARD csapat által készítet
 programot magabiztosan képes legyen használni.  
   
 ###  Üzleti folyamatok  
-  
-Tag felvétele a rendszerbe:
+Két példa az üzleti folyamatokra:
 
-|Egy könyvtárban még nem    |     |Felkeresi az ügyfél a       |     
-|regisztrált ügyfél besétál | --> |könyvtári program kezelésére| --> 
-|a könyvtárba azzal a cállal|	  |felkészített alkalmazottat  |     
-|,hogy tag szeretne lenni   |         
+**Tag felvétele a rendszerbe:**
 
-|Az alkalmazott elkéri a regisztrálni  |
-|kívánó szeménynek az adatait	       |
-|(Neve, Születési dátuma) és egy       |
-|ID segítségével felviszi a rendszerbe.|
-|(A tagfelvételre készült, 	       |
-|Tag felvétele menüpontot használja)   |
+1.  Egy könyvtárban még nem regisztrált ügyfél besétál a könyvtárba azzal a cállal
+,hogy tag szeretne lenni.
+
+2. Felkeresi az ügyfél a könyvtári program kezelésére felkészített alkalmazottat.
+
+3. Az alkalmazott elkéri a regisztrálni kívánó szeménynek az adatait 
+(Neve, Születési dátuma) és egy ID segítségével felviszi a rendszerbe.
+(A tagfelvételre készült, _Tag felvétele_ menüpontot használja
 
 -----------------------------------------------------------------------
 
-Tag törlése a rendszerből:
+**Tag törlése a rendszerből:**
 
-|Egy könyvtárban regisztrált tag	|     |Felkeresi az ügyfél a       |	 
-|besétál a könyvtárba azzal a szándékkal| --> |könyvtári program kezelésére| -->
-|,hogy meg szeretné szűneteni a tagságát|     |felkészített alkalmazottat  |    
+1. Egy könyvtárban regisztrált tag besétál a könyvtárba azzal a szándékkal
+,hogy meg szeretné szűneteni a tagságát.
 
-|Az alkalmazott megkéri a tagot ,hogy	 |     |Itt kiválasztja a tagot a tagok		|
-|azonosítsa magát majd az alkalmazott    | --> |listájából majd a töröl gombra		|
-|belép a program Tag törlése menüpontjába|     |kattintva eltávolítja őt az adatbázisból|
-  
-  
+2. Felkeresi az ügyfél a könyvtári program kezelésére felkészített alkalmazottat.
+
+3. Az alkalmazott megkéri a tagot ,hogy azonosítsa magát majd az alkalmazott belép
+ a program Tag törlése menüpontjába.
+ 
+4. Itt kiválasztja a tagot a tagok listájából majd a töröl gombra kattintva
+ eltávolítja őt az adatbázisból
+
+ 
 ###  Üzleti entitások  
   
 Az üzletben résztvevő entitások:  
