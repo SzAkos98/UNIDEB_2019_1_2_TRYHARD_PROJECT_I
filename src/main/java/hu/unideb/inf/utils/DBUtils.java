@@ -10,6 +10,7 @@ package hu.unideb.inf.utils;
         import org.hibernate.Session;
         import org.hibernate.Transaction;
 
+        import javax.persistence.Entity;
         import javax.persistence.PersistenceException;
         import javax.persistence.Query;
 
@@ -44,7 +45,37 @@ public class DBUtils {
         final int i = 0;
         return i;
     }
-    public static ObservableList<Book> runQuery(String command) {
+
+    public static ObservableList runQuery(String command, Tables tables){
+        if(tables == Tables.BOOK){
+            return runBookQuery(command);
+        }
+        else if(tables == Tables.PERSON){
+            return runPersonQuery(command);
+        }
+        else {
+            return runLoanQuery(command);
+        }
+    }
+
+    private static ObservableList runLoanQuery(String command) {
+        List<Loan> loan = null;
+        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
+            if (command == null || command.equals("")) {
+                loan = session.createQuery(" from Loan ", Loan.class).list();
+            } else {
+                loan = session.createQuery(command, Loan.class).list();
+            }
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+        return FXCollections.observableList(loan);
+    }
+
+    private static ObservableList<Book> runBookQuery(String command) {
         List<Book> book = null;
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
             if (command == null || command.equals("")) {
@@ -59,6 +90,23 @@ public class DBUtils {
             e.printStackTrace();
         }
         return FXCollections.observableList(book);
+    }
+
+    private static ObservableList<Person> runPersonQuery(String command) {
+        List<Person> person = null;
+        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
+            if (command == null || command.equals("")) {
+                person = session.createQuery(" from Person ", Person.class).list();
+            } else {
+                person = session.createQuery(command, Person.class).list();
+            }
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+        return FXCollections.observableList(person);
     }
 
     public static void persist(Object object) throws PersistenceException {

@@ -4,6 +4,7 @@ import hu.unideb.inf.main.MainApp;
 import hu.unideb.inf.model.Book;
 import hu.unideb.inf.utils.DBUtils;
 import hu.unideb.inf.utils.DataTypes;
+import hu.unideb.inf.utils.Tables;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
@@ -84,7 +85,7 @@ public class FXUtils {
     }
 
     public static void refreshBookTableView(TableView<Book> tableView){
-        tableView.setItems(DBUtils.runQuery(""));
+        tableView.setItems(DBUtils.runQuery("", Tables.BOOK));
         TableColumn<Book, Long> bookId = new TableColumn<>("Azonosító");
         bookId.setCellValueFactory(new PropertyValueFactory("id"));
 
