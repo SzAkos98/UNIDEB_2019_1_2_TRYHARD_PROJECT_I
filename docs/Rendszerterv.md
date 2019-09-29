@@ -246,6 +246,8 @@ feladatuk a Tagok értesítése problémák esetén. Hivatalos munkatársai a k�
 
 ![Kolcsonzes](kolcsonzes.png)
 
+![Folyamatok](folyamatok.png)
+
 ### Menü-hierarchiák  
     FŐMENÜ:
      - Kölcsönzés
