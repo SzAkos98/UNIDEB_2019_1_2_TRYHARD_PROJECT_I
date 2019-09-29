@@ -20,9 +20,9 @@
                     <children>
                         <Label text="ID:" />
                         <TextField fx:id="ID" />
-                        <Label text="Vezetéknév: " />
+                        <Label text="Keresztnév: " />
                         <TextField fx:id="surname" />
-                        <Label text="Keresztnév" />
+                        <Label text="Vezetéknév" />
                         <TextField fx:id="firstName" />
                         <Label text="Születési Dátum: " />
                         <TextField fx:id="birthDate" promptText="yyyy-mm-dd" />
