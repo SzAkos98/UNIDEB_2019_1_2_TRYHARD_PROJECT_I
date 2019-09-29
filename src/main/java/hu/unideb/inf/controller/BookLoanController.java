@@ -95,7 +95,6 @@ public class BookLoanController {
 
 
     public void handleDeleteBook(ActionEvent actionEvent) {
-        System.out.println("update Loan set backDate = " + new java.sql.Date(new Date().getTime()) + " Where bookID = " + backBook.getId() + " and backDate is null");
         DBUtils.updateTable("update Loan set backDate = \'" + new java.sql.Date(new Date().getTime()) + "\' Where bookID = " + backBook.getId() + " and backDate is null");
         refreshTables();
         addToLoan.disableProperty().setValue(true);
