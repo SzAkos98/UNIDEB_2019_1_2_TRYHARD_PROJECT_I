@@ -1,13 +1,15 @@
 package hu.unideb.inf.utils;
 
 
+        import hu.unideb.inf.model.Book;
+        import hu.unideb.inf.model.Loan;
         import hu.unideb.inf.model.Person;
         import javafx.collections.FXCollections;
         import javafx.collections.ObservableList;
         import org.hibernate.Session;
         import org.hibernate.Transaction;
         import javax.persistence.Query;
-        import java.awt.print.Book;
+
 
         import java.util.List;
 
@@ -41,7 +43,7 @@ public class DBUtils {
         List<Book> book = null;
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
             if (command == null || command.equals("")) {
-                book = session.createQuery("select id from Book ", Book.class).list();
+                book = session.createQuery(" from Book ", Book.class).list();
             } else {
                 book = session.createQuery(command, Book.class).list();
             }
@@ -53,5 +55,21 @@ public class DBUtils {
         }
         return FXCollections.observableList(book);
     }
+
+    public static void persist(Object object) {
+        transaction = null;
+        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
+            transaction = session.beginTransaction();
+            session.save(object);
+            transaction.commit();
+
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+        }
+
+    }
+
 
 }
