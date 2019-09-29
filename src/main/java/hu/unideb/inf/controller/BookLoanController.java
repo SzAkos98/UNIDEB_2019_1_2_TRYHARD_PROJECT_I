@@ -95,7 +95,6 @@ public class BookLoanController {
 
 
     public void handleDeleteBook(ActionEvent actionEvent) {
-        System.out.println("update Loan set backDate = " + new java.sql.Date(new Date().getTime()) + " Where bookID = " + backBook.getId() + " and backDate is null");
         DBUtils.updateTable("update Loan set backDate = \'" + new java.sql.Date(new Date().getTime()) + "\' Where bookID = " + backBook.getId() + " and backDate is null");
         refreshTables();
         addToLoan.disableProperty().setValue(true);
@@ -103,7 +102,7 @@ public class BookLoanController {
     }
 
     private void refreshTables() {
-        refreshBookTableView(table, "from Book where id in (select bookID From Loan WHERE backDate is not null) or id not in (select bookID From Loan WHERE backDate is null)");
+        refreshBookTableView(table, "from Book where id not in (select bookID From Loan where backDate is null) and id in (select id from Book)");
         refreshBookTableView(cart, "from Book where id in (select bookID From Loan WHERE backDate is null and personID = "+ LoanController.person.getId()+ ")");
     }
 }
