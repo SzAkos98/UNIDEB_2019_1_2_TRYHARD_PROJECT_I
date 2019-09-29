@@ -78,7 +78,7 @@ public class NewPersonController {
 
         DBUtils.persist(person);
         refresPersonTableView(table,"");
-//        clearFields();
+        clearFields();
     }
 
 
@@ -86,5 +86,12 @@ public class NewPersonController {
     public void handleBack(ActionEvent actionEvent) throws IOException {
         configScene(loadFxml("/fxml/MainMenu.fxml"));
 
+    }
+
+    private void clearFields(){
+        for(Map.Entry i : filterFields.entrySet()){
+            TextField textField = (TextField) i.getKey();
+            textField.setText("");
+        }
     }
 }

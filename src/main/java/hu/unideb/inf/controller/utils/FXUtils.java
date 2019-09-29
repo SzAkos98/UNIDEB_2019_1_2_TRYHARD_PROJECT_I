@@ -117,7 +117,7 @@ public class FXUtils {
         personLastName.setCellValueFactory(new PropertyValueFactory("lastName"));
 
         TableColumn<Person, Date> personBirthDate = new TableColumn<>("Születésnap");
-        personBirthDate.setCellValueFactory(new PropertyValueFactory("BirthDate"));
+        personBirthDate.setCellValueFactory(new PropertyValueFactory("birthDate"));
 
         TableColumn<Person, String> personAdress = new TableColumn<>("Cím");
         personAdress.setCellValueFactory(new PropertyValueFactory("adress"));
@@ -127,6 +127,6 @@ public class FXUtils {
     }
 
    public static java.sql.Date parseDate(String string) throws ParseException {
-       return new java.sql.Date(new SimpleDateFormat("yyyy.MM.dd").parse(string).getTime());
+       return new java.sql.Date(new SimpleDateFormat("yyyy-MM-dd").parse(string).getTime());
    }
 }
