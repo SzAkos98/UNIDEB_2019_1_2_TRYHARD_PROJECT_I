@@ -1,20 +1,21 @@
 package hu.unideb.inf.utils;
 
 
-import hu.unideb.inf.model.Person;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import javax.persistence.Query;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+        import hu.unideb.inf.model.Person;
+        import javafx.collections.FXCollections;
+        import javafx.collections.ObservableList;
+        import org.hibernate.Session;
+        import org.hibernate.Transaction;
+        import javax.persistence.Query;
+        import java.awt.print.Book;
+
+        import java.util.List;
 
 
 public class DBUtils {
     private static Transaction transaction;
 
-    private static final String CON_STR = "jdbc:h2:file:~/db.properties;AUTO_SERVER=TRUE";
+
 
 
 
@@ -36,19 +37,21 @@ public class DBUtils {
         final int i = 0;
         return i;
     }
-    public void mbushTabelen(){
-        Thread t = new Thread(new Runnable() {
-            public void run() {
-                try {
-                    Connection conn = DriverManager.getConnection(CON_STR, "test", "test");
-                    Statement stmt = conn.createStatement();
-                    ResultSet rs = stmt.executeQuery("select * from model.book");
-
-                }catch (Exception ex){ex.printStackTrace();}
+    public static ObservableList<Book> runQuery(String command) {
+        List<Book> book = null;
+        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
+            if (command == null || command.equals("")) {
+                book = session.createQuery("select id from Book ", Book.class).list();
+            } else {
+                book = session.createQuery(command, Book.class).list();
             }
-        });
-        
-        t.start();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+        return FXCollections.observableList(book);
     }
 
 }
