@@ -18,8 +18,8 @@
             <children>
                 <HBox spacing="10.0">
                     <children>
-                        <Label text="Könyvtár ID:" />
-                        <TextField fx:id="LibID" />
+                        <Label text="Könyv ID:" />
+                        <TextField fx:id="id" />
                         <Label text="Szerző: " />
                         <TextField fx:id="author" />
                         <Label text="Cím:" />
