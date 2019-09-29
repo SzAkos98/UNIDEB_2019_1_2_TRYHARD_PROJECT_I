@@ -28,6 +28,9 @@ public class Loan {
     @Column
     private Date backDate;
 
+    public Loan() {
+    }
+
     public Long getId() {
         return id;
     }
