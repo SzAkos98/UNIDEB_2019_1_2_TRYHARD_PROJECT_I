@@ -1,9 +1,11 @@
 package hu.unideb.inf.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.sql.Date;
 
+@Entity
 public class Person {
 
     @Id
@@ -28,6 +30,9 @@ public class Person {
         this.lastName = lastName;
         this.birthDate = birthDate;
         this.adress = adress;
+    }
+
+    public Person() {
     }
 
     public Long getId() {
