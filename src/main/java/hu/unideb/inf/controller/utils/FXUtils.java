@@ -79,12 +79,8 @@ public class FXUtils {
         if(type == DataTypes.NUMBER){
             return value.getText();
         }
-        else if(type == DataTypes.STRING){
+        else {
             return "\'" + value.getText() + "\'";
-        }
-        else{
-            //todo handle date
-            return "null";
         }
     }
 
@@ -115,7 +111,7 @@ public class FXUtils {
         personId.setCellValueFactory(new PropertyValueFactory("id"));
 
         TableColumn<Person, String> personFirstName = new TableColumn<>("Keresztnév");
-        personFirstName.setCellValueFactory(new PropertyValueFactory("firstName "));
+        personFirstName.setCellValueFactory(new PropertyValueFactory("firstName"));
 
         TableColumn<Person, String> personLastName = new TableColumn<>("Vezetéknév");
         personLastName.setCellValueFactory(new PropertyValueFactory("lastName"));
@@ -124,13 +120,13 @@ public class FXUtils {
         personBirthDate.setCellValueFactory(new PropertyValueFactory("BirthDate"));
 
         TableColumn<Person, String> personAdress = new TableColumn<>("Cím");
-        personAdress.setCellValueFactory(new PropertyValueFactory("Adress "));
+        personAdress.setCellValueFactory(new PropertyValueFactory("adress"));
 
 
         tableView.getColumns().setAll(personId ,personFirstName , personLastName , personBirthDate ,personAdress);
     }
 
-   private static java.sql.Date parseDate(String string) throws ParseException {
+   public static java.sql.Date parseDate(String string) throws ParseException {
        return new java.sql.Date(new SimpleDateFormat("yyyy.MM.dd").parse(string).getTime());
    }
 }

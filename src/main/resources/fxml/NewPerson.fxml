@@ -23,9 +23,11 @@
                         <Label text="Vezetéknév: " />
                         <TextField fx:id="surname" />
                         <Label text="Keresztnév" />
-                        <TextField fx:id="firstname" />
+                        <TextField fx:id="firstName" />
                         <Label text="Születési Dátum: " />
                         <TextField fx:id="birthDate" />
+                        <Label text="Lakcím: " />
+                        <TextField fx:id="adress" />
                     </children>
                 </HBox>
                 <HBox alignment="CENTER_RIGHT" spacing="10.0">
