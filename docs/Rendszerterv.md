@@ -243,22 +243,21 @@ feladatuk a Tagok értesítése problémák esetén. Hivatalos munkatársai a k�
   
 ### Rendszerhasználati esetek és lefutásaik  
   
-  
-### Határosztályok  
-  
-  
+
+![Kolcsonzes](kolcsonzes.png)
+
 ### Menü-hierarchiák  
     FŐMENÜ:
      - Kölcsönzés
-        -Tag kiválasztása
-	 -Kikölcsönözni kívánt könyv vagy könyvek kiválasztása
-     -Tag felétele
-     -Könyv felvétele
-     -Tag módosítása
-     -Könyv módosítása
-     -Tag törlése
-     -Könyv törlése
-     -Kilépés
+        - Tag kiválasztása
+	 - Kikölcsönözni kívánt könyv vagy könyvek kiválasztása
+     - Tag felétele
+     - Könyv felvétele
+     - Tag módosítása
+     - Könyv módosítása
+     - Tag törlése
+     - Könyv törlése
+     - Kilépés
   
 ### Képernyőtervek  
   
@@ -348,14 +347,7 @@ A projekt során használt fejlszetői eszközök:
 
 ### Keretrendszer  
   
-- Java FX  
-  
-### Absztrakt domain modell  
-  
-### Domain specifikáció, fogalmak  
-  
-###  Absztrakt komponensek, ezek kapcsolatai  
-  
+- Java FX   
   
 ### Architekturális terv  
 A rendszert felépítő alrendszerek
@@ -443,6 +435,9 @@ Tag:
    -Vezetéknév
    -Születési dátum
 
+
+#### Logikai adatmodell  
+
    Könyv           | Kölcsönzés                            |Tag  
    ----------------|---------------------------------------|---------  
    ID Primary key  |KolcsonzesID PRIMARY KEY, UNIQUE       |unique INTEGER           
@@ -451,18 +446,18 @@ Tag:
    Cim  VARCHAR    | KolcsonzesDatum  DATE                 |Születési datum  DATE                     
    Kiado VARCHAR   |                                       |   Lakcim VARCHAR                    
    KiadasEve DATE  |Hatarido DATE                          |                     
-   Elerheto BOOLEAN|VisszahozasDatum DATE                  |    
-
-#### Logikai adatmodell  
-
+   |               |VisszahozasDatum DATE                  |    
    
 ### Implementációs terv  
 
-A tervezési folyamatban célszerű az általános logikai felépítést mindig valamilyen grafikus reprezentációval
+A tervezési folyamatban célszerű az általános logikai felépítést mindig valamilyen 
+grafikus reprezentációval
 modellezni, mert az emberi agy vizualizált objektumokkal könnyebben dolgozik.
-Az UML (=Unified Modeling Language), modellező nyelv segítségével a specifikációt és a tervezést is grafikus
+Az UML (=Unified Modeling Language), modellező nyelv segítségével a specifikációt és 
+a tervezést is grafikus
 formában, diagramok segítségével tudjuk dokumentálni. A követelményspecifikációban a használati
-esetdiagramokat (use case), az adatbázis tervezésnél az adatbázis diagramot, az OOP tervezésnél az
+esetdiagramokat (use case), az adatbázis tervezésnél az adatbázis diagramot, az OOP 
+tervezésnél az
 osztálydiagramot és objektumdiagramot valamint a szekvenciadiagramot, aktivitásdiagramot
 használhatjuk.
 
@@ -475,16 +470,19 @@ Perzisztencia osztályok:
    -HibernateUtils
   
 ### Üzleti logika osztályai  
-Az üzleti logika a háromrétegű adatkezelő alkalmazások középső rétege, amely meghatározza az alkalmazás működésének logikáját.
-A háromrétegű architektúra az alkalmazást három különálló rétegre osztja fel. E rétegek komponensei önállóan léteznek, és együttműködésük során egyidejűleg több különböző alkalmazásnak is a részei lehetnek.
-Az adatbázislogika az adatok nyers tárolását végzi. Semmilyen információval nem rendelkezik az adatok feldolgozásával vagy megjelenítésével kapcsolatban.
-Az ügyviteli (üzleti) logika az alkalmazás logikáját, működési szabályait határozza meg. Semmilyen információval nem rendelkezik az adatok tárolásával vagy megjelenítésével kapcsolatban.
-A felhasználói interfész feladata az ügyviteli logika által küldött adatok formázása és megjelenítése. Biztosítja a felhasználó hozzáférését az ügyviteli logika szolgáltatásaihoz. Sohasem kerül közvetlen kapcsolatba az adatbázissal, és nem végez semmilyen műveletet az adatokon.
-  
-  
-### Kliensoldal osztályai  
-  
-  
+Az üzleti logika a háromrétegű adatkezelő alkalmazások középső rétege, amely meghatározza 
+az alkalmazás működésének logikáját.
+A háromrétegű architektúra az alkalmazást három különálló rétegre osztja fel. E rétegek 
+komponensei önállóan léteznek, és együttműködésük során egyidejűleg több különböző 
+alkalmazásnak is a részei lehetnek.
+Az adatbázislogika az adatok nyers tárolását végzi. Semmilyen információval nem rendelkezik 
+az adatok feldolgozásával vagy megjelenítésével kapcsolatban.
+Az ügyviteli (üzleti) logika az alkalmazás logikáját, működési szabályait határozza meg. 
+Semmilyen információval nem rendelkezik az adatok tárolásával vagy megjelenítésével kapcsolatban.
+A felhasználói interfész feladata az ügyviteli logika által küldött adatok formázása és
+megjelenítése. Biztosítja a felhasználó hozzáférését az ügyviteli logika szolgáltatásaihoz. 
+Sohasem kerül közvetlen kapcsolatba az adatbázissal, és nem végez semmilyen műveletet az 
+adatokon.
   
 ### Tesztterv  
 Kód|Leírás|  
