@@ -2,6 +2,7 @@ package hu.unideb.inf.controller.utils;
 
 import hu.unideb.inf.main.MainApp;
 import hu.unideb.inf.model.Book;
+import hu.unideb.inf.model.Person;
 import hu.unideb.inf.utils.DBUtils;
 import hu.unideb.inf.utils.DataTypes;
 import hu.unideb.inf.utils.Tables;
@@ -17,6 +18,7 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.Optional;
 
 public class FXUtils {
@@ -103,5 +105,26 @@ public class FXUtils {
 
 
         tableView.getColumns().setAll(bookId, bookAuthor, bookTitle, bookPublisher, bookpublishyear);
+    }
+
+    public static void refresPersonTableView(TableView<Person> tableView){
+        tableView.setItems(DBUtils.runQuery("",Tables.PERSON));
+        TableColumn<Person, Long> personId = new TableColumn<>("Azonosító");
+        personId.setCellValueFactory(new PropertyValueFactory("id"));
+
+        TableColumn<Person, String> personFirstName = new TableColumn<>("Keresztnév");
+        personFirstName.setCellValueFactory(new PropertyValueFactory("firstName "));
+
+        TableColumn<Person, String> personLastName = new TableColumn<>("Vezetéknév");
+        personLastName.setCellValueFactory(new PropertyValueFactory("lastName"));
+
+        TableColumn<Person, Date> personBirthDate = new TableColumn<>("Születésnap");
+        personBirthDate.setCellValueFactory(new PropertyValueFactory("BirthDate"));
+
+        TableColumn<Person, String> personAdress = new TableColumn<>("Cím");
+        personAdress.setCellValueFactory(new PropertyValueFactory("Adress "));
+
+
+        tableView.getColumns().setAll(personId ,personFirstName , personLastName , personBirthDate ,personAdress);
     }
 }
