@@ -86,10 +86,7 @@ public class UpdateBookController {
             }
         }
         queryCommand.delete(queryCommand.length() - 3, queryCommand.length()).append("WHERE id = " + condition);
-        System.out.println(queryCommand);
-
         DBUtils.updateTable(queryCommand.toString());
-
         refreshBookTableView(table, "");
         clearFields();
     }
