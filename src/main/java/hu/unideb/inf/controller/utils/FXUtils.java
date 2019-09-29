@@ -53,7 +53,6 @@ public class FXUtils {
         Scene scene = new Scene(root);
 
         scene.getStylesheets().add("style/style.css");
-        MainApp.primaryStage.setMaximized(true);
         MainApp.primaryStage.setScene(scene);
         MainApp.primaryStage.show();
     }
