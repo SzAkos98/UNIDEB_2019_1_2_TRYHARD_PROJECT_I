@@ -73,13 +73,8 @@ public class NewBookController {
             generateAlert(Alert.AlertType.ERROR, "Új könyv", "Hozzáadás", "Valamelyik érték érvénytelen!").show();
             return;
         }
-        try {
-            DBUtils.persist(book);
-        }
-        catch (Exception e){
-            generateAlert(Alert.AlertType.ERROR, "Új könyv", "Hozzáadás", "Nem lehet 2 azonos azonosító!").show();
-            return;
-        }
+
+        DBUtils.persist(book);
         refreshBookTableView(table);
         clearFields();
     }

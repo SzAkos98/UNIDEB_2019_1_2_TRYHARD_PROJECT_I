@@ -6,12 +6,17 @@ package hu.unideb.inf.utils;
         import hu.unideb.inf.model.Person;
         import javafx.collections.FXCollections;
         import javafx.collections.ObservableList;
+        import javafx.scene.control.Alert;
         import org.hibernate.Session;
         import org.hibernate.Transaction;
+
+        import javax.persistence.PersistenceException;
         import javax.persistence.Query;
 
 
         import java.util.List;
+
+        import static hu.unideb.inf.controller.utils.FXUtils.generateAlert;
 
 
 public class DBUtils {
@@ -56,7 +61,7 @@ public class DBUtils {
         return FXCollections.observableList(book);
     }
 
-    public static void persist(Object object) {
+    public static void persist(Object object) throws PersistenceException {
         transaction = null;
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
@@ -67,6 +72,8 @@ public class DBUtils {
             if (transaction != null) {
                 transaction.rollback();
             }
+            generateAlert(Alert.AlertType.ERROR, "Új könyv", "Hozzáadás", "Valamelyik érték érvénytelen!").show();
+
         }
 
     }
