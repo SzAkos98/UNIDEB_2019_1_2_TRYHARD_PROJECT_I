@@ -10,7 +10,7 @@
             xmlns="http://javafx.com/javafx/8"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="hu.unideb.inf.controller.LoanController"
-            minWidth="1408" minHeight="792">>
+            minWidth="1408" minHeight="792">
 
 <top>
         <Label styleClass="title" text="Válaszd ki a tagot aki könyvet szeretne kikölcsönözni!" />
@@ -22,7 +22,6 @@
         <VBox spacing="10.0">
             <children>
                 <VBox>
-                    <TextField fx:id="searchField" onAction="#handleSearch"/>
                     <HBox spacing="10.0">
                         <children>
 

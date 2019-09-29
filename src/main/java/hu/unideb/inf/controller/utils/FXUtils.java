@@ -55,8 +55,6 @@ public class FXUtils {
         Scene scene = new Scene(root);
 
         scene.getStylesheets().add("style/style.css");
-        MainApp.primaryStage.setFullScreenExitHint("");
-        MainApp.primaryStage.setFullScreen(true);
         MainApp.primaryStage.setScene(scene);
         MainApp.primaryStage.show();
     }

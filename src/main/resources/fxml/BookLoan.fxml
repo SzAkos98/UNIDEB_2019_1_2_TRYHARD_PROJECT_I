@@ -47,7 +47,7 @@
                 </GridPane>
                 <HBox spacing="10.0">
                     <children>
-                        <TableView fx:id="table" onMouseClicked="#handleSelection" HBox.hgrow="ALWAYS" />
+                        <TableView fx:id="table" onMouseClicked="#handleSelection" HBox.hgrow="ALWAYS"/>
                         <TableView fx:id="cart" onMouseClicked="#handleCartSelection" HBox.hgrow="ALWAYS" />
                     </children>
                 </HBox>
@@ -57,46 +57,6 @@
     <bottom>
         <VBox spacing="10.0">
             <children>
-                <Label text="Keresés:" />
-                <TextField fx:id="search" onKeyTyped="#handleTyping" />
-                <HBox spacing="10.0">
-                    <children>
-                        <HBox alignment="CENTER">
-                            <children>
-                                <HBox alignment="CENTER" spacing="10.0">
-                                    <children>
-                                        <Label text="Könyvtár ID:" />
-                                        <TextField fx:id="id" alignment="CENTER_RIGHT" disable="true" />
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" spacing="10.0">
-                                    <children>
-                                        <Label text="Szerző:" />
-                                        <TextField fx:id="author" alignment="CENTER" disable="true" />
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" spacing="10.0">
-                                    <children>
-                                        <Label text="Cím: " />
-                                        <TextField fx:id="title" alignment="CENTER" disable="true" />
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" spacing="10.0">
-                                    <children>
-                                        <Label text="Kiadó: " />
-                                        <TextField fx:id="publisher" alignment="CENTER" disable="true" />
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" spacing="10.0">
-                                    <children>
-                                        <Label text="Kiadásának éve: " />
-                                        <TextField fx:id="yearOfPublication" alignment="CENTER" disable="true" />
-                                    </children>
-                                </HBox>
-                            </children>
-                        </HBox>
-                    </children>
-                </HBox>
                 <HBox alignment="CENTER_LEFT" spacing="10.0">
                     <children>
                         <Button fx:id="addToLoan" onAction="#handleAddToLoan" prefWidth="200" text="Hozzáad" />
