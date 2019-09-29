@@ -24,7 +24,7 @@
 <top>
         <VBox>
             <children>
-                <Label styleClass="title" text="Könyvek kikölcsönzése" />
+                <Label fx:id="person" styleClass="title" text="Könyvek kikölcsönzése" />
             </children>
         </VBox>
     </top>
@@ -34,7 +34,7 @@
                 <GridPane alignment="CENTER">
                     <children>
                         <Label id="shopStorage" text="Könyvek" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
-                        <Label id="shopCart" text="Kikölcsönözni kívánt könyvek" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" />
+                        <Label id="shopCart" text="Kölcsönzött" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" />
                     </children>
                     <columnConstraints>
                         <ColumnConstraints />
@@ -66,7 +66,7 @@
                                 <HBox alignment="CENTER" spacing="10.0">
                                     <children>
                                         <Label text="Könyvtár ID:" />
-                                        <TextField fx:id="LibID" alignment="CENTER_RIGHT" disable="true" />
+                                        <TextField fx:id="id" alignment="CENTER_RIGHT" disable="true" />
                                     </children>
                                 </HBox>
                                 <HBox alignment="CENTER" spacing="10.0">
@@ -100,12 +100,11 @@
                 <HBox alignment="CENTER_LEFT" spacing="10.0">
                     <children>
                         <Button fx:id="addToLoan" onAction="#handleAddToLoan" prefWidth="200" text="Hozzáad" />
-                        <Button fx:id="endLoan" disable="true" onAction="#handleLoan" prefWidth="200" text="Kikölcsönzés" />
+                        <Button fx:id="endLoan" onAction="#handleLoan" prefWidth="200" text="Befejez" />
                         <Button onAction="#handleBack" prefWidth="200" text="Vissza" />
                         <HBox alignment="CENTER_RIGHT" spacing="10.0" HBox.hgrow="ALWAYS">
                             <children>
-                                <Button onAction="#handleDeleteAllBook" prefWidth="200" styleClass="dangerousAction" text="MINDET TÖRÖL" />
-                                <Button fx:id="deleteCartItem" disable="true" onAction="#handleDeleteBook" prefWidth="200" styleClass="dangerousAction" text="TÖRÖL" />
+                                <Button fx:id="deleteCartItem" disable="true" onAction="#handleDeleteBook" prefWidth="200" styleClass="dangerousAction" text="VISSZAHOZ" />
                             </children>
                         </HBox>
                     </children>
