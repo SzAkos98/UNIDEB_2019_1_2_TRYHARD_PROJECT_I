@@ -113,7 +113,7 @@ A projekthez továbbá felhasználtuk a Maven nevű projekt menedzsment eszközt
    Cim  VARCHAR    | KolcsonzesDatum  DATE                 |Születési datum  DATE                     
    Kiado VARCHAR   |                                       |   Lakcim VARCHAR                    
    KiadasEve DATE  |Hatarido DATE                          |                     
-   |               |VisszahozasDatum DATE                  |    
+                   |VisszahozasDatum DATE                  |    
    
   
   
@@ -458,7 +458,7 @@ Tag:
    Cim  VARCHAR    | KolcsonzesDatum  DATE                 |Születési datum  DATE                     
    Kiado VARCHAR   |                                       |   Lakcim VARCHAR                    
    KiadasEve DATE  |Hatarido DATE                          |                     
-   |               |VisszahozasDatum DATE                  |    
+                   |VisszahozasDatum DATE                  |    
    
 ### Implementációs terv  
 
