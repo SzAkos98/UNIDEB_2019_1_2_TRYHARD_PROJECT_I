@@ -18,6 +18,8 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Optional;
 
@@ -86,8 +88,8 @@ public class FXUtils {
         }
     }
 
-    public static void refreshBookTableView(TableView<Book> tableView){
-        tableView.setItems(DBUtils.runQuery("", Tables.BOOK));
+    public static void refreshBookTableView(TableView<Book> tableView, String command){
+        tableView.setItems(DBUtils.runQuery(command, Tables.BOOK));
         TableColumn<Book, Long> bookId = new TableColumn<>("Azonosító");
         bookId.setCellValueFactory(new PropertyValueFactory("id"));
 
@@ -127,4 +129,8 @@ public class FXUtils {
 
         tableView.getColumns().setAll(personId ,personFirstName , personLastName , personBirthDate ,personAdress);
     }
+
+   private static java.sql.Date parseDate(String string) throws ParseException {
+       return new java.sql.Date(new SimpleDateFormat("yyyy.MM.dd").parse(string).getTime());
+   }
 }

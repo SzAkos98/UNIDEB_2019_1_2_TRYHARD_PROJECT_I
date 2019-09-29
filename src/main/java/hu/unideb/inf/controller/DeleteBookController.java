@@ -5,7 +5,6 @@ import hu.unideb.inf.utils.DBUtils;
 import hu.unideb.inf.utils.DataTypes;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -46,7 +45,7 @@ public class DeleteBookController {
         filterFields.put(title, DataTypes.STRING);
         filterFields.put(publisher, DataTypes.STRING);
         filterFields.put(yearOfPublication, DataTypes.NUMBER);
-        refreshBookTableView(table);
+        refreshBookTableView(table, "");
     }
 
     public void handleSelection(MouseEvent mouseEvent) {
@@ -85,7 +84,7 @@ public class DeleteBookController {
 
         DBUtils.updateTable(queryCommand.toString());
 
-        refreshBookTableView(table);
+        refreshBookTableView(table, "");
         clearFields();
     }
 

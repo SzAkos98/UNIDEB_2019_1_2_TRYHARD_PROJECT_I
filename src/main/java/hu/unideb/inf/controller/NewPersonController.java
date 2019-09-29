@@ -42,7 +42,7 @@ public class NewPersonController {
         filterFields.put(lastName, DataTypes.STRING);
         filterFields.put(birthDate, DataTypes.STRING);
         filterFields.put(adress, DataTypes.NUMBER);
-        refresPersonTableView(table);
+        refresPersonTableView(table, "");
     }
 
 

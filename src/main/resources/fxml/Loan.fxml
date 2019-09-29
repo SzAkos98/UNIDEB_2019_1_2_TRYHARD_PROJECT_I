@@ -19,12 +19,16 @@
     <bottom>
         <VBox spacing="10.0">
             <children>
-                <HBox spacing="10.0">
-                    <children>
-                        <Button onAction="#handleAdding" prefWidth="200" text="Kiválasztás" />
-                        <Button onAction="#handleBack" prefWidth="200" text="Vissza" />
-                    </children>
-                </HBox>
+                <VBox>
+                    <TextField fx:id="searchField" onAction="#handleSearch"
+                    <HBox spacing="10.0">
+                        <children>
+
+                            <Button onAction="#handleAdding" prefWidth="200" text="Kiválasztás" />
+                            <Button onAction="#handleBack" prefWidth="200" text="Vissza" />
+                        </children>
+                    </HBox>
+                </VBox>
             </children>
         </VBox>
     </bottom>

@@ -44,7 +44,7 @@ public class NewBookController {
         filterFields.put(title, DataTypes.STRING);
         filterFields.put(publisher, DataTypes.STRING);
         filterFields.put(yearOfPublication, DataTypes.NUMBER);
-        refreshBookTableView(table);
+        refreshBookTableView(table, "");
     }
 
     public void handleSelection(MouseEvent mouseEvent) {
@@ -75,7 +75,7 @@ public class NewBookController {
         }
 
         DBUtils.persist(book);
-        refreshBookTableView(table);
+        refreshBookTableView(table, "");
         clearFields();
     }
 
