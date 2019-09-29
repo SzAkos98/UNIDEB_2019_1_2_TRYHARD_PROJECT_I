@@ -3,7 +3,9 @@
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
     -fx-opacity: 0.9;*/
-    -fx-background-color: rgb(177, 250, 244)
+    -fx-background-position: center center;
+    -fx-background-color: rgb(177, 250, 244);
+    -fx-background-size: auto;
 }
 
 #message {

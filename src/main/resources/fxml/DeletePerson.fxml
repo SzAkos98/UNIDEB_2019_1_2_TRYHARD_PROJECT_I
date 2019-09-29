@@ -9,8 +9,10 @@
 <BorderPane styleClass="borderpane"
             xmlns="http://javafx.com/javafx/8"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="hu.unideb.inf.controller.DeletePersonController">
-    <top>
+            fx:controller="hu.unideb.inf.controller.DeletePersonController"
+            minWidth="1920" minHeight="1080">
+
+<top>
         <Label styleClass="title" text="Tag törlése" />
     </top>
     <center>

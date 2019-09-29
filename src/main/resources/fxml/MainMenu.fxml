@@ -10,7 +10,8 @@
 <BorderPane fx:id="borderPane"
             styleClass="borderpane" id="Mainroot"
             xmlns="http://javafx.com/javafx/8.0.172-ea"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.MainMenuController">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.MainMenuController"
+            minWidth="1920" minHeight="1080">
     <top>
         <HBox alignment="CENTER">
             <Label text="FŐMENÜ" styleClass="title"/>
