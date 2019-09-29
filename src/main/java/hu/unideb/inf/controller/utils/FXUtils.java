@@ -107,8 +107,8 @@ public class FXUtils {
         tableView.getColumns().setAll(bookId, bookAuthor, bookTitle, bookPublisher, bookpublishyear);
     }
 
-    public static void refresPersonTableView(TableView<Person> tableView){
-        tableView.setItems(DBUtils.runQuery("",Tables.PERSON));
+    public static void refresPersonTableView(TableView<Person> tableView,String command){
+        tableView.setItems(DBUtils.runQuery(command,Tables.PERSON));
         TableColumn<Person, Long> personId = new TableColumn<>("Azonosító");
         personId.setCellValueFactory(new PropertyValueFactory("id"));
 
