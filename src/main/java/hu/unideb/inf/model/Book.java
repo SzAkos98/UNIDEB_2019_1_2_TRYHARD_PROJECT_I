@@ -1,10 +1,10 @@
 package hu.unideb.inf.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.sql.Date;
 
-
+@Entity
 public class Book {
     @Id
     @Column
@@ -20,7 +20,10 @@ public class Book {
     private String publisher;
 
     @Column
-    private Date publishingDate;
+    private Long yearOfPublication;
+
+    public Book() {
+    }
 
     public Long getId() {
         return id;
@@ -54,19 +57,19 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public Date getPublishingDate() {
-        return publishingDate;
+    public Long getYearOfPublication() {
+        return yearOfPublication;
     }
 
-    public void setPublishingDate(Date publishingDate) {
-        this.publishingDate = publishingDate;
+    public void setYearOfPublication(Long yearOfPublication) {
+        this.yearOfPublication = yearOfPublication;
     }
 
-    public Book(Long id, String author, String title, String publisher, Date publishingDate) {
+    public Book(Long id, String author, String title, String publisher, Long yearOfPublication) {
         this.id = id;
         this.author = author;
         this.title = title;
         this.publisher = publisher;
-        this.publishingDate = publishingDate;
+        this.yearOfPublication = yearOfPublication;
     }
 }
