@@ -104,15 +104,17 @@ lesz az is ,hogy ki által lett kikölcsönözve a könyv.
 A program controller részének megvalósítását Java programozási nyelven terveztük el.
 A projekthez továbbá felhasználtuk a Maven nevű projekt menedzsment eszköztárat is.
   
-Könyv        | Kölcsönzés   |Tag  
-------------| --------------|---------  
-   ID Primary key|KolcsonzesID PRIMARY KEY, UNIQUE |unique INTEGER           
-   LibID VARCHAR  |KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |  Vezeteknev VARCHAR                         
-   Szerzo VARCHAR |TagID FOREIGN KEY(TAG.ID) INTEGER  |   Keresztnev VARCHAR                     
-   Cim  VARCHAR   | KolcsonzesDatum  DATE  |   Születési datum  DATE                     
-   Kiado VARCHAR  |  |   Lakcim VARCHAR                    
-   KiadasEve DATE |Hatarido DATE     |                     
-  |               |VisszahozasDatum DATE        |   
+
+   Könyv           | Kölcsönzés                            |Tag  
+   ----------------|---------------------------------------|---------  
+   ID Primary key  |KolcsonzesID PRIMARY KEY, UNIQUE       |unique INTEGER           
+   LibID VARCHAR   |KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |Vezeteknev VARCHAR                         
+   Szerzo VARCHAR  |TagID FOREIGN KEY(TAG.ID) INTEGER      |Keresztnev VARCHAR                     
+   Cim  VARCHAR    | KolcsonzesDatum  DATE                 |Születési datum  DATE                     
+   Kiado VARCHAR   |                                       |   Lakcim VARCHAR                    
+   KiadasEve DATE  |Hatarido DATE                          |                     
+   |               |VisszahozasDatum DATE                  |    
+   
   
   
 ###  Projektmunkások és felelősségeik  
