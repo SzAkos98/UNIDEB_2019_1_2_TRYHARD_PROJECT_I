@@ -423,26 +423,27 @@ nem láttuk szükségességét biztonsági funkciók beépítésére a rendszrbe
 ### Adatbázis terv  
 
 A program adatbázisát 3 fő táblára osztottuk:
+
 Könyv:
-   -Könyvtári ID
-   -Szerző
-   -Cím
-   -Kiadó
-   -Kiadás éve
-   -Elérhető
+- Könyvtári ID
+- Szerző
+- Cím
+- Kiadó
+- Kiadás éve
+- Elérhető
 
 Kölcsönzés:
-   -Kölcsönzés ID
-   -Tag ID
-   -Kölcsönzés dátum
-   -Határidő
-   -Visszahozási dátum
+- Kölcsönzés ID
+- Tag ID
+- Kölcsönzés dátum
+- Határidő
+- Visszahozási dátum
 
 Tag:
-   -Azonosító
-   -Keresztnév
-   -Vezetéknév
-   -Születési dátum
+- Azonosító
+- Keresztnév
+- Vezetéknév
+- Születési dátum
 
 
 #### Logikai adatmodell  
