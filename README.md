@@ -25,6 +25,7 @@ Egy adatbázison alapuló JavaFX alkalmazás könyvek és tagok nyilvántartás�
  [Funkcionális Specifikáció](/docs/Funkcionális_specifikáció.md)
  
  [Rendszerterv](/docs/Rendszerterv.md)
+ 
  [Tesztelési jegyzőkönyv](/docs/Tesztelesijegyzokonyv.md)
  
  

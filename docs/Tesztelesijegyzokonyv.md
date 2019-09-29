@@ -1,4 +1,5 @@
-#Tesztelési jegyzőkönyv
+# Tesztelési jegyzőkönyv
+
 2019.9.29. - Debrecen
 
 

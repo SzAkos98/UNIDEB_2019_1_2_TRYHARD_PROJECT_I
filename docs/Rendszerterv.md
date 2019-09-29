@@ -448,6 +448,8 @@ Tag:
 
 #### Logikai adatmodell  
 
+![DBdiagram](dbdiagram.png)
+
    Könyv           | Kölcsönzés                            |Tag  
    ----------------|---------------------------------------|---------  
    ID Primary key  |KolcsonzesID PRIMARY KEY, UNIQUE       |unique INTEGER           
