@@ -5,6 +5,7 @@ import hu.unideb.inf.utils.DBUtils;
 import hu.unideb.inf.utils.DataTypes;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -80,10 +81,7 @@ public class DeleteBookController {
             }
         }
         queryCommand.delete(queryCommand.length() - 5, queryCommand.length());
-        System.out.println(queryCommand);
-
         DBUtils.updateTable(queryCommand.toString());
-
         refreshBookTableView(table, "");
         clearFields();
     }
