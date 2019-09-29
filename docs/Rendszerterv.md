@@ -104,16 +104,15 @@ lesz az is ,hogy ki által lett kikölcsönözve a könyv.
 A program controller részének megvalósítását Java programozási nyelven terveztük el.
 A projekthez továbbá felhasználtuk a Maven nevű projekt menedzsment eszköztárat is.
   
-Könyv        | Kölcsönzés   |Tag  
-------------| --------------|---------  
-   ID Primary key|KolcsonzesID PRIMARY KEY, UNIQUE |unique INTEGER           
-   LibID VARCHAR  |KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |  Vezeteknev VARCHAR                         
-   Szerzo VARCHAR |TagID FOREIGN KEY(TAG.ID) INTEGER  |   Keresztnev VARCHAR                     
-   Cim  VARCHAR   | KolcsonzesDatum  DATE  |   Születési datum  DATE                     
-   Kiado VARCHAR  |  |   Lakcim VARCHAR                    
-   KiadasEve DATE |Hatarido DATE     |                     
-   Elerheto BOOLEAN|VisszahozasDatum DATE        |   
-  
+   Könyv           | Kölcsönzés                            |Tag  
+   ----------------|---------------------------------------|---------  
+   ID Primary key  |KolcsonzesID PRIMARY KEY, UNIQUE       |unique INTEGER           
+   LibID VARCHAR   |KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |Vezeteknev VARCHAR                         
+   Szerzo VARCHAR  |TagID FOREIGN KEY(TAG.ID) INTEGER      |Keresztnev VARCHAR                     
+   Cim  VARCHAR    | KolcsonzesDatum  DATE                 |Születési datum  DATE                     
+   Kiado VARCHAR   |Hatarido DATE                          |   Lakcim VARCHAR                    
+   KiadasEve DATE  |VisszahozasDatum DATE                  |                     
+
   
 ###  Projektmunkások és felelősségeik  
   
@@ -158,6 +157,7 @@ megvan a végzettsége és a tudása ahoz ,hogy TRYHARD csapat által készítet
 programot magabiztosan képes legyen használni.  
   
 ###  Üzleti folyamatok  
+
 Két példa az üzleti folyamatokra:
 
 **Tag felvétele a rendszerbe:**
@@ -249,6 +249,7 @@ feladatuk a Tagok értesítése problémák esetén. Hivatalos munkatársai a k�
 ![Folyamatok](folyamatok.png)
 
 ### Menü-hierarchiák  
+
     FŐMENÜ:
      - Kölcsönzés
         - Tag kiválasztása
@@ -314,6 +315,7 @@ A jelen esetben a kölcsönzőben szükség van:
          + navigációs gombok.  
             
    - #### Meglévő könyv törlése
+   
         Külön képernyőn a véletlen törlések elkerülésére. A törléshez rá
         kell szűrni a rekordra vagy kiválasztani a táblázatból.
         + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
@@ -321,6 +323,7 @@ A jelen esetben a kölcsönzőben szükség van:
         + navigációs gombok.
    
    - #### Meglévő tag törlése
+   
         Külön képernyőn a véletlen törlések elkerülésére. A törléshez rá
         kell szűrni a rekordra vagy kiválasztani a táblázatból.
         + A képernyő egy táblázatos reprezentációából áll a rekordoknak,
@@ -331,6 +334,7 @@ A jelen esetben a kölcsönzőben szükség van:
 ### Fizikai környezet  
   
 #### Hardver és hálózati topológia  
+
 A gép hardverje 8 GB DDR4 -es RAMból, egy Intel  
 Core i7-8750H 2.20GHz típusú processzorból és egy NVIDIA GeForce GTX 1060  
 típusú videókártyából áll. A számítógép számára szükség esetén internet elérés biztosított.
@@ -352,6 +356,7 @@ A projekt során használt fejlszetői eszközök:
 - Java FX   
   
 ### Architekturális terv  
+
 A rendszert felépítő alrendszerek
 (szoftver komponensek) lényegében a Java ,Sql ,Mavan használata Java FX keretén belüli
 használata.Az alrendszerek meghatározása után a tulajdonságaikat kiaknázva vezérlési,
@@ -381,6 +386,7 @@ Architektúra elemek:
   -   referencia modell leképezése szoftver
       elemekre
    - pl. ISO OSI architektúra  
+   
 ### Egy architekturális tervezési minta  
   
 A projekt során a az MVC (model-view-controller) modellt fogjuk alkalmazni.  
@@ -415,6 +421,7 @@ A lokális adattárolásra és a számítógéphez való korlátozott hozzáfér
 nem láttuk szükségességét biztonsági funkciók beépítésére a rendszrbe.
   
 ### Adatbázis terv  
+
 A program adatbázisát 3 fő táblára osztottuk:
 Könyv:
    -Könyvtári ID
@@ -446,9 +453,9 @@ Tag:
    LibID VARCHAR   |KonyvID FOREIGN KEY(KONYV.ID) INTEGER  |Vezeteknev VARCHAR                         
    Szerzo VARCHAR  |TagID FOREIGN KEY(TAG.ID) INTEGER      |Keresztnev VARCHAR                     
    Cim  VARCHAR    | KolcsonzesDatum  DATE                 |Születési datum  DATE                     
-   Kiado VARCHAR   |                                       |   Lakcim VARCHAR                    
-   KiadasEve DATE  |Hatarido DATE                          |                     
-   |               |VisszahozasDatum DATE                  |    
+   Kiado VARCHAR   |Hatarido DATE                          |   Lakcim VARCHAR                    
+   KiadasEve DATE  |VisszahozasDatum DATE                  |                     
+
    
 ### Implementációs terv  
 
@@ -465,6 +472,7 @@ használhatjuk.
 
   
 ### Perzisztencia-osztályok  
+
 A perzisztencia megvalósításáért a Hibernate objektum-relációs leképezést
 megvalósító programkönyvtár felel.
 Perzisztencia osztályok:
@@ -472,6 +480,7 @@ Perzisztencia osztályok:
    -HibernateUtils
   
 ### Üzleti logika osztályai  
+
 Az üzleti logika a háromrétegű adatkezelő alkalmazások középső rétege, amely meghatározza 
 az alkalmazás működésének logikáját.
 A háromrétegű architektúra az alkalmazást három különálló rétegre osztja fel. E rétegek 
@@ -487,6 +496,7 @@ Sohasem kerül közvetlen kapcsolatba az adatbázissal, és nem végez semmilyen
 adatokon.
   
 ### Tesztterv  
+
 Kód|Leírás|  
 ----|---  
 T01:| A program elindítása  
