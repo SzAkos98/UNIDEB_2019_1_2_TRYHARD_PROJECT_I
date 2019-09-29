@@ -3,11 +3,11 @@ package hu.unideb.inf.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 public class Book {
     @Id
-    @Column
     private Long id;
 
     @Column

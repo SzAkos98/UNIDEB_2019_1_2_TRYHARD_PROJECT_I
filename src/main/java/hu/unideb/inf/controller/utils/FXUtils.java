@@ -1,7 +1,9 @@
 package hu.unideb.inf.controller.utils;
 
+import hu.unideb.inf.main.Main;
 import hu.unideb.inf.main.MainApp;
 import hu.unideb.inf.model.Book;
+import hu.unideb.inf.model.Loan;
 import hu.unideb.inf.model.Person;
 import hu.unideb.inf.utils.DBUtils;
 import hu.unideb.inf.utils.DataTypes;
@@ -53,6 +55,8 @@ public class FXUtils {
         Scene scene = new Scene(root);
 
         scene.getStylesheets().add("style/style.css");
+        MainApp.primaryStage.setFullScreenExitHint("");
+        MainApp.primaryStage.setFullScreen(true);
         MainApp.primaryStage.setScene(scene);
         MainApp.primaryStage.show();
     }
@@ -125,6 +129,28 @@ public class FXUtils {
         tableView.getColumns().setAll(personId ,personFirstName , personLastName , personBirthDate ,personAdress);
     }
 
+    public static void refresLoanTableView(TableView<Loan> tableView, String command){
+        tableView.setItems(DBUtils.runQuery(command,Tables.LOAN));
+        TableColumn<Loan, Long> loanId = new TableColumn<>("Azonosító");
+        loanId.setCellValueFactory(new PropertyValueFactory("id"));
+
+        TableColumn<Loan, Long> bookId = new TableColumn<>("KönyvAzon");
+        bookId.setCellValueFactory(new PropertyValueFactory("bookID"));
+
+        TableColumn<Loan, Long> personId = new TableColumn<>("TagAzon");
+        personId.setCellValueFactory(new PropertyValueFactory("personID"));
+
+        TableColumn<Loan, Date> loanDate = new TableColumn<>("Kölcsönzés dátum");
+        loanDate.setCellValueFactory(new PropertyValueFactory("loanDate"));
+
+        TableColumn<Loan, Date> deadline = new TableColumn<>("Határidő");
+        deadline.setCellValueFactory(new PropertyValueFactory("deadLine"));
+
+        TableColumn<Loan, Date> backDate = new TableColumn<>("Visszahozás");
+        deadline.setCellValueFactory(new PropertyValueFactory("backDate"));
+
+        tableView.getColumns().setAll(loanId, bookId, personId, loanDate, deadline, backDate);
+    }
    public static java.sql.Date parseDate(String string) throws ParseException {
        return new java.sql.Date(new SimpleDateFormat("yyyy-MM-dd").parse(string).getTime());
    }
