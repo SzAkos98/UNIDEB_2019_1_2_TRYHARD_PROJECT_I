@@ -112,7 +112,7 @@ Könyv        | Kölcsönzés   |Tag
    Cim  VARCHAR   | KolcsonzesDatum  DATE  |   Születési datum  DATE                     
    Kiado VARCHAR  |  |   Lakcim VARCHAR                    
    KiadasEve DATE |Hatarido DATE     |                     
-   Elerheto BOOLEAN|VisszahozasDatum DATE        |   
+  |               |VisszahozasDatum DATE        |   
   
   
 ###  Projektmunkások és felelősségeik  
