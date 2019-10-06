@@ -16,3 +16,9 @@ T08: |Egy tag eltávolítása a tagok adatbázisából                       |si
 T09: |Egy könyv kikölcsönzése                                          |sikeres
 T10: |Több könyv kikölcsönzése                                         |sikeres
 T11: |Egy könyv kitörlése a könyvek adatbázisából                      |sikeres
+T12: |A Kilépés menüpontra kattinva felugrik a Megerősítés ablak       |sikeres
+T13: |A Megerősítés ablakon belül az OK gombra kattintva a programból ki lehet lépni |sikeres
+T14: |A tag módosítása menüpont alatt nem lehet az ID-t megváltoztatni |sikeres
+T15: |A könyv módosítása menüpont alatt nem lehet az ID-t megváltoztatni |sikers
+T16: |A tag módosítása menüpont alatt nem lehet már létező ID-t megadni |sikeres
+T17: |A könyv módosítása menüpont alatt nem lehet már létező ID-t megadni |sikeres
