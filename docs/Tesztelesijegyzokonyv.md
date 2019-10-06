@@ -22,3 +22,10 @@ T14: |A tag módosítása menüpont alatt nem lehet az ID-t megváltoztatni |sik
 T15: |A könyv módosítása menüpont alatt nem lehet az ID-t megváltoztatni |sikers
 T16: |A tag módosítása menüpont alatt nem lehet már létező ID-t megadni |sikeres
 T17: |A könyv módosítása menüpont alatt nem lehet már létező ID-t megadni |sikeres
+T18: |A tag módosítása menüpont alatt módosítás esetén muszáj minden field-et kitölteni |sikeres
+T19: |A könyv módosítása menüpont alatt módosítás esetén muszáj minden field-et kitölteni |sikeres
+T20: |A kölcsönzés menüpont első megjelenő ablakjában ki lehet választani a tagot aki könyvet szeretne kikölcsönözni |sikeres
+T21: |A kikölcsönzés menüpont második megjelenő ablakján hozzá lehet adni a kölcsönzött könyvek listájához egy könyvet |sikeres
+T22: |A kikölcsönzés menüpont második megjelenő ablakján hozzá lehet adni a kölcsönzött könyvek listájához több könyvet |sikeres
+T23: |A jelenleg kikölcsönzött könyvet más nem kölcsönözheti ki |sikeres
+T24: |A tag vissza tud hozni könyvet a könyvtárba |sikeres
